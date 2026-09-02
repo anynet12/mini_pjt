@@ -161,6 +161,8 @@ finalizer, reviewer` 4개 고정, 행은 이번 실행에서 선택된 앵글 �
 
 
    (요약·인사이트·글감 앵글 도출)
+   - researcher 완료 직후 오케스트레이터가 자막을 RAG 색인한다(writer·faithfulness 검사가 쓴다):
+     `python scripts/rag_index.py posts/{date}/transcript.txt --run {date} --kind transcript`
 
 
 2. **[유일한 사용자 질문 = 앵글 선택]** researcher가 낸 글감 앵글을 `AskUserQuestion`의
@@ -193,7 +195,9 @@ finalizer, reviewer` 4개 고정, 행은 이번 실행에서 선택된 앵글 �
    기다리지 않는다):
 
 
-   - `writer` → 앵글 폴더 `a{N}/`에 `draft_v1.md`
+   - `writer` → 앵글 폴더 `a{N}/`에 `draft_v1.md`. writer는 섹션마다
+     `python scripts/rag_search.py "{질문}" --run {date} --kind transcript` 로 자막 근거 청크를
+     확인하며 쓴다(writer.md 참조). 지시에 `--run {date}`(가이드 트랙은 `--angle g{N}`도)를 명시한다.
 
 
    - `image` → `a{N}/images_v1/`(plan.md + `NN.svg`, 00=썸네일). SVG 직접 생성, 외부 API 없음
@@ -204,6 +208,12 @@ finalizer, reviewer` 4개 고정, 행은 이번 실행에서 선택된 앵글 �
    - 오케스트레이터가 `python scripts/svg_to_png.py posts/{date}/a{N}/images_vN` 을 실행해 그
      폴더의 SVG를 전부 PNG로 자동 변환한다(현재본 images_vN 기준, finalizer 완료 직후 매번).
      `post_naver.html`의 자리표시자는 이 PNG 파일명을 가리키므로 사람은 변환 없이 바로 업로드하면 된다
+   - **[faithfulness 검사]** finalizer 완료 직후, reviewer 호출 전에 오케스트레이터가
+     `python scripts/check_faithfulness.py posts/{date}/a{N}/draft_vN.md --run {date}`
+     (가이드 트랙은 `--angle g{N}` 추가)를 실행한다. 초안의 사실 주장을 색인된 근거(자막/공식 페이지/
+     research.md)와 대조해 `a{N}/faithfulness_vN.json`을 만든다. 이 경로를 reviewer 입력에 넘긴다 —
+     `unsupported` 주장은 reviewer가 D critical(원인 writer)로 지적한다(reviewer.md 참조). 스크립트가
+     실패하면(Bedrock 스로틀 등) 건너뛰고 최종 보고에 "faithfulness 미검사"를 남긴다
 
 
 4. **[품질 게이트] 각 편마다 `reviewer`로 심사한다.** reviewer가 돌려준 판정 전문을 오케스트레이터가
@@ -220,6 +230,9 @@ finalizer, reviewer` 4개 고정, 행은 이번 실행에서 선택된 앵글 �
 
 
    (앵글 N개면 각 폴더마다 발행) 아래 "포스팅" 규칙 참조. 네이버 등록은 현재 보류.
+   - 발행 직후 오케스트레이터가 발행글을 과거 글 코퍼스에 색인한다(다음 실행의 키워드 중복 회피용,
+     retention으로 폴더가 지워져도 색인은 남는다):
+     `python scripts/rag_index.py posts/{date}/a{N}/post_tistory.html --run {date} --angle a{N} --kind post`
 
 
 6. 발행까지 마친 최종본(들)을 사용자에게 **제출하고 그대로 마친다** — 별도 승인을 기다리지 않는다.
@@ -476,6 +489,8 @@ posts/{date}/
                                  텍스트로 복사해 넣고 자리표시자 위치에 변환된 PNG를 수동으로 올린다
 
 
+    faithfulness_v1.json …      check_faithfulness.py 결과 (초안 주장별 supported/partially/unsupported,
+                                 faithfulness 점수). reviewer 입력으로 전달
     review_v1.md, review_v2.md … reviewer 판정 전문 (post_vN 심사 결과, 오케스트레이터가 저장)
     review_v1.json …            parse_review.py가 만든 구조화 판정(verdict·scores·issues[].stage)
     review_log.jsonl             판정 1건 = 1줄 누적 (PASS·FAIL 모두). eval_report.py의 입력
@@ -684,11 +699,17 @@ python scripts/tistory_post.py posts/{date}/a{N} --blog {블로그명} --publish
    "앵글 선택"과 완전히 대응하는 지점이다 — 이 실행에서 사용자에게 묻는 유일한 지점이며,
    그 외에는 승인·확인 없이 자동 진행한다. 무응답 기본값도 동일(첫 번째 후보 1개로 진행).
 3. 선택된 키워드마다 `guide-researcher`를 다시 호출해 **2단계(공식 출처 리서치)**를
-   수행시킨다 → `posts/{date}/g{N}/research.md`. 이후 `writer`→`image`→`finalizer`→
-   `reviewer` 파이프라인은 영상 트랙과 완전히 동일한 방식(키워드별 독립 병렬, 진행 상황
-   매트릭스, `svg_to_png.py` 변환 등)으로 진행한다 — `g{N}` 폴더 기준이라는 점만 다르다.
+   수행시킨다 → `posts/{date}/g{N}/research.md`. guide-researcher는 읽은 공식 페이지 원문을
+   `g{N}/sources/*.md`로 저장하고 `rag_index.py --kind source`로 색인한 뒤, `rag_search.py`로
+   근거 청크를 확인하며 research.md를 쓴다(guide-researcher.md 참조). 완료 직후 오케스트레이터가
+   research.md도 색인한다:
+   `python scripts/rag_index.py posts/{date}/g{N}/research.md --run {date} --angle g{N} --kind research`.
+   이후 `writer`→`image`→`finalizer`→`reviewer` 파이프라인은 영상 트랙과 완전히 동일한 방식
+   (키워드별 독립 병렬, 진행 상황 매트릭스, `svg_to_png.py` 변환, faithfulness 검사 등)으로
+   진행한다 — `g{N}` 폴더 기준이고 RAG 검색에 `--angle g{N}`을 붙인다는 점만 다르다.
 4. 품질 게이트(reviewer, 자동 재작업 최대 2회, `review_log.md` 기록, 2회 초과 시 drop)는
-   영상 트랙과 동일하게 적용된다.
+   영상 트랙과 동일하게 적용된다. faithfulness 검사는 이 트랙에서 특히 중요하다 — 절차·요건이
+   틀리면 독자가 실제 손해를 보므로 `unsupported` 주장은 예외 없이 재작업 대상이다.
 5. 포스팅(reviewer PASS 시 `poster` 자동 발행)도 동일하다. 다만 **필수 채널 태그 규칙은
    해당 없음** — 태그는 키워드·관련 기관명 위주로 채운다.
 6. 제출·로그 분석 보고(워크플로우 6단계와 동일 형식)도 영상 트랙과 함께 또는 독립적으로
@@ -711,9 +732,12 @@ python scripts/tistory_post.py posts/{date}/a{N} --blog {블로그명} --publish
 posts/{date}/
   keyword_candidates.md       절차형 키워드 후보 (영상 트랙의 insights.md에 대응)
   g{N}/                       선택한 키워드 한 편 (영상 트랙의 a{N}/에 대응)
+    sources/                    guide-researcher가 저장한 공식 페이지 원문 (`{NN}_{기관}.md`, 맨 위
+                                 `<!-- url / title / org / checked -->` 주석). RAG 색인 대상(kind=source)
     research.md                 공식 출처 기반 리서치 (영상 트랙의 transcript.txt+insights.md에 대응)
-    draft_v1.md, images_v1/, post_v1.html, post_tistory.html,
-    post_naver.html, review_log.md …  나머지는 a{N}/과 완전히 동일한 구조·버전 규칙
+    draft_v1.md, images_v1/, post_v1.html, post_tistory.html, post_naver.html,
+    faithfulness_v1.json, review_v1.md/.json, review_log.md/.jsonl …
+                                 나머지는 a{N}/과 완전히 동일한 구조·버전 규칙
 ```
 
 - 같은 날짜 폴더 안에 영상 트랙 앵글(`a{N}/`)과 가이드 트랙 키워드(`g{N}/`)가 함께 있을 수
@@ -766,6 +790,17 @@ posts/{date}/
   호출하지 않는다. 항상 exit 0·stdout 없음이라 파이프라인에 영향이 없다.
 - `scripts/trace_report.py [날짜|파일]` — 트레이스를 서브에이전트 스팬·앵글×단계 매트릭스·도구 호출
   통계로 정리. `--timeline`으로 시간순 목록.
+- `scripts/rag_index.py <파일|폴더> --run {date} [--angle] --kind {transcript|research|source|post|…}` —
+  문서를 청크로 나눠 Bedrock Titan 임베딩으로 Chroma(`chroma_db/`, gitignore)에 색인. 같은 파일을
+  다시 색인하면 덮어쓴다. 오케스트레이터가 자막(1단계)·research.md(가이드 3단계)·발행글(5단계)을,
+  guide-researcher가 `sources/`를 색인한다.
+- `scripts/rag_search.py "{질문}" --run {date} [--angle] [--kind] [-k 6]` — **하이브리드 RAG 검색**
+  (`backend/rag/retriever.py`): 쿼리 확장(LCEL·Claude) → BM25(rank_bm25, 한국어 bigram) + 밀집(Chroma)
+  → RRF 융합 → 리랭킹(Bedrock Rerank, IAM 권한 없으면 Claude 리스트와이즈로 자동 대체) → top-k.
+  writer·guide-researcher가 근거 청크를 찾을 때 쓴다. `--no-expand --no-rerank`면 LLM 호출 없음.
+- `scripts/check_faithfulness.py <draft_vN.md> --run {date} [--angle]` — 초안의 사실 주장을 LCEL로
+  추출하고, 주장마다 RAG 검색으로 근거 청크를 찾아 supported/partially/unsupported를 판정
+  (RAGAS faithfulness 류). `faithfulness_vN.json` 저장. Claude 호출 2회 + 임베딩.
 
 
 - 의존성: `pip install -r requirements.txt` + `python -m playwright install chromium`.
@@ -773,14 +808,20 @@ posts/{date}/
 
   researcher는 자막 추출에 `python -m yt_dlp` 를 쓴다(이 환경엔 yt-dlp CLI가 없음).
   Bedrock 자격증명·모델 ID는 프로젝트 루트 `.env`(gitignore 대상)에 둔다 — `AWS_ACCESS_KEY_ID`,
-  `AWS_SECRET_ACCESS_KEY`, `AWS_DEFAULT_REGION`, `BEDROCK_CHAT_MODEL_ID`(+ RAG용
-  `BEDROCK_EMBED_MODEL_ID`, `BEDROCK_RERANK_MODEL_ID`). 키를 채팅이나 문서에 옮겨 적지 않는다.
+  `AWS_SECRET_ACCESS_KEY`, `AWS_DEFAULT_REGION`, `BEDROCK_CHAT_MODEL_ID`, RAG용
+  `BEDROCK_EMBED_MODEL_ID`(Titan v2), `BEDROCK_RERANK_MODEL_ID`(비우면 Claude 리랭킹), 선택
+  `CHROMA_DB_DIR`(기본 `chroma_db/`). 키를 채팅이나 문서에 옮겨 적지 않는다.
+- RAG 색인(`chroma_db/`)은 `posts/` retention과 무관하게 남는다. 과거 발행글(kind=post) 검색이
+  키워드 중복 회피에 쓰이므로 지우지 않는다. 실행 자료(transcript/source/research)는 `--run`
+  필터로 구분되므로 오래된 것이 섞여도 검색에 영향이 없다.
 
 
 ## 금지사항
 
 
-- **웹 검색, 외부 자료 인용 금지 (영상 내용만 사용).** 예외: 절차형(가이드) 트랙의
+- **웹 검색, 외부 자료 인용 금지 (영상 내용만 사용).** RAG 검색(`rag_search.py`)은 이 프로젝트가
+  직접 색인한 자막·리서치·공식 페이지 원문 안에서만 찾으므로 외부 자료가 아니다 — 오히려 "근거
+  문서 밖의 사실"을 막는 장치다. 예외: 절차형(가이드) 트랙의
 
 
   `guide-researcher`만 정부·공공기관·금융회사 공식 사이트에 한해 리서치가 허용된다

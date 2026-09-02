@@ -7,7 +7,8 @@ langchain-core
 langchain-aws
 pydantic>=2
 python-dotenv
-# 패턴 3 (RAG, 예정) — BM25 키워드 검색
+# 패턴 3 (RAG) — Chroma 벡터 저장소 + BM25 키워드 검색 (임베딩·리랭킹은 Bedrock)
+chromadb
 rank_bm25
 # backend/spike (SDK 실험)
 claude-agent-sdk

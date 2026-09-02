@@ -28,7 +28,13 @@ tools: Read
 - posts/{date}/a{N}/post_vN.html (심사 대상 최종본 = 현재본)
 
 
-- 필요 시 참고: posts/{date}/a{N}/draft_vN.md, posts/{date}/insights.md
+- 필요 시 참고: posts/{date}/a{N}/draft_vN.md, posts/{date}/insights.md
+
+
+- (있으면) posts/{date}/a{N}/faithfulness_vN.json — 오케스트레이터가 `scripts/check_faithfulness.py`로
+  초안의 사실 주장을 자막/공식 출처 색인과 대조한 결과. `unsupported` 주장은 "근거 문서 밖의
+  사실"이므로 **D 기준 critical, 원인 단계 writer**로 지적한다(주장 문장을 그대로 인용). `partially`는
+  major로 지적하되 근거 청크와 어긋난 수치·조건을 명시한다. faithfulness 값은 D 점수에 반영한다.
 
 절차형(가이드) 트랙에서는 위 `a{N}`이 `g{N}`으로, `insights.md` 참고가 `g{N}/research.md`
 참고로 바뀔 뿐 아래 평가 기준은 전부 동일하게 적용된다. 다만 두 가지는 트랙별로 다르게

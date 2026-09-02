@@ -4,3 +4,4 @@ __pycache__/
 .naver/
 .env
 traces/
+chroma_db/

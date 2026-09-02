@@ -7,7 +7,7 @@ name: writer
 description: 사용자가 선택한 앵글로 블로그 초안을 작성하는 에이전트. researcher 완료 후 사용자가 앵글을 선택했을 때만 호출한다.
 
 
-tools: Read, Write
+tools: Read, Write, Bash
 
 
 ---
@@ -30,6 +30,22 @@ tools: Read, Write
 
 공통:
 - (재작업 시) 오케스트레이터가 해석한 구체적 지시 + 입력으로 쓸 직전 초안 경로
+- (재작업 시, 있으면) `faithfulness_vN.json` — 근거 없는 주장(unsupported) 목록. 해당 문장은
+  근거 청크에 맞게 고치거나 삭제한다. 새 사실로 메우지 않는다.
+
+**근거 검색(RAG) — 이 에이전트가 `Bash`를 쓰는 유일한 용도**: 오케스트레이터가 자막·리서치
+문서를 이미 색인해 두었다. 소제목(섹션)마다 그 섹션의 질문으로 검색해 **실제 근거 청크를 확인한
+뒤** 쓴다. 전문(transcript.txt/research.md)을 통째로 읽는 것도 여전히 허용되지만, 수치·절차·
+조건이 들어가는 문장은 검색 결과 청크에 그 내용이 있는지 확인하고 쓴다.
+
+```bash
+# 영상 트랙: 이 실행의 자막만
+python scripts/rag_search.py "{섹션의 질문}" --run {date} --kind transcript -k 5
+# 절차형 트랙: 이 키워드의 공식 페이지 원문 + research.md
+python scripts/rag_search.py "{섹션의 질문}" --run {date} --angle g{N} -k 5
+```
+
+검색 결과의 `[출처#청크]` 참조는 글에 그대로 쓰지 않는다(제작 흔적). 다른 명령은 실행하지 않는다.
 
 
 ## 작업
