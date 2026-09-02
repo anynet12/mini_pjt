@@ -1,0 +1,13 @@
+# 기존 파이프라인
+playwright
+yt-dlp
+# 패턴 1 (LCEL chain + Pydantic 구조화 출력) — Bedrock 경유
+boto3
+langchain-core
+langchain-aws
+pydantic>=2
+python-dotenv
+# 패턴 3 (RAG, 예정) — BM25 키워드 검색
+rank_bm25
+# backend/spike (SDK 실험)
+claude-agent-sdk

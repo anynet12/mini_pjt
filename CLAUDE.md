@@ -206,16 +206,14 @@ finalizer, reviewer` 4개 고정, 행은 이번 실행에서 선택된 앵글 �
      `post_naver.html`의 자리표시자는 이 PNG 파일명을 가리키므로 사람은 변환 없이 바로 업로드하면 된다
 
 
-4. **[품질 게이트] 각 편마다 `reviewer`로 심사한다.** 아래 "품질 게이트" 규칙에 따라
-
-
-   FAIL이면 **자동으로** 재작업 루프를 돈다(사용자 승인 없이, 최대 2회). 매 FAIL 판정은
-
-
-   `review_log.md`에 기록한다. 2회 재작업(총 3번째 심사) 후에도 FAIL이면 그 앵글은 **drop**한다
-
-
-   (발행하지 않고 최종 제출에서 제외).
+4. **[품질 게이트] 각 편마다 `reviewer`로 심사한다.** reviewer가 돌려준 판정 전문을 오케스트레이터가
+   `a{N}/review_vN.md`(N = 심사한 `post_vN.html`의 번호)로 저장한 뒤 **반드시**
+   `python scripts/parse_review.py posts/{date}/a{N}/review_vN.md` 를 실행한다. 이 스크립트가
+   LCEL 체인(Bedrock Claude, Pydantic 스키마)으로 판정을 `review_vN.json`으로 구조화하고
+   `review_log.md`/`review_log.jsonl`에 PASS·FAIL 모두 누적한다. 오케스트레이터는 stdout의
+   `verdict`·`rework_stages`·`warnings`를 읽어 다음을 정한다 — 아래 "품질 게이트" 규칙에 따라
+   FAIL이면 **자동으로** 재작업 루프를 돈다(사용자 승인 없이, 최대 2회). 2회 재작업(총 3번째 심사)
+   후에도 FAIL이면 그 앵글은 **drop**한다(발행하지 않고 최종 제출에서 제외).
 
 
 5. **[포스팅] reviewer가 최종 PASS를 낸 편은 `poster`로 티스토리에 자동 발행한다.**
@@ -230,19 +228,13 @@ finalizer, reviewer` 4개 고정, 행은 이번 실행에서 선택된 앵글 �
    각 편의 경로, 제목/메타/태그, reviewer 통과 요약, **티스토리 발행 URL**을 함께 보여준다.
 
 
-   drop된 앵글이 있으면 그 사실과 마지막 FAIL 사유도 함께 보여준다. 그리고 이번 실행에서 선택된
-
-
-   모든 앵글의 `review_log.md`를 모아 반복적으로 지적된 패턴을 분석해 **개선 포인트 방향**을
-
-
-   정리하고 함께 보고한다(예: "이미지 단계에서 `<style>` 태그 사용이 2개 앵글에서 반복 지적됨 →
-
-
-   image.md에 명시적 금지 규칙 추가 검토 권장"). 이 분석은 보고만 하며, 실제 반영(에이전트 지침
-
-
-   수정 등) 여부는 사용자가 결정한다.
+   drop된 앵글이 있으면 그 사실과 마지막 FAIL 사유도 함께 보여준다. 그리고
+   `python scripts/eval_report.py posts/{date}` 를 실행해 이번 실행의 정량 지표(앵글별 판정 이력,
+   최초/최종 PASS율, 기준별 평균 점수, 원인 단계·기준별 지적 빈도, 반복 지적)를 받고, 그 위에
+   오케스트레이터가 반복 패턴을 해석해 **개선 포인트 방향**을 정리해 함께 보고한다(예: "이미지
+   단계에서 `<style>` 태그 사용이 2개 앵글에서 반복 지적됨 → image.md에 명시적 금지 규칙 추가 검토
+   권장"). 트레이스가 있으면 `python scripts/trace_report.py` 로 앵글×단계 소요 시간·도구 호출
+   통계도 덧붙인다. 이 분석은 보고만 하며, 실제 반영(에이전트 지침 수정 등) 여부는 사용자가 결정한다.
 
 
 7. 이후 사용자가 최종본을 보고 **재작업을 지시하면** 아래 **재작업 라우팅**에 따라 처리한다
@@ -272,16 +264,21 @@ finalizer가 최종본을 빌드할 때마다(최초 빌드 및 재작업 후 �
   finalizer로 재빌드한 뒤 **다시 reviewer로 재심사**한다. 사용자 승인 없이 진행한다.
 
 
-- **판정 로그**: reviewer가 FAIL을 낼 때마다(재심사 포함) 판정 전문("문제점 → 원인 단계 →
-
-
-  개선 지시")을 타임스탬프와 함께 `posts/{date}/a{N}/review_log.md`에 append 저장한다. 이 로그는
-
-
-  그 자리에서 사용자에게 보고하지 않고, 실행이 전부 끝난 뒤(워크플로우 6단계) 모든 앵글의 로그를
-
-
-  모아 반복 패턴을 분석해 개선 포인트 방향을 보고하는 데 쓴다.
+- **판정 저장 + 구조화 (PASS·FAIL 모두, 매 심사마다)**: reviewer의 판정 전문을
+  `posts/{date}/a{N}/review_vN.md`로 저장하고 곧바로 `python scripts/parse_review.py <그 파일>` 을
+  실행한다. 스크립트는 `backend/chains/review_chain.py`의 LCEL 체인으로 판정을 Pydantic 스키마
+  (`verdict`, `scores{A,B,C,D,total}`, `issues[{criterion,severity,stage,problem,instruction}]`)에
+  맞춰 `review_vN.json`에 쓰고, 같은 폴더의 `review_log.jsonl`(1건 1줄)과 `review_log.md`(사람용,
+  FAIL은 전문 포함)에 append 한다. 체인은 판정문의 `## 판정:`·`종합:` 값을 정규식으로 따로 뽑아
+  LLM 출력과 대조하므로 판정·점수는 항상 판정문이 우선한다.
+  - 오케스트레이터는 재작업 대상 단계를 **`review_vN.json`의 `issues[].stage`(minor 제외)**로
+    정한다 — stdout의 `rework_stages`가 그 목록이다(상위 단계 순). 판정문을 눈으로 다시 해석하지 않는다.
+  - stdout `warnings`에 "PASS인데 critical 지적", "FAIL인데 critical 없음·종합 70 이상" 같은
+    정합성 경고가 있으면 reviewer 판정을 그대로 따르되, 최종 보고에 그 경고를 함께 적는다.
+  - 스크립트가 실패(exit≠0: Bedrock 스로틀·자격증명 등)하면 판정문을 직접 읽어 라우팅하고,
+    `review_log.md`에 판정 전문을 수동으로 append 한 뒤 최종 보고에 "구조화 실패" 사실을 남긴다.
+  - 이 로그는 그 자리에서 사용자에게 보고하지 않고, 실행이 전부 끝난 뒤(워크플로우 6단계)
+    `scripts/eval_report.py`로 모아 정량 지표와 반복 패턴을 보고하는 데 쓴다.
 
 
 - **무한루프 방지 + Drop 규칙**: 자동 재작업은 **최대 2회**까지. 2회 재작업(즉 총 3번째 심사) 후에도
@@ -479,13 +476,11 @@ posts/{date}/
                                  텍스트로 복사해 넣고 자리표시자 위치에 변환된 PNG를 수동으로 올린다
 
 
-    review_log.md                (있으면) reviewer가 FAIL을 낼 때마다 판정 전문이 타임스탬프와
-
-
-                                 함께 누적 기록되는 로그. 전체 실행 완료 후 개선 포인트 방향 분석에
-
-
-                                 쓰인다 — "품질 게이트" 참조
+    review_v1.md, review_v2.md … reviewer 판정 전문 (post_vN 심사 결과, 오케스트레이터가 저장)
+    review_v1.json …            parse_review.py가 만든 구조화 판정(verdict·scores·issues[].stage)
+    review_log.jsonl             판정 1건 = 1줄 누적 (PASS·FAIL 모두). eval_report.py의 입력
+    review_log.md                사람용 누적 로그 (FAIL은 판정 전문 포함). 전체 실행 완료 후 개선
+                                 포인트 방향 분석에 쓰인다 — "품질 게이트" 참조
 
 
 ```
@@ -761,10 +756,25 @@ posts/{date}/
 - `scripts/prepare_naver.py`, `scripts/naver_login.py`, `scripts/naver_post.py` — 네이버용(보류).
 
 
-- 의존성: Python + Playwright(`pip install playwright` + `python -m playwright install chromium`).
+- `scripts/parse_review.py` — reviewer 판정문(`review_vN.md`) → `review_vN.json` + `review_log.md/.jsonl`.
+  `backend/chains/review_chain.py`의 **LCEL 체인**(Bedrock `ChatBedrockConverse` +
+  `with_structured_output(Pydantic)`)을 호출한다. 워크플로우 4단계에서 매 심사마다 실행.
+- `scripts/eval_report.py posts/{date}` (또는 `--all`) — `review_log.jsonl`을 모아 품질 게이트
+  정량 지표(PASS율·기준별 평균·지적 분포·반복 지적)를 마크다운으로 출력. 워크플로우 6단계에서 실행.
+- `scripts/trace_hook.py` — Claude Code hook(`.claude/settings.json`)이 세션·서브에이전트·도구
+  이벤트마다 자동 실행해 `traces/{date}/{session}.jsonl`에 스팬 레코드를 append 한다. 직접
+  호출하지 않는다. 항상 exit 0·stdout 없음이라 파이프라인에 영향이 없다.
+- `scripts/trace_report.py [날짜|파일]` — 트레이스를 서브에이전트 스팬·앵글×단계 매트릭스·도구 호출
+  통계로 정리. `--timeline`으로 시간순 목록.
+
+
+- 의존성: `pip install -r requirements.txt` + `python -m playwright install chromium`.
 
 
   researcher는 자막 추출에 `python -m yt_dlp` 를 쓴다(이 환경엔 yt-dlp CLI가 없음).
+  Bedrock 자격증명·모델 ID는 프로젝트 루트 `.env`(gitignore 대상)에 둔다 — `AWS_ACCESS_KEY_ID`,
+  `AWS_SECRET_ACCESS_KEY`, `AWS_DEFAULT_REGION`, `BEDROCK_CHAT_MODEL_ID`(+ RAG용
+  `BEDROCK_EMBED_MODEL_ID`, `BEDROCK_RERANK_MODEL_ID`). 키를 채팅이나 문서에 옮겨 적지 않는다.
 
 
 ## 금지사항
