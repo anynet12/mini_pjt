@@ -8,7 +8,7 @@ Validates (cheaply, no real subagent spawn):
       until we (simulating the web backend) resolve it?
   (c) what do stream events (include_partial_messages) look like?
 
-Run: python backend/spike/spike1_core.py
+Run: python src/spike/spike1_core.py
 """
 
 import asyncio

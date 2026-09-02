@@ -24,7 +24,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO_ROOT))
 
-from backend.chains.review_chain import ReviewRecord, parse_review_text  # noqa: E402
+from src.chains.review_chain import ReviewRecord, parse_review_text  # noqa: E402
 
 VERSION_RE = re.compile(r"review_v(\d+)\.md$")
 

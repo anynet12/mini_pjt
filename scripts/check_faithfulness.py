@@ -19,8 +19,8 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO_ROOT))
 
-from backend.rag.faithfulness import check_faithfulness  # noqa: E402
-from backend.rag.retriever import HybridRetriever  # noqa: E402
+from src.rag.faithfulness import check_faithfulness  # noqa: E402
+from src.rag.retriever import HybridRetriever  # noqa: E402
 
 VERSION_RE = re.compile(r"_v(\d+)\.(md|html)$")
 

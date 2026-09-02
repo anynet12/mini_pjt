@@ -1,6 +1,6 @@
 """Spike 2: session resume preserves context across separate process runs.
 
-Run: python backend/spike/spike2_resume.py
+Run: python src/spike/spike2_resume.py
 """
 
 import asyncio

@@ -20,7 +20,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO_ROOT))
 
-from backend.rag.retriever import HybridRetriever  # noqa: E402
+from src.rag.retriever import HybridRetriever  # noqa: E402
 
 
 def main() -> None:

@@ -12,7 +12,7 @@ import os
 import boto3
 from botocore.exceptions import BotoCoreError, ClientError
 
-from backend.chains.bedrock import region
+from src.chains.bedrock import region
 
 EMBED_DIM = int(os.environ.get("BEDROCK_EMBED_DIM", "512"))
 

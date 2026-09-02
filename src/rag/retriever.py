@@ -16,10 +16,10 @@ from langchain_core.prompts import ChatPromptTemplate
 from pydantic import BaseModel, Field
 from rank_bm25 import BM25Okapi
 
-from backend.chains.bedrock import get_chat_model
-from backend.rag.bedrock_embed import RerankUnavailable, bedrock_rerank, embed_text
-from backend.rag.chunking import tokenize
-from backend.rag.store import RagStore, make_where
+from src.chains.bedrock import get_chat_model
+from src.rag.bedrock_embed import RerankUnavailable, bedrock_rerank, embed_text
+from src.rag.chunking import tokenize
+from src.rag.store import RagStore, make_where
 
 RRF_K = 60
 

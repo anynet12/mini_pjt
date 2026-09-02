@@ -26,8 +26,8 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO_ROOT))
 
-from backend.rag.chunking import chunk_text  # noqa: E402
-from backend.rag.store import KINDS, RagStore  # noqa: E402
+from src.rag.chunking import chunk_text  # noqa: E402
+from src.rag.store import KINDS, RagStore  # noqa: E402
 
 META_COMMENT = re.compile(r"^\s*<!--(.*?)-->", re.S)
 EXTS = {".md", ".txt", ".html", ".htm"}

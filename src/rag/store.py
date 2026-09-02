@@ -13,9 +13,9 @@ import hashlib
 import os
 from pathlib import Path
 
-from backend.chains.bedrock import REPO_ROOT  # .env 로딩 부수효과 포함
-from backend.rag.bedrock_embed import embed_texts
-from backend.rag.chunking import Chunk
+from src.chains.bedrock import REPO_ROOT  # .env 로딩 부수효과 포함
+from src.rag.bedrock_embed import embed_texts
+from src.rag.chunking import Chunk
 
 COLLECTION = "blog_agent"
 KINDS = ("transcript", "insights", "research", "source", "post", "draft")

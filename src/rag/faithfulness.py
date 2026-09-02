@@ -16,8 +16,8 @@ from typing import Literal
 from langchain_core.prompts import ChatPromptTemplate
 from pydantic import BaseModel, Field
 
-from backend.chains.bedrock import get_chat_model
-from backend.rag.retriever import HybridRetriever
+from src.chains.bedrock import get_chat_model
+from src.rag.retriever import HybridRetriever
 
 
 class Claim(BaseModel):

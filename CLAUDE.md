@@ -279,7 +279,7 @@ finalizer가 최종본을 빌드할 때마다(최초 빌드 및 재작업 후 �
 
 - **판정 저장 + 구조화 (PASS·FAIL 모두, 매 심사마다)**: reviewer의 판정 전문을
   `posts/{date}/a{N}/review_vN.md`로 저장하고 곧바로 `python scripts/parse_review.py <그 파일>` 을
-  실행한다. 스크립트는 `backend/chains/review_chain.py`의 LCEL 체인으로 판정을 Pydantic 스키마
+  실행한다. 스크립트는 `src/chains/review_chain.py`의 LCEL 체인으로 판정을 Pydantic 스키마
   (`verdict`, `scores{A,B,C,D,total}`, `issues[{criterion,severity,stage,problem,instruction}]`)에
   맞춰 `review_vN.json`에 쓰고, 같은 폴더의 `review_log.jsonl`(1건 1줄)과 `review_log.md`(사람용,
   FAIL은 전문 포함)에 append 한다. 체인은 판정문의 `## 판정:`·`종합:` 값을 정규식으로 따로 뽑아
@@ -781,7 +781,7 @@ posts/{date}/
 
 
 - `scripts/parse_review.py` — reviewer 판정문(`review_vN.md`) → `review_vN.json` + `review_log.md/.jsonl`.
-  `backend/chains/review_chain.py`의 **LCEL 체인**(Bedrock `ChatBedrockConverse` +
+  `src/chains/review_chain.py`의 **LCEL 체인**(Bedrock `ChatBedrockConverse` +
   `with_structured_output(Pydantic)`)을 호출한다. 워크플로우 4단계에서 매 심사마다 실행.
 - `scripts/eval_report.py posts/{date}` (또는 `--all`) — `review_log.jsonl`을 모아 품질 게이트
   정량 지표(PASS율·기준별 평균·지적 분포·반복 지적)를 마크다운으로 출력. 워크플로우 6단계에서 실행.
@@ -795,12 +795,18 @@ posts/{date}/
   다시 색인하면 덮어쓴다. 오케스트레이터가 자막(1단계)·research.md(가이드 3단계)·발행글(5단계)을,
   guide-researcher가 `sources/`를 색인한다.
 - `scripts/rag_search.py "{질문}" --run {date} [--angle] [--kind] [-k 6]` — **하이브리드 RAG 검색**
-  (`backend/rag/retriever.py`): 쿼리 확장(LCEL·Claude) → BM25(rank_bm25, 한국어 bigram) + 밀집(Chroma)
+  (`src/rag/retriever.py`): 쿼리 확장(LCEL·Claude) → BM25(rank_bm25, 한국어 bigram) + 밀집(Chroma)
   → RRF 융합 → 리랭킹(Bedrock Rerank, IAM 권한 없으면 Claude 리스트와이즈로 자동 대체) → top-k.
   writer·guide-researcher가 근거 청크를 찾을 때 쓴다. `--no-expand --no-rerank`면 LLM 호출 없음.
 - `scripts/check_faithfulness.py <draft_vN.md> --run {date} [--angle]` — 초안의 사실 주장을 LCEL로
   추출하고, 주장마다 RAG 검색으로 근거 청크를 찾아 supported/partially/unsupported를 판정
   (RAGAS faithfulness 류). `faithfulness_vN.json` 저장. Claude 호출 2회 + 임베딩.
+
+
+- `src/agent.py` — 이 CLAUDE.md 규칙을 Claude Agent SDK로 비대화형 실행하는 진입점(`run.sh`·Docker).
+  앵글 선택은 `AskUserQuestion` 대신 MCP 도구 `PresentAngleChoices`로 받고(콘솔 입력, 무응답·`--auto`면
+  첫 항목), `rag_search`·`rag_index`·`check_faithfulness`·`parse_review`를 MCP 도구로도 제공한다.
+  이 경로로 실행 중이면 그 도구들을 Bash 스크립트 대신 써도 된다(동작 동일).
 
 
 - 의존성: `pip install -r requirements.txt` + `python -m playwright install chromium`.
