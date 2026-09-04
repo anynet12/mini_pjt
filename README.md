@@ -1,3 +1,4 @@
+# https://padlet.com/ucanlabs/sds-ax-1-aeh67w2kj28h4r3q
 # blog-agent — 유튜브 영상 → 티스토리 블로그 자동 집필·발행 에이전트
 
 유튜브 링크 하나(또는 저경쟁 절차형 키워드)에서 검색 노출이 가능한 블로그 글을 여러 편 만들어
