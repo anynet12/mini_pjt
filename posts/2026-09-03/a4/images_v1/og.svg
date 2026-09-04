@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <style>
+      .lbl { font-family: system-ui, -apple-system, 'Malgun Gothic', sans-serif; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1600" height="900" fill="#24424B"/>
+  <circle cx="800" cy="450" r="360" fill="#2F6E77" opacity="0.18"/>
+
+  <!-- ascending dashed arrow -->
+  <path d="M 560 640 L 1050 360" stroke="#D98A3D" stroke-width="5" stroke-dasharray="10 10" fill="none"/>
+  <path d="M 1050 360 L 1018 352 L 1040 388 Z" fill="#D98A3D"/>
+
+  <!-- 5 ascending step bars, centered on x=800 -->
+  <rect x="585" y="590" width="70" height="60" rx="10" fill="#8FAFA0"/>
+  <text x="620" y="628" text-anchor="middle" class="lbl" font-size="26" font-weight="700" fill="#24424B">1</text>
+
+  <rect x="675" y="540" width="70" height="110" rx="10" fill="#8FAFA0"/>
+  <text x="710" y="590" text-anchor="middle" class="lbl" font-size="26" font-weight="700" fill="#24424B">2</text>
+
+  <rect x="765" y="490" width="70" height="160" rx="10" fill="#8FAFA0"/>
+  <text x="800" y="540" text-anchor="middle" class="lbl" font-size="26" font-weight="700" fill="#24424B">3</text>
+
+  <rect x="855" y="440" width="70" height="210" rx="10" fill="#8FAFA0"/>
+  <text x="890" y="490" text-anchor="middle" class="lbl" font-size="26" font-weight="700" fill="#24424B">4</text>
+
+  <rect x="945" y="390" width="70" height="260" rx="10" fill="#D98A3D"/>
+  <text x="980" y="440" text-anchor="middle" class="lbl" font-size="26" font-weight="700" fill="#24424B">5</text>
+
+  <!-- centered keyword -->
+  <text x="800" y="760" text-anchor="middle" class="lbl" font-size="58" font-weight="700" fill="#F5F3EE">레벨업 전략</text>
+</svg>

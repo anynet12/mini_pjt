@@ -1,0 +1,54 @@
+{
+  "run": "2026-09-02",
+  "angle": "a2",
+  "version": 2,
+  "source_file": "posts/2026-09-02/a2/review_v2.md",
+  "reviewed_at": "2026-09-03T09:45:48+09:00",
+  "model": "global.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "text_facts": {
+    "verdict": "PASS",
+    "total": 89,
+    "score_A": 93,
+    "score_B": 85,
+    "score_C": 90,
+    "score_D": 88
+  },
+  "adjustments": [],
+  "consistency_warnings": [],
+  "result": {
+    "verdict": "PASS",
+    "scores": {
+      "a_format": 93,
+      "b_appeal": 85,
+      "c_coherence": 90,
+      "d_traces": 88,
+      "total": 89
+    },
+    "strengths": [
+      "도입에서 '1만 원 수령 신청' 반전 포인트를 바로 제시",
+      "표·타임라인 SVG·비교 인포그래픽 등 저장각 요소 충분",
+      "FAQ가 본문을 벗어나지 않으면서도 자기완결적"
+    ],
+    "weaknesses": [
+      "'박곰희의 설명으로는/박곰희가' 반복 어구가 일부 기계적으로 읽힘",
+      "메타 설명이 120자 상한에 근접"
+    ],
+    "issues": [
+      {
+        "criterion": "A",
+        "severity": "minor",
+        "stage": "finalizer",
+        "problem": "메타 설명이 120자 상한에 근접",
+        "instruction": "메타 설명을 5~10자 정도 더 줄여 안전 범위 내로 조정"
+      },
+      {
+        "criterion": "B",
+        "severity": "minor",
+        "stage": "writer",
+        "problem": "'박곰희의 설명으로는/박곰희가' 반복 어구가 일부 기계적으로 읽힘",
+        "instruction": "반복되는 어구를 다양한 표현으로 변경하여 자연스러운 흐름 개선"
+      }
+    ],
+    "summary": "1차 FAIL의 유일한 critical 사유였던 '10년/11년 차' 자기반박이 본문·SVG·FAQ 전 구간에서 해소됐다. 양식 요건을 모두 충족하며 실용적 저장각을 갖춘 글이다.\""
+  }
+}

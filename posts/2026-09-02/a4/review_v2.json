@@ -1,0 +1,55 @@
+{
+  "run": "2026-09-02",
+  "angle": "a4",
+  "version": 2,
+  "source_file": "posts/2026-09-02/a4/review_v2.md",
+  "reviewed_at": "2026-09-03T09:47:19+09:00",
+  "model": "global.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "text_facts": {
+    "verdict": "PASS",
+    "total": 89,
+    "score_A": 92,
+    "score_B": 85,
+    "score_C": 88,
+    "score_D": 92
+  },
+  "adjustments": [],
+  "consistency_warnings": [],
+  "result": {
+    "verdict": "PASS",
+    "scores": {
+      "a_format": 92,
+      "b_appeal": 85,
+      "c_coherence": 88,
+      "d_traces": 92,
+      "total": 89
+    },
+    "strengths": [
+      "도입 구체적 상황 제시로 훅 확보",
+      "5단계 사다리 표+SVG 등 저장각 요소 충분",
+      "화자 개인 의견 귀속 매 판단 지점마다 명시",
+      "AI 티 거의 없음"
+    ],
+    "weaknesses": [
+      "\"1억 2,700만 원\"과 계산부의 \"1.2억\" 반올림 차이 설명 없음",
+      "계산 도식 SVG의 \"÷12\", \"÷2\" 라벨이 여전히 정밀 나눗셈처럼 보여 본문의 \"어림 계산\" 뉘앙스와 온도차 있음"
+    ],
+    "issues": [
+      {
+        "criterion": "A",
+        "severity": "minor",
+        "stage": "image",
+        "problem": "계산 도식 SVG의 \"÷12\", \"÷2\" 라벨이 여전히 정밀 나눗셈처럼 보여 본문의 \"어림 계산\" 뉘앙스와 온도차 있음",
+        "instruction": "SVG 라벨을 \"≈÷12\", \"≈÷2\" 등으로 수정하거나 본문에서 어림 계산임을 더 명확히 표기"
+      },
+      {
+        "criterion": "C",
+        "severity": "minor",
+        "stage": "writer",
+        "problem": "\"1억 2,700만 원\"과 계산부의 \"1.2억\" 반올림 차이 설명 없음",
+        "instruction": "반올림 기준을 명시하거나 두 수치를 일관되게 통일"
+      }
+    ],
+    "summary": "1차 FAIL 사유였던 산수 자기모순은 화자 직접 인용 프레이밍으로 자연스럽게 해소됐고, 문자 수신 주체 혼선도 연결어로 명확해졌다. 새로운 critical/major 이슈 없음."
+  }
+}

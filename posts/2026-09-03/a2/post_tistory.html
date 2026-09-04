@@ -1,0 +1,429 @@
+<!-- meta: AI 에이전트 도입 전 반드시 확인해야 할 7가지 체크리스트예요. 시작 조건부터 예외 조건까지 답할 수 있어야 에이전트화가 가능하고, 책임자 지정을 놓치기 쉬워요. 티타임즈TV 인터뷰를 참고해 정리했어요.
+     tags: 티타임즈TV, AI에이전트, 에이전트도입, 업무자동화, RPA, 코파일럿, AI도입전략, 체크리스트 -->
+<article style="max-width:680px;margin:0 auto;padding:0 16px;line-height:1.7;">
+
+<h1>AI 에이전트 도입 체크리스트, 이 7가지부터 답할 수 있어야 시작할 수 있어요</h1>
+
+<p>요즘 회의실에서 "우리 팀도 에이전트 하나 만들어볼까요"라는 말이 흔해졌어요. 그런데 막상 "어떤 에이전트를요?"라고 되물으면 대답이 궁색해지는 경우가 많아요. AI 툴을 잘 쓰는 것과 업무 프로세스 안에 에이전트를 실제로 심는 것은 전혀 다른 이야기이기 때문이에요.</p>
+
+<p>퍼블AI연구소 김덕중 소장은 티타임즈TV 인터뷰에서 이 지점을 정확히 짚었어요. 그는 에이전트를 사람 채용에 빗대어 설명하는데, 사람을 뽑을 때도 학력·경력·요구 역량을 정의하듯 에이전트를 들이기 전에도 답해야 할 구체적인 조건들이 있다는 거예요. <strong style="background:#fff3a3;color:#1a1a1a;padding:0 2px;">"다 할 줄 아는 에이전트"를 막연히 그리는 대신, 무엇을 어디까지 맡길지부터 좁혀야 한다는 이야기예요.</strong></p>
+
+<figure style="margin:1.5em auto;max-width:800px;text-align:center;">
+<svg viewBox="0 0 1600 900" role="img" aria-label="AI 에이전트 도입 전 확인해야 할 7가지 체크리스트 — 시작 조건부터 예외 조건까지" style="width:100%;height:auto;display:block;" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="1600" height="900" fill="#F5F3EE"/>
+  <circle cx="1520" cy="40" r="220" fill="#2E7D74" opacity="0.06"/>
+  <circle cx="40" cy="880" r="180" fill="#E2924A" opacity="0.07"/>
+
+  <!-- pill tag -->
+  <rect x="90" y="108" width="300" height="52" rx="26" fill="#2E7D74"/>
+  <text x="240" y="142" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="26" font-weight="600" fill="#FFFFFF">AI 에이전트 도입 가이드</text>
+
+  <!-- title -->
+  <text x="90" y="270" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="68" font-weight="700" fill="#22303C">AI 에이전트 도입</text>
+  <text x="90" y="348" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="68" font-weight="700" fill="#2E7D74">체크리스트</text>
+
+  <!-- subtitle -->
+  <text x="90" y="428" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="34" font-weight="500" fill="#5B6672">이 7가지부터 답할 수 있어야</text>
+  <text x="90" y="472" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="34" font-weight="500" fill="#5B6672">시작할 수 있어요</text>
+
+  <text x="90" y="570" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="30" font-weight="600" fill="#2E7D74">지금 우리 조직에도 적용해보세요 →</text>
+
+  <!-- right clipboard panel -->
+  <rect x="860" y="90" width="650" height="720" rx="28" fill="#FFFFFF" stroke="#D8DDE3" stroke-width="2"/>
+  <rect x="1110" y="66" width="150" height="40" rx="12" fill="#2E7D74"/>
+
+  <!-- row 1 -->
+  <rect x="905" y="170" width="50" height="50" rx="10" fill="#2E7D74"/>
+  <path d="M 915 197 L 926 208 L 945 184" stroke="#FFFFFF" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="975" y="204" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="34" font-weight="600" fill="#22303C">시작 조건</text>
+
+  <!-- row 2 -->
+  <rect x="905" y="255" width="50" height="50" rx="10" fill="#2E7D74"/>
+  <path d="M 915 282 L 926 293 L 945 269" stroke="#FFFFFF" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="975" y="289" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="34" font-weight="600" fill="#22303C">입력 조건</text>
+
+  <!-- row 3 -->
+  <rect x="905" y="340" width="50" height="50" rx="10" fill="#2E7D74"/>
+  <path d="M 915 367 L 926 378 L 945 354" stroke="#FFFFFF" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="975" y="374" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="34" font-weight="600" fill="#22303C">판단 규칙</text>
+
+  <!-- row 4 -->
+  <rect x="905" y="425" width="50" height="50" rx="10" fill="#2E7D74"/>
+  <path d="M 915 452 L 926 463 L 945 439" stroke="#FFFFFF" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="975" y="459" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="34" font-weight="600" fill="#22303C">사용 가능한 툴</text>
+
+  <!-- row 5 -->
+  <rect x="905" y="510" width="50" height="50" rx="10" fill="#2E7D74"/>
+  <path d="M 915 537 L 926 548 L 945 524" stroke="#FFFFFF" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="975" y="544" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="34" font-weight="600" fill="#22303C">출력</text>
+
+  <!-- row 6 -->
+  <rect x="905" y="595" width="50" height="50" rx="10" fill="#2E7D74"/>
+  <path d="M 915 622 L 926 633 L 945 609" stroke="#FFFFFF" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="975" y="629" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="34" font-weight="600" fill="#22303C">책임자</text>
+
+  <!-- row 7 -->
+  <rect x="905" y="680" width="50" height="50" rx="10" fill="#2E7D74"/>
+  <path d="M 915 707 L 926 718 L 945 694" stroke="#FFFFFF" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="975" y="714" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="34" font-weight="600" fill="#22303C">예외 조건</text>
+</svg>
+<figcaption style="color:#888;font-size:14px;">AI 에이전트 도입 전 확인해야 할 7가지 체크리스트 — 시작 조건부터 예외 조건까지</figcaption>
+</figure>
+
+<h2>챗봇, 코파일럿, RPA, 에이전트 — 먼저 뭐가 필요한지부터 구분해요</h2>
+
+<p>체크리스트를 채우기 전에 짚어야 할 게 하나 있어요. 우리 조직에 진짜 필요한 게 어떤 유형인지 먼저 나누는 일이에요. 김 소장은 현실에 존재하는 자동화 형태를 크게 네 가지로 구분했어요.</p>
+
+<table style="width:100%;border-collapse:collapse;margin:1em 0;">
+<thead>
+<tr><th style="border:1px solid #D8DDE3;padding:8px;text-align:left;">유형</th><th style="border:1px solid #D8DDE3;padding:8px;text-align:left;">하는 일</th><th style="border:1px solid #D8DDE3;padding:8px;text-align:left;">예시</th></tr>
+</thead>
+<tbody>
+<tr><td style="border:1px solid #D8DDE3;padding:8px;">챗봇형</td><td style="border:1px solid #D8DDE3;padding:8px;">사용자 질문에 답변</td><td style="border:1px solid #D8DDE3;padding:8px;">인사 규정, 구매 규정 안내</td></tr>
+<tr><td style="border:1px solid #D8DDE3;padding:8px;">코파일럿형</td><td style="border:1px solid #D8DDE3;padding:8px;">문서 작업 보조</td><td style="border:1px solid #D8DDE3;padding:8px;">오피스·구글 독스 옆에서 초안 도움</td></tr>
+<tr><td style="border:1px solid #D8DDE3;padding:8px;">워크플로우 자동화</td><td style="border:1px solid #D8DDE3;padding:8px;">룰 기반 처리</td><td style="border:1px solid #D8DDE3;padding:8px;">접수된 티켓을 분류해 담당자에게 연결</td></tr>
+<tr><td style="border:1px solid #D8DDE3;padding:8px;">독립적 에이전트</td><td style="border:1px solid #D8DDE3;padding:8px;">조건을 스스로 인지해 작동</td><td style="border:1px solid #D8DDE3;padding:8px;">특정 상황이 성립하면 알아서 실행</td></tr>
+</tbody>
+</table>
+
+<p>그는 "본인 조직의 가려운 부분에 따라서 유형별 차이가 나는 에이전트들을 적재적소에 배치한다"는 말로 이 구분을 정리했어요. 단순한 질의응답이 필요한 자리에 독립적 에이전트를 억지로 앉힐 필요는 없다는 뜻이죠. 반대로 룰이 명확하고 반복적인 업무라면 챗봇보다 워크플로우 자동화 쪽이 훨씬 효율적이에요.</p>
+
+<h2>업무를 에이전트로 바꾸려면 답해야 할 7가지</h2>
+
+<p>유형을 정했다면 다음은 "이 업무를 정말 에이전트화할 수 있는가"를 검증할 차례예요. 김 소장은 이걸 사람의 업무 정의 방식에 그대로 대입했어요. 인간의 업무가 성립하려면 조건이 필요하듯, 에이전트에게 맡길 업무도 같은 기준으로 쪼갤 수 있어야 한다는 논리예요.</p>
+
+<table style="width:100%;border-collapse:collapse;margin:1em 0;">
+<thead>
+<tr><th style="border:1px solid #D8DDE3;padding:8px;text-align:left;">조건</th><th style="border:1px solid #D8DDE3;padding:8px;text-align:left;">확인할 질문</th></tr>
+</thead>
+<tbody>
+<tr><td style="border:1px solid #D8DDE3;padding:8px;">시작 조건</td><td style="border:1px solid #D8DDE3;padding:8px;">이 일은 언제 시작되는가 (요청, 스케줄링 등)</td></tr>
+<tr><td style="border:1px solid #D8DDE3;padding:8px;">입력 조건</td><td style="border:1px solid #D8DDE3;padding:8px;">무엇을 입력받아 시작하는가 (데이터, 시장 상황, 요구사항)</td></tr>
+<tr><td style="border:1px solid #D8DDE3;padding:8px;">판단 규칙</td><td style="border:1px solid #D8DDE3;padding:8px;">어떤 기준으로 판단·결정하는가</td></tr>
+<tr><td style="border:1px solid #D8DDE3;padding:8px;">사용 가능한 툴</td><td style="border:1px solid #D8DDE3;padding:8px;">어떤 도구·시스템을 다뤄야 하는가</td></tr>
+<tr><td style="border:1px solid #D8DDE3;padding:8px;">출력</td><td style="border:1px solid #D8DDE3;padding:8px;">결과물로 무엇을 내놓는가</td></tr>
+<tr><td style="border:1px solid #D8DDE3;padding:8px;">책임자</td><td style="border:1px solid #D8DDE3;padding:8px;">이 에이전트의 상사, 즉 오너는 누구인가</td></tr>
+<tr><td style="border:1px solid #D8DDE3;padding:8px;">예외 조건</td><td style="border:1px solid #D8DDE3;padding:8px;">규칙대로 처리되지 않는 상황은 무엇인가</td></tr>
+</tbody>
+</table>
+
+<p>그가 든 예시는 의외로 단순해요. IT 헬프데스크로 "마우스가 오래돼서 교체해 주세요"라는 요청이 들어왔다고 해봐요. 시작 조건은 요청 접수, 입력은 요청 내용, 판단 규칙은 "노후 장비면 교체"로 채워져요. 이 예시만으로는 답이 나오지 않는 나머지 네 칸 — 툴, 출력, 책임자, 예외 조건 — 은 여러분 조직의 실제 업무 맥락에 맞춰 직접 채워봐야 해요. 일곱 칸 모두에 답을 낼 수 있다면, 그 업무는 에이전트화할 수 있는 후보가 돼요.</p>
+
+<p>문제는 이 일곱 가지 중 하나라도 "그때그때 다르다"거나 "다 할 줄 알아야 한다"로 답이 나오는 경우예요. 김 소장은 구매 에이전트나 영업 에이전트를 만들 때 "뭘 할 수 있는 에이전트인가요"라는 질문에 "다 할 줄 알아야죠"라고 답한다면, 그 에이전트는 애초에 설계가 불가능하다고 못 박아요. <strong style="background:#fff3a3;color:#1a1a1a;padding:0 2px;">실행 단위를 구체적으로 좁혀야 비로소 만들 수 있는 대상이 된다는 거예요.</strong></p>
+
+<h2>표를 채웠다면, 그 다음은 오너를 정하는 일</h2>
+
+<p>일곱 칸을 다 채웠다고 끝이 아니에요. 다른 칸은 업무 내용만 들여다보면 채워지지만, 책임자만은 실제로 사람을 지정해야 하는 문제라 뒤로 밀리기 쉬워요. "이 에이전트가 이상하게 작동하면 누구에게 물어야 하는가"에 선뜻 답하지 못한다면, 아직 오너가 정해지지 않은 거예요.</p>
+
+<p><strong style="background:#fff3a3;color:#1a1a1a;padding:0 2px;">이 칸을 비워둔 채 에이전트를 굴리기 시작하면, 나중에 문제가 생겼을 때 손댈 사람이 없는 상태가 돼요.</strong> 표를 다 채웠는지 점검할 때 책임자 칸도 빠짐없이 확인해보세요.</p>
+
+<figure style="margin:1.5em auto;max-width:640px;text-align:center;">
+<svg viewBox="0 0 1200 800" role="img" aria-label="업무를 에이전트화하기 전에 답해야 할 7가지 조건 체크리스트" style="width:100%;height:auto;display:block;" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="1200" height="800" fill="#F5F3EE"/>
+  <circle cx="1140" cy="30" r="160" fill="#2E7D74" opacity="0.05"/>
+  <circle cx="30" cy="770" r="140" fill="#E2924A" opacity="0.06"/>
+
+  <text x="60" y="66" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="38" font-weight="700" fill="#22303C">업무를 에이전트로 바꾸려면 답해야 할 7가지</text>
+  <line x1="60" y1="88" x2="1140" y2="88" stroke="#D8DDE3" stroke-width="2"/>
+
+  <!-- row 1 -->
+  <circle cx="90" cy="150" r="26" fill="#2E7D74"/>
+  <text x="90" y="159" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">1</text>
+  <rect x="140" y="128" width="42" height="42" rx="9" fill="#2E7D74"/>
+  <path d="M 148 150 L 157 159 L 174 138" stroke="#FFFFFF" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="200" y="142" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="29" font-weight="700" fill="#22303C">시작 조건</text>
+  <text x="200" y="174" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="21" fill="#6B7684">이 일은 언제 시작되는가</text>
+  <line x1="60" y1="197" x2="1140" y2="197" stroke="#E7E9EC" stroke-width="1.5"/>
+
+  <!-- row 2 -->
+  <circle cx="90" cy="245" r="26" fill="#2E7D74"/>
+  <text x="90" y="254" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">2</text>
+  <rect x="140" y="223" width="42" height="42" rx="9" fill="#2E7D74"/>
+  <path d="M 148 245 L 157 254 L 174 233" stroke="#FFFFFF" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="200" y="237" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="29" font-weight="700" fill="#22303C">입력 조건</text>
+  <text x="200" y="269" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="21" fill="#6B7684">무엇을 입력받아 시작하는가</text>
+  <line x1="60" y1="292" x2="1140" y2="292" stroke="#E7E9EC" stroke-width="1.5"/>
+
+  <!-- row 3 -->
+  <circle cx="90" cy="340" r="26" fill="#2E7D74"/>
+  <text x="90" y="349" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">3</text>
+  <rect x="140" y="318" width="42" height="42" rx="9" fill="#2E7D74"/>
+  <path d="M 148 340 L 157 349 L 174 328" stroke="#FFFFFF" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="200" y="332" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="29" font-weight="700" fill="#22303C">판단 규칙</text>
+  <text x="200" y="364" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="21" fill="#6B7684">어떤 기준으로 판단·결정하는가</text>
+  <line x1="60" y1="387" x2="1140" y2="387" stroke="#E7E9EC" stroke-width="1.5"/>
+
+  <!-- row 4 -->
+  <circle cx="90" cy="435" r="26" fill="#2E7D74"/>
+  <text x="90" y="444" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">4</text>
+  <rect x="140" y="413" width="42" height="42" rx="9" fill="#2E7D74"/>
+  <path d="M 148 435 L 157 444 L 174 423" stroke="#FFFFFF" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="200" y="427" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="29" font-weight="700" fill="#22303C">사용 가능한 툴</text>
+  <text x="200" y="459" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="21" fill="#6B7684">어떤 도구·시스템을 다뤄야 하는가</text>
+  <line x1="60" y1="482" x2="1140" y2="482" stroke="#E7E9EC" stroke-width="1.5"/>
+
+  <!-- row 5 -->
+  <circle cx="90" cy="530" r="26" fill="#2E7D74"/>
+  <text x="90" y="539" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">5</text>
+  <rect x="140" y="508" width="42" height="42" rx="9" fill="#2E7D74"/>
+  <path d="M 148 530 L 157 539 L 174 518" stroke="#FFFFFF" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="200" y="522" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="29" font-weight="700" fill="#22303C">출력</text>
+  <text x="200" y="554" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="21" fill="#6B7684">결과물로 무엇을 내놓는가</text>
+  <line x1="60" y1="577" x2="1140" y2="577" stroke="#E7E9EC" stroke-width="1.5"/>
+
+  <!-- row 6 -->
+  <circle cx="90" cy="625" r="26" fill="#2E7D74"/>
+  <text x="90" y="634" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">6</text>
+  <rect x="140" y="603" width="42" height="42" rx="9" fill="#2E7D74"/>
+  <path d="M 148 625 L 157 634 L 174 613" stroke="#FFFFFF" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="200" y="617" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="29" font-weight="700" fill="#22303C">책임자</text>
+  <text x="200" y="649" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="21" fill="#6B7684">이 에이전트의 오너는 누구인가</text>
+  <line x1="60" y1="672" x2="1140" y2="672" stroke="#E7E9EC" stroke-width="1.5"/>
+
+  <!-- row 7 -->
+  <circle cx="90" cy="720" r="26" fill="#2E7D74"/>
+  <text x="90" y="729" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">7</text>
+  <rect x="140" y="698" width="42" height="42" rx="9" fill="#2E7D74"/>
+  <path d="M 148 720 L 157 729 L 174 708" stroke="#FFFFFF" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="200" y="712" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="29" font-weight="700" fill="#22303C">예외 조건</text>
+  <text x="200" y="744" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="21" fill="#6B7684">규칙대로 처리되지 않는 상황은 무엇인가</text>
+</svg>
+<figcaption style="color:#888;font-size:14px;">업무를 에이전트화하기 전에 답해야 할 7가지 조건 체크리스트</figcaption>
+</figure>
+
+<figure style="margin:1.5em auto;max-width:640px;text-align:center;">
+<svg viewBox="0 0 1200 800" role="img" aria-label="챗봇형 코파일럿형 워크플로우 자동화 독립적 에이전트 네 가지 자동화 유형 분기도" style="width:100%;height:auto;display:block;" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="1200" height="800" fill="#F5F3EE"/>
+  <circle cx="1150" cy="40" r="150" fill="#2E7D74" opacity="0.05"/>
+  <circle cx="40" cy="760" r="140" fill="#E2924A" opacity="0.06"/>
+
+  <text x="600" y="55" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="30" font-weight="600" fill="#6B7684">먼저 뭐가 필요한지부터 구분해요</text>
+
+  <!-- root box -->
+  <rect x="440" y="80" width="320" height="72" rx="18" fill="#2E7D74"/>
+  <text x="600" y="124" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="27" font-weight="700" fill="#FFFFFF">필요한 자동화 유형은?</text>
+
+  <!-- connectors -->
+  <line x1="600" y1="152" x2="600" y2="210" stroke="#ABB4BD" stroke-width="3"/>
+  <line x1="170" y1="210" x2="1010" y2="210" stroke="#ABB4BD" stroke-width="3"/>
+  <line x1="170" y1="210" x2="170" y2="280" stroke="#ABB4BD" stroke-width="3"/>
+  <line x1="450" y1="210" x2="450" y2="280" stroke="#ABB4BD" stroke-width="3"/>
+  <line x1="730" y1="210" x2="730" y2="280" stroke="#ABB4BD" stroke-width="3"/>
+  <line x1="1010" y1="210" x2="1010" y2="280" stroke="#ABB4BD" stroke-width="3"/>
+
+  <!-- box 1: 챗봇형 -->
+  <rect x="40" y="280" width="260" height="340" rx="20" fill="#FFFFFF" stroke="#D8DDE3" stroke-width="2"/>
+  <circle cx="170" cy="335" r="30" fill="#2E7D74"/>
+  <g transform="translate(170,335)">
+    <rect x="-14" y="-11" width="28" height="18" rx="6" fill="#FFFFFF"/>
+    <path d="M -6,7 L -2,14 L 2,7 Z" fill="#FFFFFF"/>
+  </g>
+  <text x="170" y="382" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="26" font-weight="700" fill="#22303C">챗봇형</text>
+  <text x="170" y="418" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="20" font-weight="500" fill="#3E4A56">사용자 질문에 답변</text>
+  <line x1="80" y1="460" x2="260" y2="460" stroke="#E7E9EC" stroke-width="1.5"/>
+  <text x="170" y="478" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="14" font-weight="600" fill="#9AA3AC">예시</text>
+  <text x="170" y="502" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="18" fill="#6B7684">인사·구매</text>
+  <text x="170" y="526" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="18" fill="#6B7684">규정 안내</text>
+
+  <!-- box 2: 코파일럿형 -->
+  <rect x="320" y="280" width="260" height="340" rx="20" fill="#FFFFFF" stroke="#D8DDE3" stroke-width="2"/>
+  <circle cx="450" cy="335" r="30" fill="#2E7D74"/>
+  <g transform="translate(450,335) rotate(45)">
+    <rect x="-4" y="-15" width="8" height="30" rx="3" fill="#FFFFFF"/>
+  </g>
+  <text x="450" y="382" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="26" font-weight="700" fill="#22303C">코파일럿형</text>
+  <text x="450" y="418" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="20" font-weight="500" fill="#3E4A56">문서 작업 보조</text>
+  <line x1="360" y1="460" x2="540" y2="460" stroke="#E7E9EC" stroke-width="1.5"/>
+  <text x="450" y="478" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="14" font-weight="600" fill="#9AA3AC">예시</text>
+  <text x="450" y="502" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="18" fill="#6B7684">오피스·구글독스</text>
+  <text x="450" y="526" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="18" fill="#6B7684">초안 도움</text>
+
+  <!-- box 3: 워크플로우 자동화 -->
+  <rect x="600" y="280" width="260" height="340" rx="20" fill="#FFFFFF" stroke="#D8DDE3" stroke-width="2"/>
+  <circle cx="730" cy="335" r="30" fill="#2E7D74"/>
+  <g transform="translate(730,335)">
+    <path d="M -12,-8 L 4,-8 L 4,-14 L 14,0 L 4,14 L 4,8 L -12,8 Z" fill="#FFFFFF"/>
+  </g>
+  <text x="730" y="382" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="26" font-weight="700" fill="#22303C">워크플로우 자동화</text>
+  <text x="730" y="418" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="20" font-weight="500" fill="#3E4A56">룰 기반 처리</text>
+  <line x1="640" y1="460" x2="820" y2="460" stroke="#E7E9EC" stroke-width="1.5"/>
+  <text x="730" y="478" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="14" font-weight="600" fill="#9AA3AC">예시</text>
+  <text x="730" y="502" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="18" fill="#6B7684">티켓 분류 후</text>
+  <text x="730" y="526" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="18" fill="#6B7684">담당자 연결</text>
+
+  <!-- box 4: 독립적 에이전트 (강조) -->
+  <rect x="880" y="280" width="260" height="340" rx="20" fill="#FFFFFF" stroke="#E2924A" stroke-width="4"/>
+  <circle cx="1010" cy="335" r="30" fill="#E2924A"/>
+  <g transform="translate(1010,335)">
+    <path d="M0,-16 L4,-4 L16,0 L4,4 L0,16 L-4,4 L-16,0 L-4,-4 Z" fill="#FFFFFF"/>
+  </g>
+  <text x="1010" y="382" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="26" font-weight="700" fill="#22303C">독립적 에이전트</text>
+  <text x="1010" y="412" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="20" font-weight="500" fill="#3E4A56">조건을 스스로</text>
+  <text x="1010" y="438" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="20" font-weight="500" fill="#3E4A56">인지해 작동</text>
+  <line x1="920" y1="460" x2="1100" y2="460" stroke="#E7E9EC" stroke-width="1.5"/>
+  <text x="1010" y="478" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="14" font-weight="600" fill="#9AA3AC">예시</text>
+  <text x="1010" y="502" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="18" fill="#6B7684">특정 상황 성립 시</text>
+  <text x="1010" y="526" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="18" fill="#6B7684">알아서 실행</text>
+</svg>
+<figcaption style="color:#888;font-size:14px;">챗봇형 코파일럿형 워크플로우 자동화 독립적 에이전트 네 가지 자동화 유형 분기도</figcaption>
+</figure>
+
+<figure style="margin:1.5em auto;max-width:640px;text-align:center;">
+<svg viewBox="0 0 1200 800" role="img" aria-label="IT 헬프데스크 마우스 교체 요청 예시로 채운 3가지 조건과 물음표로 남은 나머지 4가지" style="width:100%;height:auto;display:block;" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="1200" height="800" fill="#F5F3EE"/>
+  <circle cx="1150" cy="770" r="150" fill="#2E7D74" opacity="0.05"/>
+  <circle cx="40" cy="30" r="120" fill="#E2924A" opacity="0.06"/>
+
+  <text x="600" y="34" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="20" font-weight="600" fill="#9AA3AC">IT 헬프데스크 요청 예시</text>
+
+  <!-- speech bubble -->
+  <rect x="350" y="50" width="500" height="90" rx="20" fill="#FFFFFF" stroke="#2E7D74" stroke-width="3"/>
+  <path d="M 580,140 L 600,165 L 620,140 Z" fill="#FFFFFF" stroke="#2E7D74" stroke-width="3"/>
+  <text x="600" y="104" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="26" font-weight="600" fill="#22303C">"마우스가 오래돼서 교체해 주세요"</text>
+
+  <!-- connectors -->
+  <line x1="600" y1="165" x2="600" y2="200" stroke="#ABB4BD" stroke-width="3"/>
+  <line x1="120" y1="200" x2="1080" y2="200" stroke="#ABB4BD" stroke-width="3"/>
+  <line x1="120" y1="200" x2="120" y2="258" stroke="#ABB4BD" stroke-width="3"/>
+  <line x1="280" y1="200" x2="280" y2="258" stroke="#ABB4BD" stroke-width="3"/>
+  <line x1="440" y1="200" x2="440" y2="258" stroke="#ABB4BD" stroke-width="3"/>
+  <line x1="600" y1="200" x2="600" y2="258" stroke="#ABB4BD" stroke-width="3"/>
+  <line x1="760" y1="200" x2="760" y2="258" stroke="#ABB4BD" stroke-width="3"/>
+  <line x1="920" y1="200" x2="920" y2="258" stroke="#ABB4BD" stroke-width="3"/>
+  <line x1="1080" y1="200" x2="1080" y2="258" stroke="#ABB4BD" stroke-width="3"/>
+
+  <!-- card 1: 시작 조건 (채워짐) -->
+  <rect x="45" y="260" width="150" height="380" rx="16" fill="#FFFFFF" stroke="#D8DDE3" stroke-width="2"/>
+  <circle cx="65" cy="260" r="16" fill="#E2924A"/>
+  <text x="65" y="266" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="17" font-weight="700" fill="#FFFFFF">1</text>
+  <rect x="51" y="266" width="138" height="60" rx="10" fill="#2E7D74"/>
+  <text x="120" y="304" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">시작 조건</text>
+  <text x="120" y="485" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" font-weight="700" fill="#22303C">요청 접수</text>
+
+  <!-- card 2: 입력 조건 (채워짐) -->
+  <rect x="205" y="260" width="150" height="380" rx="16" fill="#FFFFFF" stroke="#D8DDE3" stroke-width="2"/>
+  <circle cx="225" cy="260" r="16" fill="#E2924A"/>
+  <text x="225" y="266" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="17" font-weight="700" fill="#FFFFFF">2</text>
+  <rect x="211" y="266" width="138" height="60" rx="10" fill="#2E7D74"/>
+  <text x="280" y="304" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">입력 조건</text>
+  <text x="280" y="485" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" font-weight="700" fill="#22303C">요청 내용</text>
+
+  <!-- card 3: 판단 규칙 (채워짐) -->
+  <rect x="365" y="260" width="150" height="380" rx="16" fill="#FFFFFF" stroke="#D8DDE3" stroke-width="2"/>
+  <circle cx="385" cy="260" r="16" fill="#E2924A"/>
+  <text x="385" y="266" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="17" font-weight="700" fill="#FFFFFF">3</text>
+  <rect x="371" y="266" width="138" height="60" rx="10" fill="#2E7D74"/>
+  <text x="440" y="304" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">판단 규칙</text>
+  <text x="440" y="470" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="20" font-weight="700" fill="#22303C">노후 장비면</text>
+  <text x="440" y="498" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="20" font-weight="700" fill="#22303C">교체</text>
+
+  <!-- card 4: 사용 가능한 툴 (예시에서는 알 수 없음 — 물음표) -->
+  <rect x="525" y="260" width="150" height="380" rx="16" fill="#FBFAF8" stroke="#B7BEC6" stroke-width="2" stroke-dasharray="7 6"/>
+  <circle cx="545" cy="260" r="16" fill="#B7BEC6"/>
+  <text x="545" y="266" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="17" font-weight="700" fill="#FFFFFF">4</text>
+  <rect x="531" y="266" width="138" height="60" rx="10" fill="#EDEFF1"/>
+  <text x="600" y="294" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="16" font-weight="700" fill="#6B7684">사용 가능한</text>
+  <text x="600" y="316" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="16" font-weight="700" fill="#6B7684">툴</text>
+  <text x="600" y="500" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="60" font-weight="800" fill="#B7BEC6">?</text>
+
+  <!-- card 5: 출력 (예시에서는 알 수 없음 — 물음표) -->
+  <rect x="685" y="260" width="150" height="380" rx="16" fill="#FBFAF8" stroke="#B7BEC6" stroke-width="2" stroke-dasharray="7 6"/>
+  <circle cx="705" cy="260" r="16" fill="#B7BEC6"/>
+  <text x="705" y="266" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="17" font-weight="700" fill="#FFFFFF">5</text>
+  <rect x="691" y="266" width="138" height="60" rx="10" fill="#EDEFF1"/>
+  <text x="760" y="304" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="18" font-weight="700" fill="#6B7684">출력</text>
+  <text x="760" y="500" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="60" font-weight="800" fill="#B7BEC6">?</text>
+
+  <!-- card 6: 책임자 (예시에서는 알 수 없음 — 물음표) -->
+  <rect x="845" y="260" width="150" height="380" rx="16" fill="#FBFAF8" stroke="#B7BEC6" stroke-width="2" stroke-dasharray="7 6"/>
+  <circle cx="865" cy="260" r="16" fill="#B7BEC6"/>
+  <text x="865" y="266" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="17" font-weight="700" fill="#FFFFFF">6</text>
+  <rect x="851" y="266" width="138" height="60" rx="10" fill="#EDEFF1"/>
+  <text x="920" y="304" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="18" font-weight="700" fill="#6B7684">책임자</text>
+  <text x="920" y="500" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="60" font-weight="800" fill="#B7BEC6">?</text>
+
+  <!-- card 7: 예외 조건 (예시에서는 알 수 없음 — 물음표) -->
+  <rect x="1005" y="260" width="150" height="380" rx="16" fill="#FBFAF8" stroke="#B7BEC6" stroke-width="2" stroke-dasharray="7 6"/>
+  <circle cx="1025" cy="260" r="16" fill="#B7BEC6"/>
+  <text x="1025" y="266" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="17" font-weight="700" fill="#FFFFFF">7</text>
+  <rect x="1011" y="266" width="138" height="60" rx="10" fill="#EDEFF1"/>
+  <text x="1080" y="304" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="18" font-weight="700" fill="#6B7684">예외 조건</text>
+  <text x="1080" y="500" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="60" font-weight="800" fill="#B7BEC6">?</text>
+
+  <text x="600" y="770" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" font-weight="600" fill="#2E7D74">이 예시로는 3칸까지만 채워져요 — 나머지 4칸은 직접 채워보세요</text>
+</svg>
+<figcaption style="color:#888;font-size:14px;">IT 헬프데스크 마우스 교체 요청 예시로 채운 3가지 조건과 물음표로 남은 나머지 4가지</figcaption>
+</figure>
+
+<h2>지금 당장 해볼 일</h2>
+
+<p>지금 업무 중 하나를 골라 위 표의 일곱 칸을 실제로 채워보세요. <strong style="background:#fff3a3;color:#1a1a1a;padding:0 2px;">시작조건과 입력, 판단 규칙까지는 술술 나오는데 책임자나 예외 조건 칸에서 막힌다면, 그 업무는 아직 에이전트화할 준비가 안 된 거예요.</strong> 반대로 일곱 칸이 다 채워진다면, 그게 바로 첫 에이전트로 시도해볼 만한 후보예요.</p>
+
+<figure style="margin:1.5em auto;max-width:640px;text-align:center;">
+<svg viewBox="0 0 1200 800" role="img" aria-label="책임자 칸이 뒤로 밀리기 쉬운 이유를 보여주는 체크리스트 작성 장면" style="width:100%;height:auto;display:block;" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="1200" height="800" fill="#F5F3EE"/>
+  <circle cx="1150" cy="30" r="150" fill="#2E7D74" opacity="0.05"/>
+  <circle cx="30" cy="770" r="130" fill="#E2924A" opacity="0.06"/>
+
+  <text x="60" y="66" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="36" font-weight="700" fill="#22303C">체크리스트, 어디까지 채웠나요?</text>
+  <line x1="60" y1="88" x2="1140" y2="88" stroke="#D8DDE3" stroke-width="2"/>
+
+  <!-- row 1: 시작 조건 (완료) -->
+  <rect x="100" y="120" width="50" height="50" rx="10" fill="#2E7D74"/>
+  <path d="M 110 147 L 121 158 L 140 133" stroke="#FFFFFF" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="175" y="154" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="32" font-weight="600" fill="#22303C">시작 조건</text>
+
+  <!-- row 2: 입력 조건 (완료) -->
+  <rect x="100" y="205" width="50" height="50" rx="10" fill="#2E7D74"/>
+  <path d="M 110 232 L 121 243 L 140 218" stroke="#FFFFFF" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="175" y="239" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="32" font-weight="600" fill="#22303C">입력 조건</text>
+
+  <!-- row 3: 판단 규칙 (완료) -->
+  <rect x="100" y="290" width="50" height="50" rx="10" fill="#2E7D74"/>
+  <path d="M 110 317 L 121 328 L 140 303" stroke="#FFFFFF" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="175" y="324" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="32" font-weight="600" fill="#22303C">판단 규칙</text>
+
+  <!-- row 4: 사용 가능한 툴 (완료) -->
+  <rect x="100" y="375" width="50" height="50" rx="10" fill="#2E7D74"/>
+  <path d="M 110 402 L 121 413 L 140 388" stroke="#FFFFFF" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="175" y="409" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="32" font-weight="600" fill="#22303C">사용 가능한 툴</text>
+
+  <!-- row 5: 출력 (완료) -->
+  <rect x="100" y="460" width="50" height="50" rx="10" fill="#2E7D74"/>
+  <path d="M 110 487 L 121 498 L 140 473" stroke="#FFFFFF" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="175" y="494" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="32" font-weight="600" fill="#22303C">출력</text>
+
+  <!-- row 6: 책임자 (작성 중, 빈 칸 + 펜) -->
+  <rect x="100" y="545" width="50" height="50" rx="10" fill="#FFF8EF" stroke="#E2924A" stroke-width="3" stroke-dasharray="8 6"/>
+  <text x="175" y="579" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="32" font-weight="700" fill="#E2924A">책임자</text>
+  <rect x="330" y="552" width="128" height="36" rx="18" fill="#E2924A"/>
+  <text x="394" y="576" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="20" font-weight="600" fill="#FFFFFF">지금 채우는 중</text>
+  <g transform="translate(600,540) rotate(-35)">
+    <rect x="-7" y="-50" width="14" height="70" rx="4" fill="#2E7D74"/>
+    <rect x="-7" y="14" width="14" height="10" fill="#FFFFFF"/>
+    <path d="M -7,24 L 7,24 L 0,44 Z" fill="#22303C"/>
+  </g>
+
+  <!-- row 7: 예외 조건 (아직 미착수) -->
+  <rect x="100" y="630" width="50" height="50" rx="10" fill="#FFFFFF" stroke="#B7BEC6" stroke-width="3" stroke-dasharray="8 6"/>
+  <text x="175" y="664" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="32" font-weight="500" fill="#9AA3AC">예외 조건</text>
+  <rect x="360" y="637" width="110" height="36" rx="18" fill="#EDEFF1"/>
+  <text x="415" y="661" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="20" font-weight="600" fill="#9AA3AC">다음 차례</text>
+
+  <text x="600" y="748" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="26" font-weight="700" fill="#E2924A">책임자 칸은 사람을 지정해야 해서 뒤로 밀리기 쉬워요</text>
+</svg>
+<figcaption style="color:#888;font-size:14px;">책임자 칸이 뒤로 밀리기 쉬운 이유를 보여주는 체크리스트 작성 장면</figcaption>
+</figure>
+
+<h2>자주 묻는 질문</h2>
+
+<p><strong>Q. 챗봇이랑 에이전트는 정확히 뭐가 다른가요?</strong><br>챗봇형은 사용자가 물어본 것에 답하는 역할에 머무르지만, 에이전트는 스스로 조건을 인지하고 있다가 그 조건이 성립하면 알아서 실행까지 하는 독립적인 존재예요. 질문에 답만 하는지, 조건이 맞으면 스스로 움직이는지가 핵심 차이예요.</p>
+
+<p><strong>Q. 7가지 조건 중 하나라도 애매하면 어떻게 되나요?</strong><br>시작조건·입력·규칙·툴·출력·책임자·예외조건 중 하나라도 "그때그때 다르다"거나 범위가 무한정이면 그 업무는 에이전트로 설계하기 어려워요. 실행 단위를 더 구체적으로 좁혀서 다시 정의해야 해요.</p>
+
+<p><strong>Q. 룰 기반 업무는 챗봇이 아니라 워크플로우 자동화로 봐야 하나요?</strong><br>접수된 요청을 분류해 담당자에게 연결하는 식으로 판단 기준(룰)이 명확하다면 챗봇형보다 워크플로우 자동화에 가까워요. 반대로 사용자가 궁금한 걸 물어보고 답을 받는 구조라면 챗봇형으로 보는 게 맞아요.</p>
+
+<hr/>
+<p><em>이 글은 [티타임즈TV]의 영상 "AI에이전트도 면접보고 채용하고 은퇴시켜야 한다 (김덕중 퍼블AI연구소장)"을 참고해 작성했습니다. (<a href="https://youtu.be/ckQnPKqe35M">https://youtu.be/ckQnPKqe35M</a>)</em></p>
+
+</article>

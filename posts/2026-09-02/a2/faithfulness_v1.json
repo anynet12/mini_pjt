@@ -1,0 +1,79 @@
+{
+  "draft": "draft_v1.md",
+  "run": "2026-09-02",
+  "angle": null,
+  "kind_filter": null,
+  "checked_at": "2026-09-02T18:15:21+09:00",
+  "rerank_mode": null,
+  "n_claims": 8,
+  "supported": 5,
+  "partially": 1,
+  "unsupported": 2,
+  "faithfulness": 0.688,
+  "items": [
+    {
+      "index": 0,
+      "claim": "12월 31일자로 정년퇴직한 60세 아버지의 퇴직금 약 1.2억 원이 증권사 IRP에 들어왔어요.",
+      "section": "",
+      "verdict": "supported",
+      "evidence_ref": "transcript#1, transcript#0, transcript#7",
+      "note": "12월 31일 정년퇴직, 60세, 퇴직금 1.2억 원, 증권사 IRP 입금 모두 근거에 명시됨"
+    },
+    {
+      "index": 1,
+      "claim": "수령 한도용 연차는 55세가 되면 자동으로 올라가요.",
+      "section": "IRP 수령 연차는 하나가 아니라 둘이에요",
+      "verdict": "unsupported",
+      "evidence_ref": "transcript#25, transcript#26",
+      "note": "근거는 수령 한도용 연차가 자동으로 올라간다고만 하며, 55세라는 구체적 나이 언급 없음"
+    },
+    {
+      "index": 2,
+      "claim": "퇴직소득세 감면용 연차는 연금 수령을 신청한 시점부터 올라가요.",
+      "section": "IRP 수령 연차는 하나가 아니라 둘이에요",
+      "verdict": "supported",
+      "evidence_ref": "transcript#26",
+      "note": "퇴직소득세 감면용 수령 연차는 신청부터 올라간다고 명시"
+    },
+    {
+      "index": 3,
+      "claim": "연금으로 수령한 지 10년 차까지는 퇴직소득세를 30% 깎아 주고, 11년 차부터는 40%를 깎아 줘요.",
+      "section": "퇴직소득세 감면 30%와 40%, 갈림길은 11년 차예요",
+      "verdict": "supported",
+      "evidence_ref": "transcript#26",
+      "note": "10년까지 30%, 11년부터 40% 깎아준다고 정확히 명시"
+    },
+    {
+      "index": 4,
+      "claim": "70대에 처음 연금 수령 신청을 하면, 그때부터 1년 차예요.",
+      "section": "70대에 신청하면 그때부터 1년 차예요",
+      "verdict": "supported",
+      "evidence_ref": "transcript#26, transcript#27",
+      "note": "수령 신청한 시점부터 1년 차가 시작된다는 내용이 근거에 있음"
+    },
+    {
+      "index": 5,
+      "claim": "지금 1년에 1만 원만 받겠다고 신청해 두면 연금을 수령한 것으로 쳐요.",
+      "section": "70대에 신청하면 그때부터 1년 차예요",
+      "verdict": "supported",
+      "evidence_ref": "transcript#27",
+      "note": "1년에 만 원 받는 것만으로도 연금 수령한 것으로 인정된다고 명시"
+    },
+    {
+      "index": 6,
+      "claim": "1만 원을 받는 것만으로도 올해가 1년 차로 돌기 시작하고, 10년만 지나면 40% 감면 구간에 들어가요.",
+      "section": "70대에 신청하면 그때부터 1년 차예요",
+      "verdict": "partially",
+      "evidence_ref": "transcript#27",
+      "note": "1만 원으로 1년 차 시작은 맞으나, 40% 구간은 11년부터이므로 '10년 지나면'은 정확히는 11년 차부터"
+    },
+    {
+      "index": 7,
+      "claim": "영상 속 1.27억 원을 어떻게 굴릴지는 '공부하고 결정하자'로 미뤄졌어요.",
+      "section": "",
+      "verdict": "unsupported",
+      "evidence_ref": "transcript#32, transcript#19",
+      "note": "근거에서 1.27억 운용에 대해 여러 옵션을 논의하나, '공부하고 결정하자'로 미뤘다는 결론은 없음"
+    }
+  ]
+}

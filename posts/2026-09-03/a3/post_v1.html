@@ -1,0 +1,452 @@
+<!-- meta: 챗봇, 코파일럿, RPA, AI 에이전트의 차이를 4가지 유형 기준으로 정리하고 내 업무에 맞는 도구 고르는 법을 알려드려요.
+     tags: 티타임즈TV, AI에이전트, 챗봇, 코파일럿, RPA, 업무자동화, AI도구선택 -->
+<article style="max-width:680px;margin:0 auto;padding:0 16px;line-height:1.7;">
+
+<h1>챗봇, 코파일럿, RPA, 에이전트 — 뭐가 다른지 헷갈린다면</h1>
+
+<p>회의록은 자동으로 정리되고, 휴가 신청은 챗봇에게 말 한마디로 끝나고, 어떤 부서는 "우리 팀에 에이전트 하나 들였다"고 자랑합니다. 그런데 막상 "그거 챗봇 아니야?"라고 물으면 대답이 애매해지는 경우가 많아요. 챗봇, 코파일럿, RPA, 에이전트라는 말이 뉴스와 사내 공지에 뒤섞여 쓰이다 보니, 정작 내 업무에 뭘 도입해야 할지 판단하기가 더 어려워진 셈이죠.</p>
+
+<p>퍼블AI연구소 김덕중 소장은 한 인터뷰에서 이 혼란을 정리하는 기준을 하나 제시했어요. <strong style="background:#fff3a3;color:#1a1a1a;padding:0 2px;">조직에 AI를 들일 때 "다 되는 만능 도구"를 찾을 게 아니라, 필요한 성격에 따라 네 가지 유형 중 맞는 걸 골라야 한다는 겁니다.</strong> 사람을 뽑을 때도 만능 인재를 찾기보다 그 자리에 필요한 역량을 보는 것과 같은 이치예요.</p>
+
+<figure style="margin:1.5em auto;max-width:800px;text-align:center;">
+<svg viewBox="0 0 1600 900" role="img" aria-label="챗봇, 코파일럿, RPA, 에이전트 네 가지 AI 자동화 유형을 자동화 정도 순서로 나열한 썸네일 이미지" style="width:100%;height:auto;display:block;" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <symbol id="ic-chat" viewBox="-40 -40 80 80">
+      <rect x="-28" y="-22" width="56" height="36" rx="10" fill="none" stroke="currentColor" stroke-width="6"/>
+      <polyline points="-12,14 -12,26 -2,14" fill="none" stroke="currentColor" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+      <circle cx="-12" cy="-4" r="3.5" fill="currentColor"/>
+      <circle cx="0" cy="-4" r="3.5" fill="currentColor"/>
+      <circle cx="12" cy="-4" r="3.5" fill="currentColor"/>
+    </symbol>
+    <symbol id="ic-doc" viewBox="-40 -40 80 80">
+      <rect x="-22" y="-28" width="34" height="52" rx="4" fill="none" stroke="currentColor" stroke-width="6"/>
+      <line x1="-14" y1="-14" x2="4" y2="-14" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+      <line x1="-14" y1="-2" x2="4" y2="-2" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+      <line x1="-14" y1="10" x2="-4" y2="10" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+      <g transform="translate(18,18) rotate(45)">
+        <rect x="-4" y="-16" width="8" height="24" rx="2" fill="none" stroke="currentColor" stroke-width="5"/>
+        <polygon points="-4,8 4,8 0,16" fill="currentColor"/>
+      </g>
+    </symbol>
+    <symbol id="ic-gear" viewBox="-40 -40 80 80">
+      <circle cx="0" cy="0" r="20" fill="none" stroke="currentColor" stroke-width="6"/>
+      <circle cx="0" cy="0" r="7" fill="none" stroke="currentColor" stroke-width="5"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(0)"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(45)"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(90)"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(135)"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(180)"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(225)"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(270)"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(315)"/>
+    </symbol>
+    <symbol id="ic-agent" viewBox="-40 -40 80 80">
+      <rect x="-20" y="-22" width="40" height="36" rx="10" fill="none" stroke="currentColor" stroke-width="6"/>
+      <line x1="0" y1="-22" x2="0" y2="-32" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="0" cy="-32" r="4" fill="currentColor"/>
+      <circle cx="-9" cy="-4" r="4" fill="currentColor"/>
+      <circle cx="9" cy="-4" r="4" fill="currentColor"/>
+      <line x1="-8" y1="10" x2="8" y2="10" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+    </symbol>
+  </defs>
+
+  <rect x="0" y="0" width="1600" height="900" fill="#F5F6F8"/>
+  <rect x="0" y="0" width="400" height="10" fill="#5B8FB9"/>
+  <rect x="400" y="0" width="400" height="10" fill="#6FA98C"/>
+  <rect x="800" y="0" width="400" height="10" fill="#D9A15B"/>
+  <rect x="1200" y="0" width="400" height="10" fill="#8B6BB0"/>
+
+  <text x="800" y="130" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="60" font-weight="700" fill="#2B2F38">챗봇, 코파일럿, RPA, 에이전트</text>
+  <text x="800" y="195" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="38" fill="#6B7280">뭐가 다른지 헷갈린다면</text>
+
+  <!-- 챗봇형 -->
+  <rect x="195" y="320" width="160" height="160" rx="28" fill="#5B8FB9"/>
+  <use href="#ic-chat" x="225" y="350" width="100" height="100" style="color:#FFFFFF"/>
+  <text x="275" y="535" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="30" font-weight="700" fill="#2B2F38">챗봇형</text>
+
+  <!-- 코파일럿형 -->
+  <rect x="545" y="320" width="160" height="160" rx="28" fill="#6FA98C"/>
+  <use href="#ic-doc" x="575" y="350" width="100" height="100" style="color:#FFFFFF"/>
+  <text x="625" y="535" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="30" font-weight="700" fill="#2B2F38">코파일럿형</text>
+
+  <!-- 워크플로우 자동화 -->
+  <rect x="895" y="320" width="160" height="160" rx="28" fill="#D9A15B"/>
+  <use href="#ic-gear" x="925" y="350" width="100" height="100" style="color:#FFFFFF"/>
+  <text x="975" y="535" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="30" font-weight="700" fill="#2B2F38">
+    <tspan x="975">워크플로우</tspan>
+    <tspan x="975" dy="34">자동화</tspan>
+  </text>
+
+  <!-- 독립 에이전트 -->
+  <rect x="1245" y="320" width="160" height="160" rx="28" fill="#8B6BB0"/>
+  <use href="#ic-agent" x="1275" y="350" width="100" height="100" style="color:#FFFFFF"/>
+  <text x="1325" y="535" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="30" font-weight="700" fill="#2B2F38">독립 에이전트</text>
+
+  <!-- 방향 화살표 -->
+  <line x1="200" y1="650" x2="1385" y2="650" stroke="#9AA1AC" stroke-width="4"/>
+  <polygon points="1400,650 1382,640 1382,660" fill="#9AA1AC"/>
+  <text x="200" y="700" text-anchor="start" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="26" fill="#6B7280">사람이 매번 요청해야 움직임</text>
+  <text x="1400" y="700" text-anchor="end" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="26" fill="#6B7280">스스로 판단해 실행하는 비중 커짐</text>
+</svg>
+<figcaption style="color:#888;font-size:14px;">챗봇, 코파일럿, RPA, 에이전트 네 가지 AI 자동화 유형을 자동화 정도 순서로 나열한 썸네일 이미지</figcaption>
+</figure>
+
+<h2>AI 자동화, 사실은 네 층위로 나뉜다</h2>
+
+<p>그가 든 구분은 이렇습니다. 첫 번째는 인사 규정이나 구매 규정처럼 "이거 뭐예요"라고 물으면 답해주는 챗봇형이에요. 두 번째는 마이크로소프트 오피스나 구글 독스 같은 문서 작업 툴 옆에 붙어서 초안을 거들어주는 코파일럿형, 즉 생산성 보조 도구입니다. 세 번째는 티켓이 들어오면 규칙에 따라 분류하고 담당자에게 연결해주는 것처럼, 정해진 룰만 잘 세팅하면 돌아가는 워크플로우 자동화(RPA성)예요. 네 번째가 스스로 활성화 조건을 갖고 있다가 그 조건이 성립하면 알아서 판단하고 행동하는 독립적 에이전트입니다.</p>
+
+<table style="width:100%;border-collapse:collapse;margin:1.2em 0;">
+  <thead>
+    <tr>
+      <th style="border:1px solid #ddd;padding:8px;background:#f5f5f5;">유형</th>
+      <th style="border:1px solid #ddd;padding:8px;background:#f5f5f5;">하는 일</th>
+      <th style="border:1px solid #ddd;padding:8px;background:#f5f5f5;">예시</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border:1px solid #ddd;padding:8px;">챗봇형</td>
+      <td style="border:1px solid #ddd;padding:8px;">질문에 답변</td>
+      <td style="border:1px solid #ddd;padding:8px;">인사·구매 규정 안내</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ddd;padding:8px;">코파일럿형</td>
+      <td style="border:1px solid #ddd;padding:8px;">문서 작업 보조</td>
+      <td style="border:1px solid #ddd;padding:8px;">오피스·독스 옆 초안 작성</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ddd;padding:8px;">워크플로우 자동화(RPA성)</td>
+      <td style="border:1px solid #ddd;padding:8px;">규칙 기반 처리</td>
+      <td style="border:1px solid #ddd;padding:8px;">티켓 분류·담당자 연결</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ddd;padding:8px;">독립 에이전트</td>
+      <td style="border:1px solid #ddd;padding:8px;">조건 인지 후 자율 행동</td>
+      <td style="border:1px solid #ddd;padding:8px;">조건 성립 시 스스로 실행</td>
+    </tr>
+  </tbody>
+</table>
+
+<figure style="margin:1.5em auto;max-width:640px;text-align:center;">
+<svg viewBox="0 0 1200 800" role="img" aria-label="챗봇형, 코파일럿형, 워크플로우 자동화, 독립 에이전트 네 가지 AI 자동화 유형을 하는 일과 예시로 비교한 표" style="width:100%;height:auto;display:block;" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <symbol id="ic-chat2" viewBox="-40 -40 80 80">
+      <rect x="-28" y="-22" width="56" height="36" rx="10" fill="none" stroke="currentColor" stroke-width="6"/>
+      <polyline points="-12,14 -12,26 -2,14" fill="none" stroke="currentColor" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+      <circle cx="-12" cy="-4" r="3.5" fill="currentColor"/>
+      <circle cx="0" cy="-4" r="3.5" fill="currentColor"/>
+      <circle cx="12" cy="-4" r="3.5" fill="currentColor"/>
+    </symbol>
+    <symbol id="ic-doc2" viewBox="-40 -40 80 80">
+      <rect x="-22" y="-28" width="34" height="52" rx="4" fill="none" stroke="currentColor" stroke-width="6"/>
+      <line x1="-14" y1="-14" x2="4" y2="-14" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+      <line x1="-14" y1="-2" x2="4" y2="-2" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+      <line x1="-14" y1="10" x2="-4" y2="10" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+      <g transform="translate(18,18) rotate(45)">
+        <rect x="-4" y="-16" width="8" height="24" rx="2" fill="none" stroke="currentColor" stroke-width="5"/>
+        <polygon points="-4,8 4,8 0,16" fill="currentColor"/>
+      </g>
+    </symbol>
+    <symbol id="ic-gear2" viewBox="-40 -40 80 80">
+      <circle cx="0" cy="0" r="20" fill="none" stroke="currentColor" stroke-width="6"/>
+      <circle cx="0" cy="0" r="7" fill="none" stroke="currentColor" stroke-width="5"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(0)"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(45)"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(90)"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(135)"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(180)"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(225)"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(270)"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(315)"/>
+    </symbol>
+    <symbol id="ic-agent2" viewBox="-40 -40 80 80">
+      <rect x="-20" y="-22" width="40" height="36" rx="10" fill="none" stroke="currentColor" stroke-width="6"/>
+      <line x1="0" y1="-22" x2="0" y2="-32" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="0" cy="-32" r="4" fill="currentColor"/>
+      <circle cx="-9" cy="-4" r="4" fill="currentColor"/>
+      <circle cx="9" cy="-4" r="4" fill="currentColor"/>
+      <line x1="-8" y1="10" x2="8" y2="10" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+    </symbol>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="800" fill="#F5F6F8"/>
+
+  <text x="600" y="60" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="36" font-weight="700" fill="#2B2F38">AI 자동화, 네 가지 유형</text>
+
+  <!-- 챗봇형 -->
+  <g>
+    <rect x="60" y="120" width="250" height="460" rx="16" fill="#FFFFFF" stroke="#5B8FB9" stroke-width="3"/>
+    <rect x="80" y="140" width="210" height="10" rx="5" fill="#5B8FB9"/>
+    <use href="#ic-chat2" x="135" y="165" width="100" height="100" style="color:#5B8FB9"/>
+    <text x="185" y="300" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="26" font-weight="700" fill="#2B2F38">챗봇형</text>
+    <line x1="80" y1="330" x2="290" y2="330" stroke="#E2E5EA" stroke-width="2"/>
+    <text x="185" y="368" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="17" font-weight="600" fill="#6B7280">하는 일</text>
+    <text x="185" y="404" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" fill="#2B2F38">질문에 답변</text>
+    <text x="185" y="470" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="17" font-weight="600" fill="#6B7280">예시</text>
+    <text x="185" y="504" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" fill="#2B2F38">
+      <tspan x="185">인사·구매</tspan>
+      <tspan x="185" dy="28">규정 안내</tspan>
+    </text>
+  </g>
+
+  <!-- 코파일럿형 -->
+  <g>
+    <rect x="337" y="120" width="250" height="460" rx="16" fill="#FFFFFF" stroke="#6FA98C" stroke-width="3"/>
+    <rect x="357" y="140" width="210" height="10" rx="5" fill="#6FA98C"/>
+    <use href="#ic-doc2" x="412" y="165" width="100" height="100" style="color:#6FA98C"/>
+    <text x="462" y="300" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="26" font-weight="700" fill="#2B2F38">코파일럿형</text>
+    <line x1="357" y1="330" x2="567" y2="330" stroke="#E2E5EA" stroke-width="2"/>
+    <text x="462" y="368" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="17" font-weight="600" fill="#6B7280">하는 일</text>
+    <text x="462" y="404" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" fill="#2B2F38">문서 작업 보조</text>
+    <text x="462" y="470" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="17" font-weight="600" fill="#6B7280">예시</text>
+    <text x="462" y="504" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" fill="#2B2F38">
+      <tspan x="462">오피스·독스 옆</tspan>
+      <tspan x="462" dy="28">초안 작성</tspan>
+    </text>
+  </g>
+
+  <!-- 워크플로우 자동화(RPA성) -->
+  <g>
+    <rect x="614" y="120" width="250" height="460" rx="16" fill="#FFFFFF" stroke="#D9A15B" stroke-width="3"/>
+    <rect x="634" y="140" width="210" height="10" rx="5" fill="#D9A15B"/>
+    <use href="#ic-gear2" x="689" y="165" width="100" height="100" style="color:#D9A15B"/>
+    <text x="739" y="295" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="24" font-weight="700" fill="#2B2F38">
+      <tspan x="739">워크플로우 자동화</tspan>
+      <tspan x="739" dy="26" font-size="19" fill="#6B7280">(RPA성)</tspan>
+    </text>
+    <line x1="634" y1="330" x2="844" y2="330" stroke="#E2E5EA" stroke-width="2"/>
+    <text x="739" y="368" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="17" font-weight="600" fill="#6B7280">하는 일</text>
+    <text x="739" y="404" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" fill="#2B2F38">규칙 기반 처리</text>
+    <text x="739" y="470" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="17" font-weight="600" fill="#6B7280">예시</text>
+    <text x="739" y="504" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" fill="#2B2F38">
+      <tspan x="739">티켓 분류·</tspan>
+      <tspan x="739" dy="28">담당자 연결</tspan>
+    </text>
+  </g>
+
+  <!-- 독립 에이전트 -->
+  <g>
+    <rect x="891" y="120" width="250" height="460" rx="16" fill="#FFFFFF" stroke="#8B6BB0" stroke-width="3"/>
+    <rect x="911" y="140" width="210" height="10" rx="5" fill="#8B6BB0"/>
+    <use href="#ic-agent2" x="966" y="165" width="100" height="100" style="color:#8B6BB0"/>
+    <text x="1016" y="300" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="26" font-weight="700" fill="#2B2F38">독립 에이전트</text>
+    <line x1="911" y1="330" x2="1121" y2="330" stroke="#E2E5EA" stroke-width="2"/>
+    <text x="1016" y="368" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="17" font-weight="600" fill="#6B7280">하는 일</text>
+    <text x="1016" y="404" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" fill="#2B2F38">
+      <tspan x="1016">조건 인지 후</tspan>
+      <tspan x="1016" dy="26">자율 행동</tspan>
+    </text>
+    <text x="1016" y="470" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="17" font-weight="600" fill="#6B7280">예시</text>
+    <text x="1016" y="504" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" fill="#2B2F38">
+      <tspan x="1016">조건 성립 시</tspan>
+      <tspan x="1016" dy="28">스스로 실행</tspan>
+    </text>
+  </g>
+
+  <!-- 자동화 정도 방향 -->
+  <line x1="90" y1="660" x2="1095" y2="660" stroke="#9AA1AC" stroke-width="4"/>
+  <polygon points="1110,660 1092,650 1092,670" fill="#9AA1AC"/>
+  <text x="600" y="710" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" fill="#6B7280">사람 개입 많음 → 스스로 판단하는 비중이 커짐</text>
+</svg>
+<figcaption style="color:#888;font-size:14px;">챗봇형, 코파일럿형, 워크플로우 자동화, 독립 에이전트 네 가지 AI 자동화 유형을 하는 일과 예시로 비교한 표</figcaption>
+</figure>
+
+<p>이 네 가지는 자동화의 "정도" 차이이기도 해요. 챗봇과 코파일럿은 사람이 매번 요청해야 움직이지만, 뒤로 갈수록 사람의 개입 없이 스스로 판단하는 비중이 커집니다. <strong style="background:#fff3a3;color:#1a1a1a;padding:0 2px;">그래서 같은 "AI 도입"이라도 사내 규정 안내처럼 단순 응답이면 챗봇으로 충분하고, 반대로 조건을 인지해 알아서 움직여야 하는 업무라면 챗봇 수준으로는 애초에 해결이 안 됩니다.</strong></p>
+
+<h2>챗봇·코파일럿과 진짜 '에이전트'를 가르는 기준</h2>
+
+<p>여기서 헷갈리는 지점이 하나 더 있어요. 겉보기에 챗봇도 대화하고 에이전트도 대화하니 비슷해 보이지만, 김 소장은 진짜 에이전트라면 갖춰야 할 조건이 따로 있다고 설명해요. 사람을 채용할 때 학력이나 경력을 보듯, 에이전트에게도 필수 요건이 있다는 거예요.</p>
+
+<p>그가 꼽은 요건은 업무 목표와 성공 조건을 스스로 이해하는지, 모델과 추론 방식을 다룰 줄 아는지, 단기·장기 메모리로 맥락을 기억하는지, MCP 같은 기술로 여러 시스템에 연결해 실제 작업을 수행하는지, 그리고 "이걸 읽어도 될까요", "이걸 실행해도 될까요"처럼 인간에게 승인을 구하는 실행권 기능이 있는지입니다. 여기에 제대로 작동했는지 검증하는 평가·감사 체계, 그리고 이 에이전트를 책임지고 업그레이드하는 운영자가 있는지까지 더해집니다.</p>
+
+<p>이 기준으로 보면 단순히 질문에 답만 하는 도구는 챗봇에 머무르고, 문서를 거드는 정도는 코파일럿에 머무릅니다. <strong style="background:#fff3a3;color:#1a1a1a;padding:0 2px;">실제 업무 시스템에 연결돼 무언가를 실행하고, 그 결과를 인간에게 승인받고 책임자가 관리하는 수준이 돼야 비로소 에이전트라고 부를 만하다는 게 그의 구분이에요.</strong></p>
+
+<figure style="margin:1.5em auto;max-width:640px;text-align:center;">
+<svg viewBox="0 0 1200 800" role="img" aria-label="AI 에이전트가 MCP로 여러 업무 시스템에 연결돼 실행 전 인간의 승인을 구하는 개념도" style="width:100%;height:auto;display:block;" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <symbol id="ic-agent3" viewBox="-40 -40 80 80">
+      <rect x="-20" y="-22" width="40" height="36" rx="10" fill="none" stroke="currentColor" stroke-width="6"/>
+      <line x1="0" y1="-22" x2="0" y2="-32" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="0" cy="-32" r="4" fill="currentColor"/>
+      <circle cx="-9" cy="-4" r="4" fill="currentColor"/>
+      <circle cx="9" cy="-4" r="4" fill="currentColor"/>
+      <line x1="-8" y1="10" x2="8" y2="10" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+    </symbol>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="800" fill="#F5F6F8"/>
+  <text x="600" y="55" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="32" font-weight="700" fill="#2B2F38">MCP로 연결되고, 실행 전엔 사람에게 승인을 구한다</text>
+
+  <!-- 연결선 (시스템 → 에이전트, 원이 위에 그려져 선 끝이 자연스럽게 가려짐) -->
+  <line x1="280" y1="135" x2="560" y2="340" stroke="#9AA1AC" stroke-width="3"/>
+  <line x1="280" y1="355" x2="560" y2="340" stroke="#9AA1AC" stroke-width="3"/>
+  <line x1="280" y1="575" x2="560" y2="340" stroke="#9AA1AC" stroke-width="3"/>
+
+  <!-- MCP 라벨 -->
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+    <rect x="392" y="223" width="56" height="28" rx="14" fill="#FFFFFF" stroke="#9AA1AC" stroke-width="1.5"/>
+    <text x="420" y="242" text-anchor="middle" font-size="15" fill="#4B5563">MCP</text>
+    <rect x="392" y="333" width="56" height="28" rx="14" fill="#FFFFFF" stroke="#9AA1AC" stroke-width="1.5"/>
+    <text x="420" y="352" text-anchor="middle" font-size="15" fill="#4B5563">MCP</text>
+    <rect x="392" y="443" width="56" height="28" rx="14" fill="#FFFFFF" stroke="#9AA1AC" stroke-width="1.5"/>
+    <text x="420" y="462" text-anchor="middle" font-size="15" fill="#4B5563">MCP</text>
+  </g>
+
+  <!-- 업무 시스템 3개 -->
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+    <rect x="60" y="90" width="220" height="90" rx="16" fill="#FFFFFF" stroke="#5B8FB9" stroke-width="3"/>
+    <text x="170" y="141" text-anchor="middle" font-size="22" font-weight="700" fill="#2B2F38">문서 시스템</text>
+
+    <rect x="60" y="310" width="220" height="90" rx="16" fill="#FFFFFF" stroke="#6FA98C" stroke-width="3"/>
+    <text x="170" y="361" text-anchor="middle" font-size="22" font-weight="700" fill="#2B2F38">데이터베이스</text>
+
+    <rect x="60" y="530" width="220" height="90" rx="16" fill="#FFFFFF" stroke="#D9A15B" stroke-width="3"/>
+    <text x="170" y="581" text-anchor="middle" font-size="22" font-weight="700" fill="#2B2F38">커뮤니케이션 도구</text>
+  </g>
+
+  <!-- 에이전트 -->
+  <circle cx="560" cy="340" r="90" fill="#8B6BB0"/>
+  <use href="#ic-agent3" x="510" y="290" width="100" height="100" style="color:#FFFFFF"/>
+  <text x="560" y="470" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="26" font-weight="700" fill="#2B2F38">에이전트</text>
+
+  <!-- 승인 요청 화살표 -->
+  <line x1="650" y1="300" x2="716" y2="200" stroke="#8B6BB0" stroke-width="3"/>
+  <polygon points="722,190 716,210 700,196" fill="#8B6BB0"/>
+
+  <!-- 말풍선 -->
+  <rect x="720" y="150" width="380" height="95" rx="20" fill="#FFFFFF" stroke="#8B6BB0" stroke-width="3"/>
+  <text x="910" y="190" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="24" font-weight="600" fill="#2B2F38">이걸 실행해도</text>
+  <text x="910" y="224" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="24" font-weight="600" fill="#2B2F38">될까요?</text>
+
+  <!-- 승인 화살표 -->
+  <line x1="910" y1="245" x2="910" y2="335" stroke="#9AA1AC" stroke-width="3"/>
+  <polygon points="910,350 900,332 920,332" fill="#9AA1AC"/>
+
+  <!-- 승인자(사람) -->
+  <circle cx="910" cy="385" r="22" fill="none" stroke="#4B5563" stroke-width="5"/>
+  <rect x="880" y="410" width="60" height="70" rx="20" fill="none" stroke="#4B5563" stroke-width="5"/>
+
+  <!-- 승인 체크 배지 -->
+  <circle cx="972" cy="430" r="26" fill="#6FA98C"/>
+  <polyline points="960,430 969,440 987,414" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="910" y="510" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" font-weight="700" fill="#2B2F38">승인</text>
+
+  <!-- 추가 요건 배지 -->
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+    <rect x="300" y="670" width="260" height="56" rx="28" fill="#FFFFFF" stroke="#9AA1AC" stroke-width="2"/>
+    <text x="430" y="705" text-anchor="middle" font-size="21" fill="#2B2F38">평가·감사 체계</text>
+
+    <rect x="600" y="670" width="300" height="56" rx="28" fill="#FFFFFF" stroke="#9AA1AC" stroke-width="2"/>
+    <text x="750" y="705" text-anchor="middle" font-size="21" fill="#2B2F38">운영자가 책임 관리</text>
+  </g>
+</svg>
+<figcaption style="color:#888;font-size:14px;">AI 에이전트가 MCP로 여러 업무 시스템에 연결돼 실행 전 인간의 승인을 구하는 개념도</figcaption>
+</figure>
+
+<h2>내 업무엔 뭐가 맞을까 — 판단은 이렇게</h2>
+
+<p>그래서 실제로 뭘 골라야 하느냐는 결국 "이 업무에 뭐가 필요한가"로 돌아옵니다. 단순히 정보를 물어보고 답만 들으면 되는 일이면 챗봇형으로 충분해요. 보고서나 회의록처럼 사람이 직접 작성하되 옆에서 초안을 거들어줄 손이 필요하면 코파일럿형이 맞습니다. 반면 규칙이 명확하고 판단할 여지가 크지 않은 반복 업무라면 워크플로우 자동화가 더 효율적이고, 조건에 따라 스스로 판단해서 실행까지 해야 하는 일이라면 그때 비로소 독립 에이전트가 필요해집니다.</p>
+
+<p>중요한 건 이 네 가지 중 하나만 골라 조직 전체에 적용하려 들지 않는 거예요. 조직 안에서 가려운 부분이 저마다 다르기 때문에, 어떤 업무는 챗봇으로 어떤 업무는 워크플로우 자동화로 나눠 배치하는 게 자연스럽습니다. <strong style="background:#fff3a3;color:#1a1a1a;padding:0 2px;">다 할 줄 아는 만능 도구를 찾으려는 순간, 오히려 아무것도 제대로 설계하지 못하게 될 가능성이 커요.</strong></p>
+
+<figure style="margin:1.5em auto;max-width:640px;text-align:center;">
+<svg viewBox="0 0 1200 800" role="img" aria-label="업무 성격에 따라 챗봇, 코파일럿, 워크플로우 자동화, 독립 에이전트 중 알맞은 유형을 고르는 분기 흐름도" style="width:100%;height:auto;display:block;" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <symbol id="ic-chat3" viewBox="-40 -40 80 80">
+      <rect x="-28" y="-22" width="56" height="36" rx="10" fill="none" stroke="currentColor" stroke-width="6"/>
+      <polyline points="-12,14 -12,26 -2,14" fill="none" stroke="currentColor" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+      <circle cx="-12" cy="-4" r="3.5" fill="currentColor"/>
+      <circle cx="0" cy="-4" r="3.5" fill="currentColor"/>
+      <circle cx="12" cy="-4" r="3.5" fill="currentColor"/>
+    </symbol>
+    <symbol id="ic-doc3" viewBox="-40 -40 80 80">
+      <rect x="-22" y="-28" width="34" height="52" rx="4" fill="none" stroke="currentColor" stroke-width="6"/>
+      <line x1="-14" y1="-14" x2="4" y2="-14" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+      <line x1="-14" y1="-2" x2="4" y2="-2" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+      <line x1="-14" y1="10" x2="-4" y2="10" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+      <g transform="translate(18,18) rotate(45)">
+        <rect x="-4" y="-16" width="8" height="24" rx="2" fill="none" stroke="currentColor" stroke-width="5"/>
+        <polygon points="-4,8 4,8 0,16" fill="currentColor"/>
+      </g>
+    </symbol>
+    <symbol id="ic-gear3" viewBox="-40 -40 80 80">
+      <circle cx="0" cy="0" r="20" fill="none" stroke="currentColor" stroke-width="6"/>
+      <circle cx="0" cy="0" r="7" fill="none" stroke="currentColor" stroke-width="5"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(0)"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(45)"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(90)"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(135)"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(180)"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(225)"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(270)"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(315)"/>
+    </symbol>
+    <symbol id="ic-agent4" viewBox="-40 -40 80 80">
+      <rect x="-20" y="-22" width="40" height="36" rx="10" fill="none" stroke="currentColor" stroke-width="6"/>
+      <line x1="0" y1="-22" x2="0" y2="-32" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="0" cy="-32" r="4" fill="currentColor"/>
+      <circle cx="-9" cy="-4" r="4" fill="currentColor"/>
+      <circle cx="9" cy="-4" r="4" fill="currentColor"/>
+      <line x1="-8" y1="10" x2="8" y2="10" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+    </symbol>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="800" fill="#F5F6F8"/>
+  <text x="600" y="55" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="32" font-weight="700" fill="#2B2F38">업무 성격에 따라 고르는 유형</text>
+
+  <!-- Row 1: 챗봇형 -->
+  <rect x="60" y="100" width="560" height="90" rx="16" fill="#FFFFFF" stroke="#9AA1AC" stroke-width="2"/>
+  <text x="340" y="153" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" fill="#2B2F38">정보를 물어보고 답만 들으면 되는 일</text>
+  <line x1="630" y1="145" x2="760" y2="145" stroke="#9AA1AC" stroke-width="4"/>
+  <polygon points="775,145 758,135 758,155" fill="#9AA1AC"/>
+  <rect x="780" y="100" width="340" height="90" rx="16" fill="#5B8FB9"/>
+  <use href="#ic-chat3" x="800" y="120" width="50" height="50" style="color:#FFFFFF"/>
+  <text x="865" y="154" text-anchor="start" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="26" font-weight="700" fill="#FFFFFF">챗봇형</text>
+
+  <!-- Row 2: 코파일럿형 -->
+  <rect x="60" y="250" width="560" height="90" rx="16" fill="#FFFFFF" stroke="#9AA1AC" stroke-width="2"/>
+  <text x="340" y="303" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" fill="#2B2F38">초안을 거들어줄 손이 필요한 문서 작업</text>
+  <line x1="630" y1="295" x2="760" y2="295" stroke="#9AA1AC" stroke-width="4"/>
+  <polygon points="775,295 758,285 758,305" fill="#9AA1AC"/>
+  <rect x="780" y="250" width="340" height="90" rx="16" fill="#6FA98C"/>
+  <use href="#ic-doc3" x="800" y="270" width="50" height="50" style="color:#FFFFFF"/>
+  <text x="865" y="304" text-anchor="start" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="26" font-weight="700" fill="#FFFFFF">코파일럿형</text>
+
+  <!-- Row 3: 워크플로우 자동화 -->
+  <rect x="60" y="400" width="560" height="90" rx="16" fill="#FFFFFF" stroke="#9AA1AC" stroke-width="2"/>
+  <text x="340" y="453" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" fill="#2B2F38">규칙이 명확한 반복 업무</text>
+  <line x1="630" y1="445" x2="760" y2="445" stroke="#9AA1AC" stroke-width="4"/>
+  <polygon points="775,445 758,435 758,455" fill="#9AA1AC"/>
+  <rect x="780" y="400" width="340" height="90" rx="16" fill="#D9A15B"/>
+  <use href="#ic-gear3" x="800" y="420" width="50" height="50" style="color:#FFFFFF"/>
+  <text x="865" y="454" text-anchor="start" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">워크플로우 자동화</text>
+
+  <!-- Row 4: 독립 에이전트 -->
+  <rect x="60" y="550" width="560" height="90" rx="16" fill="#FFFFFF" stroke="#9AA1AC" stroke-width="2"/>
+  <text x="340" y="603" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" fill="#2B2F38">조건에 따라 스스로 판단해 실행해야 하는 일</text>
+  <line x1="630" y1="595" x2="760" y2="595" stroke="#9AA1AC" stroke-width="4"/>
+  <polygon points="775,595 758,585 758,605" fill="#9AA1AC"/>
+  <rect x="780" y="550" width="340" height="90" rx="16" fill="#8B6BB0"/>
+  <use href="#ic-agent4" x="800" y="570" width="50" height="50" style="color:#FFFFFF"/>
+  <text x="865" y="604" text-anchor="start" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="26" font-weight="700" fill="#FFFFFF">독립 에이전트</text>
+
+  <text x="600" y="710" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="20" fill="#6B7280">한 가지만 골라 전체에 적용하지 않기 — 업무별로 나눠 배치</text>
+</svg>
+<figcaption style="color:#888;font-size:14px;">업무 성격에 따라 챗봇, 코파일럿, 워크플로우 자동화, 독립 에이전트 중 알맞은 유형을 고르는 분기 흐름도</figcaption>
+</figure>
+
+<p>지금 당장 필요한 건 거창한 도입 계획보다, 내가 반복하고 있는 업무 하나를 떠올려 이 네 가지 틀에 대입해보는 일이에요. 그 업무가 "질문에 답하는 것"에 가까운지, "누군가의 승인 없이도 스스로 판단해 실행해야 하는 것"에 가까운지만 구분해도, 다음에 어떤 도구 이름을 마주치든 훨씬 덜 헷갈릴 거예요.</p>
+
+<h2>자주 묻는 질문</h2>
+
+<p><strong>Q. RPA와 AI 에이전트는 같은 건가요?</strong><br>겹치는 부분은 있지만 같지는 않아요. RPA성 워크플로우 자동화는 정해진 규칙 안에서 티켓 분류처럼 반복 작업을 처리하는 쪽이고, 독립 에이전트는 스스로 활성화 조건을 인지해서 그 조건이 성립할 때 판단하고 행동하는 쪽이라 자율성의 정도가 다릅니다.</p>
+
+<p><strong>Q. 코파일럿만으로 부족하다고 느껴지면 언제 에이전트로 넘어가야 하나요?</strong><br>단순히 문서 초안을 거드는 수준을 넘어, 실제 시스템에 연결돼 무언가를 실행하고 그 실행에 대해 승인을 받고 책임자가 관리해야 하는 상황이라면 코파일럿이 아니라 에이전트가 필요한 시점이라고 볼 수 있어요.</p>
+
+<p><strong>Q. 한 조직에서 네 가지 유형을 같이 써도 되나요?</strong><br>그렇습니다. 업무마다 필요한 성격이 다르기 때문에, 규정 안내는 챗봇으로 문서 작업은 코파일럿으로 반복 처리는 워크플로우 자동화로 나눠 배치하는 방식이 오히려 권장되는 접근이에요.</p>
+
+<hr/>
+
+<p><em>이 글은 [티타임즈TV]의 영상 "AI에이전트도 면접보고 채용하고 은퇴시켜야 한다 (김덕중 퍼블AI연구소장)"을 참고해 작성했습니다.</em> (<a href="https://youtu.be/ckQnPKqe35M" target="_blank" rel="noopener">https://youtu.be/ckQnPKqe35M</a>)</p>
+
+</article>

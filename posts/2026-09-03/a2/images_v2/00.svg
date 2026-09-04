@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <rect x="0" y="0" width="1600" height="900" fill="#F5F3EE"/>
+  <circle cx="1520" cy="40" r="220" fill="#2E7D74" opacity="0.06"/>
+  <circle cx="40" cy="880" r="180" fill="#E2924A" opacity="0.07"/>
+
+  <!-- pill tag -->
+  <rect x="90" y="108" width="300" height="52" rx="26" fill="#2E7D74"/>
+  <text x="240" y="142" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="26" font-weight="600" fill="#FFFFFF">AI 에이전트 도입 가이드</text>
+
+  <!-- title -->
+  <text x="90" y="270" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="68" font-weight="700" fill="#22303C">AI 에이전트 도입</text>
+  <text x="90" y="348" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="68" font-weight="700" fill="#2E7D74">체크리스트</text>
+
+  <!-- subtitle -->
+  <text x="90" y="428" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="34" font-weight="500" fill="#5B6672">이 7가지부터 답할 수 있어야</text>
+  <text x="90" y="472" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="34" font-weight="500" fill="#5B6672">시작할 수 있어요</text>
+
+  <text x="90" y="570" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="30" font-weight="600" fill="#2E7D74">지금 우리 조직에도 적용해보세요 →</text>
+
+  <!-- right clipboard panel -->
+  <rect x="860" y="90" width="650" height="720" rx="28" fill="#FFFFFF" stroke="#D8DDE3" stroke-width="2"/>
+  <rect x="1110" y="66" width="150" height="40" rx="12" fill="#2E7D74"/>
+
+  <!-- row 1 -->
+  <rect x="905" y="170" width="50" height="50" rx="10" fill="#2E7D74"/>
+  <path d="M 915 197 L 926 208 L 945 184" stroke="#FFFFFF" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="975" y="204" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="34" font-weight="600" fill="#22303C">시작 조건</text>
+
+  <!-- row 2 -->
+  <rect x="905" y="255" width="50" height="50" rx="10" fill="#2E7D74"/>
+  <path d="M 915 282 L 926 293 L 945 269" stroke="#FFFFFF" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="975" y="289" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="34" font-weight="600" fill="#22303C">입력 조건</text>
+
+  <!-- row 3 -->
+  <rect x="905" y="340" width="50" height="50" rx="10" fill="#2E7D74"/>
+  <path d="M 915 367 L 926 378 L 945 354" stroke="#FFFFFF" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="975" y="374" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="34" font-weight="600" fill="#22303C">판단 규칙</text>
+
+  <!-- row 4 -->
+  <rect x="905" y="425" width="50" height="50" rx="10" fill="#2E7D74"/>
+  <path d="M 915 452 L 926 463 L 945 439" stroke="#FFFFFF" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="975" y="459" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="34" font-weight="600" fill="#22303C">사용 가능한 툴</text>
+
+  <!-- row 5 -->
+  <rect x="905" y="510" width="50" height="50" rx="10" fill="#2E7D74"/>
+  <path d="M 915 537 L 926 548 L 945 524" stroke="#FFFFFF" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="975" y="544" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="34" font-weight="600" fill="#22303C">출력</text>
+
+  <!-- row 6 -->
+  <rect x="905" y="595" width="50" height="50" rx="10" fill="#2E7D74"/>
+  <path d="M 915 622 L 926 633 L 945 609" stroke="#FFFFFF" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="975" y="629" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="34" font-weight="600" fill="#22303C">책임자</text>
+
+  <!-- row 7 -->
+  <rect x="905" y="680" width="50" height="50" rx="10" fill="#2E7D74"/>
+  <path d="M 915 707 L 926 718 L 945 694" stroke="#FFFFFF" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="975" y="714" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="34" font-weight="600" fill="#22303C">예외 조건</text>
+</svg>

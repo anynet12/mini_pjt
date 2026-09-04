@@ -1,0 +1,95 @@
+{
+  "draft": "draft_v2.md",
+  "run": "2026-09-02",
+  "angle": null,
+  "kind_filter": null,
+  "checked_at": "2026-09-03T09:44:02+09:00",
+  "rerank_mode": null,
+  "n_claims": 10,
+  "supported": 9,
+  "partially": 0,
+  "unsupported": 1,
+  "faithfulness": 0.9,
+  "items": [
+    {
+      "index": 0,
+      "claim": "35년 다닌 회사를 정년퇴직한 아버지의 퇴직금은 1억 2,700만 원이다.",
+      "section": "",
+      "verdict": "supported",
+      "evidence_ref": "transcript#0",
+      "note": "근거에서 '남은 퇴직금이 1.2억인데'라고 명시되어 있고, transcript#3에서 '아빠가 한 회사를 35년을 다녔는데'라고 확인됨"
+    },
+    {
+      "index": 1,
+      "claim": "사전지정운용제도(디폴트 옵션) 적용 예정 문자를 받은 후 2주 안에 운용 방법을 직접 정하지 않으면 미리 지정해 둔 상품이 자동으로 매수된다.",
+      "section": "",
+      "verdict": "supported",
+      "evidence_ref": "transcript#10, transcript#11",
+      "note": "문자 내용에서 '2주 이내의 정립금 운용 방법을 스스로 선정하지 않을 경우 계좌에 설정된 사전지정 운용 방법 디폴트 옵션으로 운용이 됩니다'라고 명시됨"
+    },
+    {
+      "index": 2,
+      "claim": "1억으로 포트폴리오를 짜면 해외주식을 3천만 원어치, 국내주식을 2천만 원, 금을 1천만 원어치 사야 한다.",
+      "section": "",
+      "verdict": "unsupported",
+      "evidence_ref": "transcript#28",
+      "note": "근거에서 1억으로 포트폴리오를 짜는 구체적인 배분 비율(해외주식 3천만 원, 국내주식 2천만 원, 금 1천만 원)이 명시되지 않음. transcript#28, #30에서 포트폴리오 구성에 대해 논의하지만 이 구체적인 배분은 나타나지 않음"
+    },
+    {
+      "index": 3,
+      "claim": "영상 시점 기준으로 코스피는 4,600을 넘었고 S&P500은 7,000 근처였다.",
+      "section": "",
+      "verdict": "supported",
+      "evidence_ref": "transcript#29",
+      "note": "근거에서 '국주 지금 4,600 넘었어요. 자, SP 500 지금 조심 7,000데요'라고 명시됨"
+    },
+    {
+      "index": 4,
+      "claim": "1억 2천만 원을 채권으로만 굴려도 연 4%는 나온다.",
+      "section": "",
+      "verdict": "supported",
+      "evidence_ref": "transcript#17",
+      "note": "근거에서 '1억 2천에 저거를 그냥 내가 채권 사줬어도 4% 나오잖아요'라고 명시됨"
+    },
+    {
+      "index": 5,
+      "claim": "1억 2천만 원에 4%를 적용하면 연 480만 원, 월 20만 원, 2주 10만 원이다.",
+      "section": "",
+      "verdict": "supported",
+      "evidence_ref": "transcript#17",
+      "note": "근거에서 '1.2억에 4%면 480만 원인데'라고 명시되어 있고, 이를 통해 월 20만 원(480만 원÷12개월), 2주 10만 원(480만 원÷48주)이 계산됨"
+    },
+    {
+      "index": 6,
+      "claim": "퇴직금 운용 5단계는 금리형 상품, TDF, 자산배분 ETF 포트폴리오, 배당주, 주식 순서이다.",
+      "section": "",
+      "verdict": "supported",
+      "evidence_ref": "transcript#31",
+      "note": "근거에서 '금리형 상품입니다... 그다음에 여기서 한 발 더 나아간다면 TDF... 그다음에 하게 되는 방법이 내가 직접 자산 배분 포트를 ETF로 짜서 하는 거죠. 그다음에 할 수 있는 방법은 배당주를 사는 겁니다... 마지막에 주식을 하는 겁니다'라고 순서대로 명시됨"
+    },
+    {
+      "index": 7,
+      "claim": "금리형 상품은 1년, 2년, 3년 뒤 얼마를 벌지가 미리 정해진 상품이다.",
+      "section": "",
+      "verdict": "supported",
+      "evidence_ref": "transcript#31",
+      "note": "근거에서 '금리형 상품 이게 뜻하는 거는요. 금리가 정해져 있는 상품입니다. 내가 앞으로 1년 2년'이라고 명시됨"
+    },
+    {
+      "index": 8,
+      "claim": "TDF는 자산이 여러 곳에 흩어져 있어 보수적인 상품군이다.",
+      "section": "",
+      "verdict": "supported",
+      "evidence_ref": "transcript#31",
+      "note": "근거에서 'TDF를 매수하는 거 과분산입니다. 과분산이 되어 있기 때문에 보수적인 상품군에 속한다라고 볼 수 있고'라고 명시됨"
+    },
+    {
+      "index": 9,
+      "claim": "IRP 안의 현금은 현금성 자산이라 CMA 금리 정도는 붙는다.",
+      "section": "",
+      "verdict": "supported",
+      "evidence_ref": "transcript#17",
+      "note": "근거에서 '현금성 자산이기 때문에 이거는 적어도 CMA 금리 정도 줍니다'라고 명시됨"
+    }
+  ]
+}

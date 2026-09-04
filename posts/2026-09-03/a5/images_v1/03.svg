@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#f7f5f0"/>
+  <rect x="0" y="0" width="1200" height="8" fill="#263248"/>
+  <rect x="0" y="792" width="1200" height="8" fill="#e0923f"/>
+
+  <text x="600" y="70" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="34" font-weight="700" fill="#263248">개인용 vs 조직·전사용, 조달부터 다르게</text>
+
+  <!-- left card: 개인용 -->
+  <rect x="90" y="120" width="470" height="600" rx="20" fill="#ffffff" stroke="#d8d3c8" stroke-width="2"/>
+  <rect x="104" y="134" width="442" height="58" rx="14" fill="#3f7ca6"/>
+  <circle cx="140" cy="163" r="12" fill="#f7f5f0"/>
+  <path d="M 122 186 Q 140 168 158 186 Z" fill="#f7f5f0"/>
+  <text x="180" y="171" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="27" font-weight="700" fill="#ffffff">개인용</text>
+
+  <rect x="120" y="222" width="110" height="36" rx="9" fill="#cfe3ec"/>
+  <text x="175" y="246" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="19" font-weight="700" fill="#1f4d63">예시</text>
+  <text x="250" y="248" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="21" fill="#263248">클로드코드, 코덱스 같은</text>
+  <text x="250" y="278" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="21" fill="#263248">범용 도구</text>
+
+  <line x1="120" y1="312" x2="530" y2="312" stroke="#eee9dd" stroke-width="2"/>
+
+  <rect x="120" y="332" width="110" height="36" rx="9" fill="#cfe3ec"/>
+  <text x="175" y="356" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="19" font-weight="700" fill="#1f4d63">비용·책임</text>
+  <text x="250" y="358" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="21" fill="#263248">월 3만 원 안팎</text>
+  <text x="250" y="388" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="21" fill="#263248">운영 책임은 개인에게</text>
+
+  <line x1="120" y1="422" x2="530" y2="422" stroke="#eee9dd" stroke-width="2"/>
+
+  <rect x="120" y="442" width="110" height="36" rx="9" fill="#cfe3ec"/>
+  <text x="175" y="466" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="19" font-weight="700" fill="#1f4d63">적합 업무</text>
+  <text x="250" y="468" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="21" fill="#263248">공개 정보를 다루는</text>
+  <text x="250" y="498" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="21" fill="#263248">개인 업무</text>
+
+  <rect x="120" y="540" width="410" height="150" rx="12" fill="#f3f1ea" stroke="#d8d3c8" stroke-width="1.5"/>
+  <text x="325" y="578" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="19" fill="#5a6478">개인이 편하게 쓰던 도구가</text>
+  <text x="325" y="606" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="19" fill="#5a6478">전사 핵심 업무로 번지면</text>
+  <text x="325" y="634" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="19" fill="#5a6478">관리 주체 없이 비용만 커진다</text>
+
+  <!-- right card: 조직·전사용 -->
+  <rect x="640" y="120" width="470" height="600" rx="20" fill="#ffffff" stroke="#d8d3c8" stroke-width="2"/>
+  <rect x="654" y="134" width="442" height="58" rx="14" fill="#e0923f"/>
+  <rect x="678" y="151" width="26" height="26" rx="3" fill="#f7f5f0"/>
+  <rect x="683" y="156" width="5" height="5" fill="#e0923f"/>
+  <rect x="694" y="156" width="5" height="5" fill="#e0923f"/>
+  <rect x="683" y="166" width="5" height="5" fill="#e0923f"/>
+  <rect x="694" y="166" width="5" height="5" fill="#e0923f"/>
+  <text x="720" y="171" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="27" font-weight="700" fill="#ffffff">조직·전사용</text>
+
+  <rect x="670" y="222" width="110" height="36" rx="9" fill="#f7ddb9"/>
+  <text x="725" y="246" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="19" font-weight="700" fill="#7a4a1c">예시</text>
+  <text x="800" y="248" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="21" fill="#263248">코파일럿 스튜디오,</text>
+  <text x="800" y="278" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="21" fill="#263248">클라우드 플랫폼, 자체 구축</text>
+
+  <line x1="670" y1="312" x2="1080" y2="312" stroke="#eee9dd" stroke-width="2"/>
+
+  <rect x="670" y="332" width="120" height="36" rx="9" fill="#f7ddb9"/>
+  <text x="730" y="356" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="19" font-weight="700" fill="#7a4a1c">필요 요소</text>
+  <text x="800" y="358" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="21" fill="#263248">권한 관리 · 개정 관리</text>
+  <text x="800" y="388" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="21" fill="#263248">· 승인 관리</text>
+
+  <line x1="670" y1="422" x2="1080" y2="422" stroke="#eee9dd" stroke-width="2"/>
+
+  <rect x="670" y="442" width="110" height="36" rx="9" fill="#f7ddb9"/>
+  <text x="725" y="466" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="19" font-weight="700" fill="#7a4a1c">적합 업무</text>
+  <text x="800" y="468" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="21" fill="#263248">레거시 연동 · 기밀 데이터</text>
+  <text x="800" y="498" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="21" fill="#263248">(인사·재무·영업)</text>
+
+  <rect x="670" y="540" width="410" height="150" rx="12" fill="#f3f1ea" stroke="#d8d3c8" stroke-width="1.5"/>
+  <text x="875" y="578" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="19" fill="#5a6478">레거시 시스템과 연동되고</text>
+  <text x="875" y="606" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="19" fill="#5a6478">기밀 데이터를 다루는 업무는</text>
+  <text x="875" y="634" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="19" fill="#5a6478">개인용 범용 도구로 감당 안 된다</text>
+</svg>

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="적립식(매달 50만 원 분할 매수)과 목돈(1억을 해외주식 3천만 원·국내주식 2천만 원·금 1천만 원으로 한 번에 매수) 대비 도식">
+  <rect x="0" y="0" width="1200" height="800" fill="#F5F3EE"/>
+
+  <!-- 제목 -->
+  <text x="600" y="72" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', 'Malgun Gothic', sans-serif" font-size="40" font-weight="800" fill="#2A2F3A">매달 50만 원과 1억은 같은 투자가 아니다</text>
+
+  <!-- 왼쪽 패널: 적립식 -->
+  <rect x="50" y="120" width="520" height="620" rx="24" fill="#FFFFFF" stroke="#3A8F7A" stroke-width="5"/>
+  <rect x="50" y="120" width="520" height="80" rx="24" fill="#3A8F7A"/>
+  <rect x="50" y="170" width="520" height="30" fill="#3A8F7A"/>
+  <text x="310" y="173" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', 'Malgun Gothic', sans-serif" font-size="38" font-weight="800" fill="#FFFFFF">적립식</text>
+
+  <!-- 달력형 작은 동전 12개 -->
+  <g fill="#D99A3E">
+    <circle cx="140" cy="290" r="26"/><circle cx="250" cy="290" r="26"/><circle cx="360" cy="290" r="26"/><circle cx="470" cy="290" r="26"/>
+    <circle cx="140" cy="380" r="26"/><circle cx="250" cy="380" r="26"/><circle cx="360" cy="380" r="26"/><circle cx="470" cy="380" r="26"/>
+    <circle cx="140" cy="470" r="26"/><circle cx="250" cy="470" r="26"/><circle cx="360" cy="470" r="26"/><circle cx="470" cy="470" r="26"/>
+  </g>
+  <g fill="none" stroke="#FFFFFF" stroke-width="4">
+    <circle cx="140" cy="290" r="15"/><circle cx="250" cy="290" r="15"/><circle cx="360" cy="290" r="15"/><circle cx="470" cy="290" r="15"/>
+    <circle cx="140" cy="380" r="15"/><circle cx="250" cy="380" r="15"/><circle cx="360" cy="380" r="15"/><circle cx="470" cy="380" r="15"/>
+    <circle cx="140" cy="470" r="15"/><circle cx="250" cy="470" r="15"/><circle cx="360" cy="470" r="15"/><circle cx="470" cy="470" r="15"/>
+  </g>
+
+  <text x="310" y="570" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', 'Malgun Gothic', sans-serif" font-size="34" font-weight="700" fill="#2A2F3A">매달 50만 원씩 나눠 매수</text>
+  <text x="310" y="625" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', 'Malgun Gothic', sans-serif" font-size="28" fill="#5A6070">몇십만 원씩 나눠 사니</text>
+  <text x="310" y="665" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', 'Malgun Gothic', sans-serif" font-size="28" fill="#5A6070">부담이 크게 체감되지 않음</text>
+
+  <!-- 가운데 vs -->
+  <circle cx="600" cy="430" r="40" fill="#2A2F3A"/>
+  <text x="600" y="442" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', 'Malgun Gothic', sans-serif" font-size="30" font-weight="800" fill="#FFFFFF">vs</text>
+
+  <!-- 오른쪽 패널: 목돈 -->
+  <rect x="630" y="120" width="520" height="620" rx="24" fill="#FFFFFF" stroke="#2B4C7E" stroke-width="5"/>
+  <rect x="630" y="120" width="520" height="80" rx="24" fill="#2B4C7E"/>
+  <rect x="630" y="170" width="520" height="30" fill="#2B4C7E"/>
+  <text x="890" y="173" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', 'Malgun Gothic', sans-serif" font-size="38" font-weight="800" fill="#FFFFFF">목돈</text>
+
+  <!-- 돈주머니 -->
+  <path d="M890 235 L860 275 L920 275 Z" fill="#D99A3E"/>
+  <ellipse cx="890" cy="325" rx="80" ry="62" fill="#D99A3E"/>
+  <text x="890" y="340" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', 'Malgun Gothic', sans-serif" font-size="40" font-weight="800" fill="#FFFFFF">1억</text>
+
+  <!-- 화살표: 한 번에 매수 -->
+  <line x1="890" y1="392" x2="890" y2="450" stroke="#2B4C7E" stroke-width="6" stroke-linecap="round"/>
+  <path d="M870 445 L890 470 L910 445 Z" fill="#2B4C7E"/>
+  <rect x="770" y="405" width="240" height="0" fill="none"/>
+  <text x="960" y="430" font-family="Pretendard, 'Noto Sans KR', 'Malgun Gothic', sans-serif" font-size="26" font-weight="700" fill="#2B4C7E">한 번에 매수</text>
+
+  <!-- 세 상자 -->
+  <rect x="660" y="490" width="145" height="110" rx="14" fill="#2B4C7E"/>
+  <text x="732" y="535" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', 'Malgun Gothic', sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">해외주식</text>
+  <text x="732" y="575" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', 'Malgun Gothic', sans-serif" font-size="28" font-weight="800" fill="#FFFFFF">3천만 원</text>
+
+  <rect x="818" y="490" width="145" height="110" rx="14" fill="#2B4C7E" fill-opacity="0.8"/>
+  <text x="890" y="535" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', 'Malgun Gothic', sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">국내주식</text>
+  <text x="890" y="575" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', 'Malgun Gothic', sans-serif" font-size="28" font-weight="800" fill="#FFFFFF">2천만 원</text>
+
+  <rect x="976" y="490" width="145" height="110" rx="14" fill="#D99A3E"/>
+  <text x="1048" y="535" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', 'Malgun Gothic', sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">금</text>
+  <text x="1048" y="575" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', 'Malgun Gothic', sans-serif" font-size="28" font-weight="800" fill="#FFFFFF">1천만 원</text>
+
+  <text x="890" y="650" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', 'Malgun Gothic', sans-serif" font-size="28" fill="#5A6070">클릭 한 번이</text>
+  <text x="890" y="690" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', 'Malgun Gothic', sans-serif" font-size="28" font-weight="700" fill="#2A2F3A">3천만 원짜리 결정이 된다</text>
+
+  <!-- 하단 한 줄 -->
+  <text x="600" y="778" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', 'Malgun Gothic', sans-serif" font-size="26" fill="#5A6070">첫 질문은 "어떤 상품을 살까"가 아니라 "이 돈으로 투자를 할 수 있는가"</text>
+</svg>

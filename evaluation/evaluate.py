@@ -3,6 +3,10 @@
 `test_queries.csv`(케이스 정의)와 `results_roundN.csv`(실행 결과 기록)를 합쳐 통과율을 계산하고
 `roundN_report.md` 초안을 만든다. 케이스 실행 자체는 사람이(또는 run.sh 로) 하고, 결과를 results 파일에 적는다.
 
+라운드마다 케이스 정의를 늘려갈 수 있다 — `test_queries_round{N}.csv`가 있으면 그 라운드는 그 파일을
+쓰고, 없으면 공용 `test_queries.csv`로 대체한다. 예: 1차는 `test_queries.csv`(원본 20건) 그대로 재현,
+2차는 `test_queries_round2.csv`(원본 + 추가 케이스)로 확장.
+
 results_roundN.csv 컬럼:
     id, pass (Y/N), observed (실제 동작 요약), traits_missing (미충족 expected_traits · 세미콜론), forbidden_hit (나온 금지 항목 · 세미콜론), tools_observed (호출된 도구 · 세미콜론), note
 
@@ -21,8 +25,16 @@ THRESHOLD = 0.85  # SERVICE.md §5: 20건 중 17건 이상
 MUST_BE_PERFECT = ("guardrail", "negative")
 
 
-def load_cases() -> list[dict]:
-    with (HERE / "test_queries.csv").open(encoding="utf-8-sig", newline="") as f:
+def cases_path(n: int) -> Path:
+    """라운드 전용 케이스 파일(test_queries_round{n}.csv)이 있으면 그걸 쓰고,
+    없으면 공용 test_queries.csv로 대체한다. 라운드별로 평가셋을 늘려갈 때(예: 2차에
+    케이스 추가) 이전 라운드의 결과·보고서는 그대로 재현 가능하게 유지하기 위함이다."""
+    p = HERE / f"test_queries_round{n}.csv"
+    return p if p.exists() else HERE / "test_queries.csv"
+
+
+def load_cases(n: int) -> list[dict]:
+    with cases_path(n).open(encoding="utf-8-sig", newline="") as f:
         return list(csv.DictReader(f))
 
 
@@ -46,7 +58,7 @@ def load_results(n: int) -> dict[str, dict]:
         return {r["id"]: r for r in csv.DictReader(f)}
 
 
-def build_report(n: int, cases: list[dict], results: dict[str, dict]) -> str:
+def build_report(n: int, cases: list[dict], results: dict[str, dict], src: Path) -> str:
     by_cat = defaultdict(lambda: {"total": 0, "pass": 0, "done": 0})
     rows = []
     for c in cases:
@@ -67,7 +79,7 @@ def build_report(n: int, cases: list[dict], results: dict[str, dict]) -> str:
 
     L = [f"# {n}차 자체 평가 결과", "",
          f"- 일시: {_dt.date.today().isoformat()}",
-         f"- 기준: `evaluation/test_queries.csv` {total}건 · 완성 기준 통과율 ≥ {THRESHOLD:.0%} + guardrail·negative 100% (SERVICE.md §5)",
+         f"- 기준: `evaluation/{src.name}` {total}건 · 완성 기준 통과율 ≥ {THRESHOLD:.0%} + guardrail·negative 100% (SERVICE.md §5)",
          f"- 결과: **{passed}/{total} 통과 ({rate:.0%})** · 실행 {done}/{total} · 판정: **{status}**", "",
          "## 카테고리별", "", "| 카테고리 | 통과 / 전체 | 통과율 | 비고 |", "|---|---|---|---|"]
     for cat in ("positive", "negative", "edge", "guardrail"):
@@ -102,11 +114,11 @@ def main() -> None:
     ap.add_argument("--round", type=int, required=True)
     ap.add_argument("--init", action="store_true")
     args = ap.parse_args()
-    cases = load_cases()
+    cases = load_cases(args.round)
     if args.init:
         print("생성:", init_results(args.round, cases))
         return
-    report = build_report(args.round, cases, load_results(args.round))
+    report = build_report(args.round, cases, load_results(args.round), cases_path(args.round))
     out = HERE / f"round{args.round}_report.md"
     out.write_text(report, encoding="utf-8")
     print(report)

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#f7f5f0"/>
+  <rect x="0" y="0" width="1600" height="8" fill="#263248"/>
+  <rect x="0" y="892" width="1600" height="8" fill="#e0923f"/>
+
+  <text x="800" y="118" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="56" font-weight="700" fill="#263248">AI 에이전트 통폐합, 언제 해야 할까</text>
+  <text x="800" y="168" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="30" fill="#5a6478">'돈 먹는 하마' 되기 전에 봐야 할 신호들</text>
+
+  <!-- stand -->
+  <rect x="792" y="470" width="16" height="290" fill="#3f7ca6"/>
+  <rect x="690" y="760" width="220" height="22" rx="8" fill="#3f7ca6"/>
+
+  <!-- beam (tilted: left heavier/lower, right lighter/higher) -->
+  <line x1="560" y1="512" x2="1040" y2="440" stroke="#263248" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="800" cy="476" r="18" fill="#263248"/>
+
+  <!-- left hangers -->
+  <line x1="560" y1="512" x2="520" y2="618" stroke="#263248" stroke-width="5"/>
+  <line x1="560" y1="512" x2="600" y2="618" stroke="#263248" stroke-width="5"/>
+  <!-- left pan -->
+  <path d="M 495 618 L 625 618 L 598 656 L 522 656 Z" fill="#e0923f" stroke="#263248" stroke-width="4" stroke-linejoin="round"/>
+
+  <!-- cluttered agent icons on left pan -->
+  <g>
+    <rect x="522" y="528" width="38" height="38" rx="7" fill="#263248"/>
+    <circle cx="533" cy="547" r="3.4" fill="#f7f5f0"/>
+    <circle cx="549" cy="547" r="3.4" fill="#f7f5f0"/>
+
+    <rect x="565" y="528" width="38" height="38" rx="7" fill="#263248"/>
+    <circle cx="576" cy="547" r="3.4" fill="#f7f5f0"/>
+    <circle cx="592" cy="547" r="3.4" fill="#f7f5f0"/>
+
+    <rect x="522" y="571" width="38" height="38" rx="7" fill="#263248"/>
+    <circle cx="533" cy="590" r="3.4" fill="#f7f5f0"/>
+    <circle cx="549" cy="590" r="3.4" fill="#f7f5f0"/>
+
+    <rect x="565" y="571" width="38" height="38" rx="7" fill="#263248"/>
+    <circle cx="576" cy="590" r="3.4" fill="#f7f5f0"/>
+    <circle cx="592" cy="590" r="3.4" fill="#f7f5f0"/>
+  </g>
+  <text x="560" y="696" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="26" font-weight="600" fill="#263248">부채가 된 에이전트들</text>
+
+  <!-- right hangers -->
+  <line x1="1040" y1="440" x2="1000" y2="530" stroke="#263248" stroke-width="5"/>
+  <line x1="1040" y1="440" x2="1080" y2="530" stroke="#263248" stroke-width="5"/>
+  <!-- right pan -->
+  <path d="M 975 530 L 1105 530 L 1078 566 L 1002 566 Z" fill="#f7ddb9" stroke="#263248" stroke-width="4" stroke-linejoin="round"/>
+
+  <!-- single compact/checked icon -->
+  <rect x="1015" y="452" width="50" height="50" rx="9" fill="#3f7ca6"/>
+  <path d="M 1026 478 L 1036 488 L 1054 464" fill="none" stroke="#f7f5f0" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="1040" y="606" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="26" font-weight="600" fill="#263248">콤팩트하게 정리된 운영</text>
+</svg>

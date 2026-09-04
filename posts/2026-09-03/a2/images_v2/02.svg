@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <rect x="0" y="0" width="1200" height="800" fill="#F5F3EE"/>
+  <circle cx="1150" cy="40" r="150" fill="#2E7D74" opacity="0.05"/>
+  <circle cx="40" cy="760" r="140" fill="#E2924A" opacity="0.06"/>
+
+  <text x="600" y="55" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="30" font-weight="600" fill="#6B7684">먼저 뭐가 필요한지부터 구분해요</text>
+
+  <!-- root box -->
+  <rect x="440" y="80" width="320" height="72" rx="18" fill="#2E7D74"/>
+  <text x="600" y="124" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="27" font-weight="700" fill="#FFFFFF">필요한 자동화 유형은?</text>
+
+  <!-- connectors -->
+  <line x1="600" y1="152" x2="600" y2="210" stroke="#ABB4BD" stroke-width="3"/>
+  <line x1="170" y1="210" x2="1010" y2="210" stroke="#ABB4BD" stroke-width="3"/>
+  <line x1="170" y1="210" x2="170" y2="280" stroke="#ABB4BD" stroke-width="3"/>
+  <line x1="450" y1="210" x2="450" y2="280" stroke="#ABB4BD" stroke-width="3"/>
+  <line x1="730" y1="210" x2="730" y2="280" stroke="#ABB4BD" stroke-width="3"/>
+  <line x1="1010" y1="210" x2="1010" y2="280" stroke="#ABB4BD" stroke-width="3"/>
+
+  <!-- box 1: 챗봇형 -->
+  <rect x="40" y="280" width="260" height="340" rx="20" fill="#FFFFFF" stroke="#D8DDE3" stroke-width="2"/>
+  <circle cx="170" cy="335" r="30" fill="#2E7D74"/>
+  <g transform="translate(170,335)">
+    <rect x="-14" y="-11" width="28" height="18" rx="6" fill="#FFFFFF"/>
+    <path d="M -6,7 L -2,14 L 2,7 Z" fill="#FFFFFF"/>
+  </g>
+  <text x="170" y="382" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="26" font-weight="700" fill="#22303C">챗봇형</text>
+  <text x="170" y="418" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="20" font-weight="500" fill="#3E4A56">사용자 질문에 답변</text>
+  <line x1="80" y1="460" x2="260" y2="460" stroke="#E7E9EC" stroke-width="1.5"/>
+  <text x="170" y="478" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="14" font-weight="600" fill="#9AA3AC">예시</text>
+  <text x="170" y="502" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="18" fill="#6B7684">인사·구매</text>
+  <text x="170" y="526" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="18" fill="#6B7684">규정 안내</text>
+
+  <!-- box 2: 코파일럿형 -->
+  <rect x="320" y="280" width="260" height="340" rx="20" fill="#FFFFFF" stroke="#D8DDE3" stroke-width="2"/>
+  <circle cx="450" cy="335" r="30" fill="#2E7D74"/>
+  <g transform="translate(450,335) rotate(45)">
+    <rect x="-4" y="-15" width="8" height="30" rx="3" fill="#FFFFFF"/>
+  </g>
+  <text x="450" y="382" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="26" font-weight="700" fill="#22303C">코파일럿형</text>
+  <text x="450" y="418" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="20" font-weight="500" fill="#3E4A56">문서 작업 보조</text>
+  <line x1="360" y1="460" x2="540" y2="460" stroke="#E7E9EC" stroke-width="1.5"/>
+  <text x="450" y="478" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="14" font-weight="600" fill="#9AA3AC">예시</text>
+  <text x="450" y="502" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="18" fill="#6B7684">오피스·구글독스</text>
+  <text x="450" y="526" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="18" fill="#6B7684">초안 도움</text>
+
+  <!-- box 3: 워크플로우 자동화 -->
+  <rect x="600" y="280" width="260" height="340" rx="20" fill="#FFFFFF" stroke="#D8DDE3" stroke-width="2"/>
+  <circle cx="730" cy="335" r="30" fill="#2E7D74"/>
+  <g transform="translate(730,335)">
+    <path d="M -12,-8 L 4,-8 L 4,-14 L 14,0 L 4,14 L 4,8 L -12,8 Z" fill="#FFFFFF"/>
+  </g>
+  <text x="730" y="382" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="26" font-weight="700" fill="#22303C">워크플로우 자동화</text>
+  <text x="730" y="418" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="20" font-weight="500" fill="#3E4A56">룰 기반 처리</text>
+  <line x1="640" y1="460" x2="820" y2="460" stroke="#E7E9EC" stroke-width="1.5"/>
+  <text x="730" y="478" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="14" font-weight="600" fill="#9AA3AC">예시</text>
+  <text x="730" y="502" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="18" fill="#6B7684">티켓 분류 후</text>
+  <text x="730" y="526" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="18" fill="#6B7684">담당자 연결</text>
+
+  <!-- box 4: 독립적 에이전트 (강조) -->
+  <rect x="880" y="280" width="260" height="340" rx="20" fill="#FFFFFF" stroke="#E2924A" stroke-width="4"/>
+  <circle cx="1010" cy="335" r="30" fill="#E2924A"/>
+  <g transform="translate(1010,335)">
+    <path d="M0,-16 L4,-4 L16,0 L4,4 L0,16 L-4,4 L-16,0 L-4,-4 Z" fill="#FFFFFF"/>
+  </g>
+  <text x="1010" y="382" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="26" font-weight="700" fill="#22303C">독립적 에이전트</text>
+  <text x="1010" y="412" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="20" font-weight="500" fill="#3E4A56">조건을 스스로</text>
+  <text x="1010" y="438" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="20" font-weight="500" fill="#3E4A56">인지해 작동</text>
+  <line x1="920" y1="460" x2="1100" y2="460" stroke="#E7E9EC" stroke-width="1.5"/>
+  <text x="1010" y="478" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="14" font-weight="600" fill="#9AA3AC">예시</text>
+  <text x="1010" y="502" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="18" fill="#6B7684">특정 상황 성립 시</text>
+  <text x="1010" y="526" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="18" fill="#6B7684">알아서 실행</text>
+</svg>

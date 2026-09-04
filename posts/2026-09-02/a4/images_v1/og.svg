@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="퇴직금 목돈 운용 5단계 대표이미지">
+  <rect x="0" y="0" width="1600" height="900" fill="#F5F3EE"/>
+
+  <!-- 중앙 원형 배경 -->
+  <circle cx="800" cy="450" r="390" fill="#FFFFFF"/>
+  <circle cx="800" cy="450" r="390" fill="none" stroke="#2B4C7E" stroke-width="8"/>
+
+  <!-- 5칸 계단 (중앙) -->
+  <g>
+    <rect x="560" y="520" width="90" height="120" rx="12" fill="#3A8F7A"/>
+    <rect x="660" y="460" width="90" height="180" rx="12" fill="#3A8F7A" fill-opacity="0.85"/>
+    <rect x="760" y="400" width="90" height="240" rx="12" fill="#2B4C7E" fill-opacity="0.75"/>
+    <rect x="860" y="340" width="90" height="300" rx="12" fill="#2B4C7E" fill-opacity="0.88"/>
+    <rect x="960" y="280" width="90" height="360" rx="12" fill="#2B4C7E"/>
+    <!-- 상승 화살표 -->
+    <path d="M585 480 L985 230" stroke="#D99A3E" stroke-width="14" stroke-linecap="round" fill="none"/>
+    <path d="M950 210 L1010 215 L985 275 Z" fill="#D99A3E"/>
+  </g>
+
+  <!-- 동전 -->
+  <g>
+    <circle cx="580" cy="280" r="70" fill="#D99A3E"/>
+    <circle cx="580" cy="280" r="48" fill="none" stroke="#FFFFFF" stroke-width="8"/>
+    <text x="580" y="304" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', 'Malgun Gothic', sans-serif" font-size="64" font-weight="800" fill="#FFFFFF">₩</text>
+  </g>
+
+  <!-- 텍스트 최소 -->
+  <text x="800" y="728" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', 'Malgun Gothic', sans-serif" font-size="56" font-weight="800" fill="#2A2F3A">퇴직금 운용 5단계</text>
+</svg>

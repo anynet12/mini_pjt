@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#f7f5f0"/>
+  <rect x="0" y="0" width="1200" height="8" fill="#263248"/>
+  <rect x="0" y="792" width="1200" height="8" fill="#e0923f"/>
+
+  <text x="600" y="80" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="38" font-weight="700" fill="#263248">에이전트가 늘어날수록 커지는 관리 비용</text>
+  <text x="600" y="118" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="24" fill="#5a6478">토큰 사용료 + 인프라 비용</text>
+
+  <!-- y axis label -->
+  <text x="90" y="420" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" fill="#5a6478" transform="rotate(-90 90 420)">관리 비용 (토큰·인프라)</text>
+
+  <!-- baseline -->
+  <line x1="180" y1="650" x2="1080" y2="650" stroke="#263248" stroke-width="3"/>
+
+  <!-- reference dashed line (qualitative projection, not a hard number) -->
+  <line x1="180" y1="230" x2="1080" y2="230" stroke="#e0923f" stroke-width="2.5" stroke-dasharray="10 8"/>
+  <text x="1080" y="212" text-anchor="end" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" font-weight="600" fill="#c97a2c">인건비 수준 (전망)</text>
+
+  <!-- bar 1 -->
+  <rect x="270" y="530" width="140" height="120" rx="8" fill="#cfe3ec" stroke="#3f7ca6" stroke-width="2"/>
+  <text x="340" y="690" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" fill="#263248">에이전트</text>
+  <text x="340" y="716" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" fill="#263248">한두 개</text>
+
+  <!-- bar 2 -->
+  <rect x="530" y="400" width="140" height="250" rx="8" fill="#3f7ca6"/>
+  <text x="600" y="690" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" fill="#263248">에이전트</text>
+  <text x="600" y="716" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" fill="#263248">여러 개</text>
+
+  <!-- bar 3 -->
+  <rect x="790" y="270" width="140" height="380" rx="8" fill="#e0923f"/>
+  <text x="860" y="690" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" fill="#263248">에이전트</text>
+  <text x="860" y="716" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" fill="#263248">많아질수록</text>
+
+  <text x="600" y="762" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="20" fill="#5a6478">※ 실제 절감·증가 폭은 조직마다 다르며, 그래프는 정성적 추세를 나타냅니다</text>
+</svg>

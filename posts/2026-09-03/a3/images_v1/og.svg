@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <symbol id="og-chat" viewBox="-40 -40 80 80">
+      <rect x="-28" y="-22" width="56" height="36" rx="10" fill="none" stroke="currentColor" stroke-width="6"/>
+      <polyline points="-12,14 -12,26 -2,14" fill="none" stroke="currentColor" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+      <circle cx="-12" cy="-4" r="3.5" fill="currentColor"/>
+      <circle cx="0" cy="-4" r="3.5" fill="currentColor"/>
+      <circle cx="12" cy="-4" r="3.5" fill="currentColor"/>
+    </symbol>
+    <symbol id="og-doc" viewBox="-40 -40 80 80">
+      <rect x="-22" y="-28" width="34" height="52" rx="4" fill="none" stroke="currentColor" stroke-width="6"/>
+      <line x1="-14" y1="-14" x2="4" y2="-14" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+      <line x1="-14" y1="-2" x2="4" y2="-2" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+      <line x1="-14" y1="10" x2="-4" y2="10" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="og-gear" viewBox="-40 -40 80 80">
+      <circle cx="0" cy="0" r="20" fill="none" stroke="currentColor" stroke-width="6"/>
+      <circle cx="0" cy="0" r="7" fill="none" stroke="currentColor" stroke-width="5"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(0)"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(45)"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(90)"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(135)"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(180)"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(225)"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(270)"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(315)"/>
+    </symbol>
+    <symbol id="og-agent" viewBox="-40 -40 80 80">
+      <rect x="-20" y="-22" width="40" height="36" rx="10" fill="none" stroke="currentColor" stroke-width="6"/>
+      <line x1="0" y1="-22" x2="0" y2="-32" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="0" cy="-32" r="4" fill="currentColor"/>
+      <circle cx="-9" cy="-4" r="4" fill="currentColor"/>
+      <circle cx="9" cy="-4" r="4" fill="currentColor"/>
+      <line x1="-8" y1="10" x2="8" y2="10" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+    </symbol>
+  </defs>
+
+  <rect x="0" y="0" width="1600" height="900" fill="#F5F6F8"/>
+
+  <!-- 중앙 진행선 -->
+  <line x1="800" y1="80" x2="800" y2="800" stroke="#C7CCD3" stroke-width="6"/>
+  <polygon points="800,818 788,792 812,792" fill="#C7CCD3"/>
+
+  <!-- 4가지 유형 아이콘 (위→아래: 챗봇형 → 코파일럿형 → 워크플로우 자동화 → 독립 에이전트) -->
+  <circle cx="800" cy="140" r="80" fill="#5B8FB9"/>
+  <use href="#og-chat" x="750" y="90" width="100" height="100" style="color:#FFFFFF"/>
+
+  <circle cx="800" cy="340" r="80" fill="#6FA98C"/>
+  <use href="#og-doc" x="750" y="290" width="100" height="100" style="color:#FFFFFF"/>
+
+  <circle cx="800" cy="540" r="80" fill="#D9A15B"/>
+  <use href="#og-gear" x="750" y="490" width="100" height="100" style="color:#FFFFFF"/>
+
+  <circle cx="800" cy="740" r="80" fill="#8B6BB0"/>
+  <use href="#og-agent" x="750" y="690" width="100" height="100" style="color:#FFFFFF"/>
+</svg>

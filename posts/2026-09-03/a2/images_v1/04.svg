@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <rect x="0" y="0" width="1200" height="800" fill="#F5F3EE"/>
+  <circle cx="1150" cy="30" r="150" fill="#2E7D74" opacity="0.05"/>
+  <circle cx="30" cy="770" r="130" fill="#E2924A" opacity="0.06"/>
+
+  <text x="60" y="66" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="36" font-weight="700" fill="#22303C">체크리스트, 어디까지 채웠나요?</text>
+  <line x1="60" y1="88" x2="1140" y2="88" stroke="#D8DDE3" stroke-width="2"/>
+
+  <!-- row 1: 시작 조건 (완료) -->
+  <rect x="100" y="120" width="50" height="50" rx="10" fill="#2E7D74"/>
+  <path d="M 110 147 L 121 158 L 140 133" stroke="#FFFFFF" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="175" y="154" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="32" font-weight="600" fill="#22303C">시작 조건</text>
+
+  <!-- row 2: 입력 조건 (완료) -->
+  <rect x="100" y="205" width="50" height="50" rx="10" fill="#2E7D74"/>
+  <path d="M 110 232 L 121 243 L 140 218" stroke="#FFFFFF" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="175" y="239" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="32" font-weight="600" fill="#22303C">입력 조건</text>
+
+  <!-- row 3: 판단 규칙 (완료) -->
+  <rect x="100" y="290" width="50" height="50" rx="10" fill="#2E7D74"/>
+  <path d="M 110 317 L 121 328 L 140 303" stroke="#FFFFFF" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="175" y="324" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="32" font-weight="600" fill="#22303C">판단 규칙</text>
+
+  <!-- row 4: 사용 가능한 툴 (완료) -->
+  <rect x="100" y="375" width="50" height="50" rx="10" fill="#2E7D74"/>
+  <path d="M 110 402 L 121 413 L 140 388" stroke="#FFFFFF" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="175" y="409" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="32" font-weight="600" fill="#22303C">사용 가능한 툴</text>
+
+  <!-- row 5: 출력 (완료) -->
+  <rect x="100" y="460" width="50" height="50" rx="10" fill="#2E7D74"/>
+  <path d="M 110 487 L 121 498 L 140 473" stroke="#FFFFFF" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="175" y="494" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="32" font-weight="600" fill="#22303C">출력</text>
+
+  <!-- row 6: 책임자 (작성 중, 빈 칸 + 펜) -->
+  <rect x="100" y="545" width="50" height="50" rx="10" fill="#FFF8EF" stroke="#E2924A" stroke-width="3" stroke-dasharray="8 6"/>
+  <text x="175" y="579" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="32" font-weight="700" fill="#E2924A">책임자</text>
+  <rect x="330" y="552" width="128" height="36" rx="18" fill="#E2924A"/>
+  <text x="394" y="576" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="20" font-weight="600" fill="#FFFFFF">지금 채우는 중</text>
+  <g transform="translate(600,540) rotate(-35)">
+    <rect x="-7" y="-50" width="14" height="70" rx="4" fill="#2E7D74"/>
+    <rect x="-7" y="14" width="14" height="10" fill="#FFFFFF"/>
+    <path d="M -7,24 L 7,24 L 0,44 Z" fill="#22303C"/>
+  </g>
+
+  <!-- row 7: 예외 조건 (아직 미착수) -->
+  <rect x="100" y="630" width="50" height="50" rx="10" fill="#FFFFFF" stroke="#B7BEC6" stroke-width="3" stroke-dasharray="8 6"/>
+  <text x="175" y="664" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="32" font-weight="500" fill="#9AA3AC">예외 조건</text>
+  <rect x="360" y="637" width="110" height="36" rx="18" fill="#EDEFF1"/>
+  <text x="415" y="661" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="20" font-weight="600" fill="#9AA3AC">다음 차례</text>
+
+  <text x="600" y="748" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="28" font-weight="700" fill="#E2924A">가장 자주 비어 있는 책임자 칸부터 채워보세요</text>
+</svg>

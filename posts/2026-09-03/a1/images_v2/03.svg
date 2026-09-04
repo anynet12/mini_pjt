@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#F6F4EF"/>
+
+  <text x="600" y="80" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="36" font-weight="800" fill="#263646" text-anchor="middle">지금 점검해볼 것</text>
+
+  <!-- role badge: 빌더 -->
+  <rect x="100" y="130" width="300" height="100" rx="16" fill="#FFFFFF" stroke="#5B84A5" stroke-width="2"/>
+  <circle cx="155" cy="160" r="16" fill="#5B84A5"/>
+  <rect x="132" y="176" width="46" height="34" rx="10" fill="#5B84A5"/>
+  <text x="210" y="176" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="28" font-weight="800" fill="#263646">빌더</text>
+  <text x="210" y="202" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="16" fill="#263646" opacity="0.7">만든 사람</text>
+
+  <!-- role badge: 오너 -->
+  <rect x="440" y="130" width="300" height="100" rx="16" fill="#FFFFFF" stroke="#DB8A3E" stroke-width="2"/>
+  <circle cx="495" cy="160" r="16" fill="#DB8A3E"/>
+  <rect x="472" y="176" width="46" height="34" rx="10" fill="#DB8A3E"/>
+  <text x="550" y="176" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="28" font-weight="800" fill="#263646">오너</text>
+  <text x="550" y="202" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="16" fill="#263646" opacity="0.7">책임지고 운영</text>
+
+  <!-- role badge: 유저 -->
+  <rect x="780" y="130" width="300" height="100" rx="16" fill="#FFFFFF" stroke="#8C97A3" stroke-width="2"/>
+  <circle cx="835" cy="160" r="16" fill="#8C97A3"/>
+  <rect x="812" y="176" width="46" height="34" rx="10" fill="#8C97A3"/>
+  <text x="890" y="176" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="28" font-weight="800" fill="#263646">유저</text>
+  <text x="890" y="202" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="16" fill="#263646" opacity="0.7">실제 쓰는 사람</text>
+
+  <!-- check row 1 -->
+  <rect x="100" y="280" width="1000" height="110" rx="16" fill="#FFFFFF" stroke="#5B84A5" stroke-width="2"/>
+  <rect x="140" y="305" width="60" height="60" rx="12" fill="#FFFFFF" stroke="#263646" stroke-width="3" stroke-dasharray="6,6"/>
+  <text x="230" y="343" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="26" font-weight="600" fill="#263646">오너가 누구인지 한 문장으로 답할 수 있는가?</text>
+
+  <!-- check row 2 -->
+  <rect x="100" y="420" width="1000" height="110" rx="16" fill="#FFFFFF" stroke="#5B84A5" stroke-width="2"/>
+  <rect x="140" y="445" width="60" height="60" rx="12" fill="#FFFFFF" stroke="#263646" stroke-width="3" stroke-dasharray="6,6"/>
+  <text x="230" y="483" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="26" font-weight="600" fill="#263646">담당자 없이 문서만으로 인수인계가 가능한가?</text>
+
+  <text x="600" y="610" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="24" font-weight="700" fill="#DB8A3E" text-anchor="middle">두 질문에 막힘없이 답하지 못하면 하루 만에 사라질 수 있어요</text>
+</svg>

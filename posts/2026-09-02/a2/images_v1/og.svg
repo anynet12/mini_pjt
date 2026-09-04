@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="1만 원 동전과 시작 버튼으로 표현한 IRP 연금 수령 신청">
+  <rect x="0" y="0" width="1600" height="900" fill="#F5F3EE"/>
+  <circle cx="800" cy="440" r="400" fill="#E6E2DA"/>
+  <circle cx="800" cy="440" r="330" fill="none" stroke="#FFFFFF" stroke-width="6"/>
+
+  <circle cx="800" cy="420" r="230" fill="#D98C3F"/>
+  <circle cx="800" cy="420" r="230" fill="none" stroke="#2B3A55" stroke-width="10"/>
+  <circle cx="800" cy="420" r="182" fill="none" stroke="#F5F3EE" stroke-width="7" stroke-dasharray="18 16"/>
+  <text x="800" y="400" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', 'Malgun Gothic', sans-serif" font-size="170" font-weight="800" fill="#FFFFFF">1만</text>
+  <text x="800" y="500" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', 'Malgun Gothic', sans-serif" font-size="60" font-weight="600" fill="#FFFFFF">원</text>
+
+  <circle cx="990" cy="590" r="92" fill="#3A8F7B" stroke="#F5F3EE" stroke-width="10"/>
+  <polygon points="965,545 965,635 1040,590" fill="#FFFFFF"/>
+
+  <rect x="560" y="720" width="480" height="76" rx="38" fill="#2B3A55"/>
+  <text x="800" y="771" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', 'Malgun Gothic', sans-serif" font-size="40" font-weight="700" fill="#F5F3EE">IRP 연금 수령 신청</text>
+</svg>

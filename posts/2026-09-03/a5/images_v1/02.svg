@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#f7f5f0"/>
+  <rect x="0" y="0" width="1200" height="8" fill="#263248"/>
+  <rect x="0" y="792" width="1200" height="8" fill="#e0923f"/>
+
+  <text x="600" y="72" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="36" font-weight="700" fill="#263248">분리할까, 합칠까 — 판단 신호</text>
+
+  <!-- left card: 분리 신호 -->
+  <rect x="90" y="130" width="470" height="560" rx="20" fill="#ffffff" stroke="#d8d3c8" stroke-width="2"/>
+  <rect x="104" y="144" width="442" height="60" rx="14" fill="#3f7ca6"/>
+  <text x="325" y="182" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="28" font-weight="700" fill="#ffffff">분리 신호</text>
+
+  <circle cx="134" cy="252" r="16" fill="#3f7ca6"/>
+  <path d="M 127 252 L 132 258 L 142 245" fill="none" stroke="#ffffff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="165" y="259" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" fill="#263248">성공 지표(목표)가 완전히 다를 때</text>
+
+  <circle cx="134" cy="352" r="16" fill="#3f7ca6"/>
+  <path d="M 127 352 L 132 358 L 142 345" fill="none" stroke="#ffffff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="165" y="359" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" fill="#263248">데이터·보안 정책이 완전히</text>
+  <text x="165" y="389" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" fill="#263248">다를 때</text>
+
+  <circle cx="134" cy="452" r="16" fill="#3f7ca6"/>
+  <path d="M 127 452 L 132 458 L 142 445" fill="none" stroke="#ffffff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="165" y="459" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" fill="#263248">승인자·권한 구조가 달라질 때</text>
+
+  <rect x="120" y="540" width="410" height="120" rx="12" fill="#cfe3ec"/>
+  <text x="325" y="580" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="19" fill="#1f4d63">예: 영업 에이전트가 B2B·B2C로</text>
+  <text x="325" y="608" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="19" fill="#1f4d63">나뉘며 데이터·승인 절차가 달라진 경우</text>
+  <text x="325" y="636" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="18" fill="#4a6a78">(요구가 늘었다고 항상 분리가 답은 아니다)</text>
+
+  <!-- right card: 통폐합 신호 -->
+  <rect x="640" y="130" width="470" height="560" rx="20" fill="#ffffff" stroke="#d8d3c8" stroke-width="2"/>
+  <rect x="654" y="144" width="442" height="60" rx="14" fill="#e0923f"/>
+  <text x="875" y="182" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="28" font-weight="700" fill="#ffffff">통폐합 신호</text>
+
+  <circle cx="684" cy="252" r="16" fill="#e0923f"/>
+  <path d="M 677 252 L 682 258 L 692 245" fill="none" stroke="#ffffff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="715" y="259" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" fill="#263248">사용 빈도·활용도가 낮을 때</text>
+
+  <rect x="674" y="310" width="406" height="150" rx="12" fill="#f7ddb9"/>
+  <text x="875" y="348" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="19" fill="#7a4a1c">예: 인사 에이전트와 총무 에이전트를</text>
+  <text x="875" y="376" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="19" fill="#7a4a1c">따로 두었지만 실제 사용 요구가</text>
+  <text x="875" y="404" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="19" fill="#7a4a1c">많지 않아 인사·총무로 합치는 경우</text>
+
+  <rect x="674" y="490" width="406" height="150" rx="12" fill="#f3f1ea" stroke="#d8d3c8" stroke-width="1.5"/>
+  <text x="875" y="528" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="19" fill="#5a6478">판단하려면 누가 얼마나 쓰는지</text>
+  <text x="875" y="556" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="19" fill="#5a6478">파악하는 최소한의 관리 체계가</text>
+  <text x="875" y="584" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="19" fill="#5a6478">필요하다</text>
+
+  <!-- center VS badge -->
+  <circle cx="600" cy="410" r="42" fill="#263248" stroke="#f7f5f0" stroke-width="5"/>
+  <text x="600" y="420" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="26" font-weight="700" fill="#ffffff">VS</text>
+
+  <text x="600" y="732" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="20" fill="#5a6478">세 조건 중 하나라도 다르면 분리, 사용 빈도가 낮고 조건이 비슷하면 통폐합</text>
+</svg>

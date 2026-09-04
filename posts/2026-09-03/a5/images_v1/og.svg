@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#f7f5f0"/>
+  <rect x="0" y="0" width="1600" height="8" fill="#263248"/>
+  <rect x="0" y="892" width="1600" height="8" fill="#e0923f"/>
+
+  <!-- compact balance scale, kept near horizontal center (x ~680-920) for tight crop -->
+  <rect x="793" y="410" width="14" height="240" fill="#3f7ca6"/>
+  <rect x="745" y="650" width="110" height="18" rx="7" fill="#3f7ca6"/>
+
+  <line x1="705" y1="430" x2="895" y2="388" stroke="#263248" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="800" cy="409" r="13" fill="#263248"/>
+
+  <!-- left hangers + heavier pan -->
+  <line x1="705" y1="430" x2="688" y2="478" stroke="#263248" stroke-width="4"/>
+  <line x1="705" y1="430" x2="722" y2="478" stroke="#263248" stroke-width="4"/>
+  <path d="M 678 478 L 732 478 L 718 498 L 692 498 Z" fill="#e0923f" stroke="#263248" stroke-width="3" stroke-linejoin="round"/>
+
+  <g>
+    <rect x="682" y="434" width="22" height="22" rx="5" fill="#263248"/>
+    <circle cx="689" cy="445" r="2" fill="#f7f5f0"/>
+    <circle cx="699" cy="445" r="2" fill="#f7f5f0"/>
+
+    <rect x="706" y="434" width="22" height="22" rx="5" fill="#263248"/>
+    <circle cx="713" cy="445" r="2" fill="#f7f5f0"/>
+    <circle cx="723" cy="445" r="2" fill="#f7f5f0"/>
+
+    <rect x="694" y="456" width="22" height="22" rx="5" fill="#263248"/>
+    <circle cx="701" cy="467" r="2" fill="#f7f5f0"/>
+    <circle cx="711" cy="467" r="2" fill="#f7f5f0"/>
+  </g>
+
+  <!-- right hangers + lighter pan -->
+  <line x1="895" y1="388" x2="878" y2="438" stroke="#263248" stroke-width="4"/>
+  <line x1="895" y1="388" x2="912" y2="438" stroke="#263248" stroke-width="4"/>
+  <path d="M 868 438 L 922 438 L 908 458 L 882 458 Z" fill="#f7ddb9" stroke="#263248" stroke-width="3" stroke-linejoin="round"/>
+
+  <rect x="783" y="360" width="34" height="34" rx="7" fill="#3f7ca6"/>
+  <path d="M 790 377 L 797 384 L 809 366" fill="none" stroke="#f7f5f0" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <text x="800" y="750" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="42" font-weight="700" fill="#263248">에이전트 통폐합</text>
+</svg>

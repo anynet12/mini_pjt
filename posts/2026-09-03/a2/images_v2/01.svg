@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <rect x="0" y="0" width="1200" height="800" fill="#F5F3EE"/>
+  <circle cx="1140" cy="30" r="160" fill="#2E7D74" opacity="0.05"/>
+  <circle cx="30" cy="770" r="140" fill="#E2924A" opacity="0.06"/>
+
+  <text x="60" y="66" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="38" font-weight="700" fill="#22303C">업무를 에이전트로 바꾸려면 답해야 할 7가지</text>
+  <line x1="60" y1="88" x2="1140" y2="88" stroke="#D8DDE3" stroke-width="2"/>
+
+  <!-- row 1 -->
+  <circle cx="90" cy="150" r="26" fill="#2E7D74"/>
+  <text x="90" y="159" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">1</text>
+  <rect x="140" y="128" width="42" height="42" rx="9" fill="#2E7D74"/>
+  <path d="M 148 150 L 157 159 L 174 138" stroke="#FFFFFF" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="200" y="142" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="29" font-weight="700" fill="#22303C">시작 조건</text>
+  <text x="200" y="174" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="21" fill="#6B7684">이 일은 언제 시작되는가</text>
+  <line x1="60" y1="197" x2="1140" y2="197" stroke="#E7E9EC" stroke-width="1.5"/>
+
+  <!-- row 2 -->
+  <circle cx="90" cy="245" r="26" fill="#2E7D74"/>
+  <text x="90" y="254" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">2</text>
+  <rect x="140" y="223" width="42" height="42" rx="9" fill="#2E7D74"/>
+  <path d="M 148 245 L 157 254 L 174 233" stroke="#FFFFFF" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="200" y="237" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="29" font-weight="700" fill="#22303C">입력 조건</text>
+  <text x="200" y="269" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="21" fill="#6B7684">무엇을 입력받아 시작하는가</text>
+  <line x1="60" y1="292" x2="1140" y2="292" stroke="#E7E9EC" stroke-width="1.5"/>
+
+  <!-- row 3 -->
+  <circle cx="90" cy="340" r="26" fill="#2E7D74"/>
+  <text x="90" y="349" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">3</text>
+  <rect x="140" y="318" width="42" height="42" rx="9" fill="#2E7D74"/>
+  <path d="M 148 340 L 157 349 L 174 328" stroke="#FFFFFF" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="200" y="332" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="29" font-weight="700" fill="#22303C">판단 규칙</text>
+  <text x="200" y="364" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="21" fill="#6B7684">어떤 기준으로 판단·결정하는가</text>
+  <line x1="60" y1="387" x2="1140" y2="387" stroke="#E7E9EC" stroke-width="1.5"/>
+
+  <!-- row 4 -->
+  <circle cx="90" cy="435" r="26" fill="#2E7D74"/>
+  <text x="90" y="444" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">4</text>
+  <rect x="140" y="413" width="42" height="42" rx="9" fill="#2E7D74"/>
+  <path d="M 148 435 L 157 444 L 174 423" stroke="#FFFFFF" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="200" y="427" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="29" font-weight="700" fill="#22303C">사용 가능한 툴</text>
+  <text x="200" y="459" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="21" fill="#6B7684">어떤 도구·시스템을 다뤄야 하는가</text>
+  <line x1="60" y1="482" x2="1140" y2="482" stroke="#E7E9EC" stroke-width="1.5"/>
+
+  <!-- row 5 -->
+  <circle cx="90" cy="530" r="26" fill="#2E7D74"/>
+  <text x="90" y="539" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">5</text>
+  <rect x="140" y="508" width="42" height="42" rx="9" fill="#2E7D74"/>
+  <path d="M 148 530 L 157 539 L 174 518" stroke="#FFFFFF" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="200" y="522" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="29" font-weight="700" fill="#22303C">출력</text>
+  <text x="200" y="554" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="21" fill="#6B7684">결과물로 무엇을 내놓는가</text>
+  <line x1="60" y1="577" x2="1140" y2="577" stroke="#E7E9EC" stroke-width="1.5"/>
+
+  <!-- row 6 -->
+  <circle cx="90" cy="625" r="26" fill="#2E7D74"/>
+  <text x="90" y="634" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">6</text>
+  <rect x="140" y="603" width="42" height="42" rx="9" fill="#2E7D74"/>
+  <path d="M 148 625 L 157 634 L 174 613" stroke="#FFFFFF" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="200" y="617" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="29" font-weight="700" fill="#22303C">책임자</text>
+  <text x="200" y="649" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="21" fill="#6B7684">이 에이전트의 오너는 누구인가</text>
+  <line x1="60" y1="672" x2="1140" y2="672" stroke="#E7E9EC" stroke-width="1.5"/>
+
+  <!-- row 7 -->
+  <circle cx="90" cy="720" r="26" fill="#2E7D74"/>
+  <text x="90" y="729" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">7</text>
+  <rect x="140" y="698" width="42" height="42" rx="9" fill="#2E7D74"/>
+  <path d="M 148 720 L 157 729 L 174 708" stroke="#FFFFFF" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="200" y="712" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="29" font-weight="700" fill="#22303C">예외 조건</text>
+  <text x="200" y="744" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="21" fill="#6B7684">규칙대로 처리되지 않는 상황은 무엇인가</text>
+</svg>

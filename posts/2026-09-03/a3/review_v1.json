@@ -1,0 +1,69 @@
+{
+  "run": "2026-09-03",
+  "angle": "a3",
+  "version": 1,
+  "source_file": "posts/2026-09-03/a3/review_v1.md",
+  "reviewed_at": "2026-09-03T10:37:11+09:00",
+  "model": "global.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "text_facts": {
+    "verdict": "PASS",
+    "total": 79,
+    "score_A": 76,
+    "score_B": 72,
+    "score_C": 90,
+    "score_D": 85
+  },
+  "adjustments": [],
+  "consistency_warnings": [],
+  "result": {
+    "verdict": "PASS",
+    "scores": {
+      "a_format": 76,
+      "b_appeal": 72,
+      "c_coherence": 90,
+      "d_traces": 85,
+      "total": 79
+    },
+    "strengths": [
+      "구체적 상황 훅과 실행 가능한 판단 기준 제공",
+      "4유형 구분 기준이 명확하고 실무 검색 의도와 잘 맞음",
+      "이미지/폭/태그 규격 전부 충족"
+    ],
+    "weaknesses": [
+      "표+SVG+본문이 같은 4유형 정보를 3중 반복해 리듬 늘어짐",
+      "FAQ 3문항이 본문 재진술 수준으로 정보 중복",
+      "해요체와 하십시오체가 같은 문단 안에서 계속 교차"
+    ],
+    "issues": [
+      {
+        "criterion": "A",
+        "severity": "minor",
+        "stage": "writer",
+        "problem": "메타 설명이 약 55~60자로 짧음",
+        "instruction": "메타 설명을 권장 길이(70~160자)로 확장하여 검색 결과에서 더 많은 정보를 노출하도록 개선"
+      },
+      {
+        "criterion": "A",
+        "severity": "major",
+        "stage": "writer",
+        "problem": "문체 혼용: 해요체와 하십시오체가 같은 문단 안에서 계속 교차",
+        "instruction": "전체 문서에서 문체를 통일하여 일관된 톤 유지. 해요체 또는 하십시오체 중 하나로 선택하여 전편에 걸쳐 적용"
+      },
+      {
+        "criterion": "B",
+        "severity": "major",
+        "stage": "writer",
+        "problem": "표+SVG+본문이 같은 4유형 정보를 3중 반복해 리듬 늘어짐",
+        "instruction": "정보 표현 방식을 통합하거나 선택하여 중복을 제거. 표, SVG, 본문 중 가장 효과적인 형식 1~2가지만 유지"
+      },
+      {
+        "criterion": "B",
+        "severity": "major",
+        "stage": "writer",
+        "problem": "FAQ 3문항이 본문 재진술 수준으로 정보 중복",
+        "instruction": "FAQ 항목을 본문에서 다루지 않은 추가 질문으로 재구성하거나, 본문과 차별화된 심화 내용으로 개선"
+      }
+    ],
+    "summary": "4유형 구분 기준이 명확하고 실무 검색 의도와 잘 맞는 글. critical 이슈 없어 PASS. 문체 혼용·정보 중복·FAQ 복창은 다음 버전에서 다듬으면 좋을 제안."
+  }
+}

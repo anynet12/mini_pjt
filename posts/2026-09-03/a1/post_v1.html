@@ -1,0 +1,268 @@
+<!-- meta: 1년 걸려 만든 AI 에이전트가 담당자 퇴사 후 하루 만에 원상복구된 사례로 본 오너십·문서화의 중요성.
+     tags: AI에이전트, 티타임즈TV, AI도입, 오너십, 문서화, 조직관리, 업무자동화, RPA -->
+<article style="max-width:680px;margin:0 auto;padding:0 16px;line-height:1.7;">
+
+<h1>AI 에이전트, 담당자 퇴사하자 하루 만에 사라진 이유</h1>
+
+<p>한 조직에서 AI를 유독 좋아하던 팀원 한 명이 있었어요. 이 사람은 1년 가까이 이런저런 시행착오를 거치며 동료들이 실제로 쓸 만한 AI 에이전트를 만들어냈고, 팀원들도 꽤 만족하며 그 에이전트를 업무에 썼어요. 그런데 이 담당자가 퇴사하자, 조직은 하루도 지나지 않아 예전 방식인 엑셀 업무로 되돌아갔습니다.</p>
+
+<p>1년 치 학습과 시행착오가 담긴 결과물이 단 하루 만에 무용지물이 됐다는 이야기예요. AI 에이전트 도입을 검토 중이거나 이미 몇 개쯤 굴리고 있는 조직이라면 남 얘기로 넘기기 어려운 사례입니다. 왜 이런 일이 벌어졌는지, 그리고 무엇을 갖추고 있었으면 막을 수 있었는지를 짚어보려고 해요.</p>
+
+<figure style="margin:1.5em auto;max-width:800px;text-align:center;">
+<svg viewBox="0 0 1600 900" role="img" aria-label="AI 에이전트를 1년간 만든 담당자가 퇴사하자 하루 만에 엑셀 업무로 되돌아간 과정을 보여주는 3단계 아이콘 다이어그램" style="width:100%;height:auto;display:block;" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#F6F4EF"/>
+  <rect x="0" y="0" width="1600" height="14" fill="#263646"/>
+
+  <rect x="80" y="70" width="290" height="54" rx="27" fill="#5B84A5" opacity="0.15"/>
+  <text x="225" y="105" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="26" font-weight="700" fill="#263646" text-anchor="middle">AI 에이전트 관리</text>
+
+  <text x="800" y="235" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="62" font-weight="800" fill="#263646" text-anchor="middle">AI 에이전트, 담당자 퇴사하자</text>
+  <text x="800" y="315" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="62" font-weight="800" fill="#263646" text-anchor="middle">하루 만에 사라진 이유</text>
+
+  <rect x="720" y="345" width="160" height="6" rx="3" fill="#DB8A3E"/>
+
+  <rect x="170" y="430" width="380" height="390" rx="24" fill="#FFFFFF" stroke="#5B84A5" stroke-width="3"/>
+  <line x1="360" y1="460" x2="360" y2="480" stroke="#5B84A5" stroke-width="6"/>
+  <circle cx="360" cy="452" r="8" fill="#DB8A3E"/>
+  <rect x="310" y="480" width="100" height="90" rx="18" fill="#5B84A5"/>
+  <rect x="333" y="508" width="16" height="16" rx="4" fill="#F6F4EF"/>
+  <rect x="381" y="508" width="16" height="16" rx="4" fill="#F6F4EF"/>
+  <rect x="340" y="545" width="40" height="10" rx="5" fill="#F6F4EF"/>
+  <rect x="320" y="575" width="80" height="55" rx="14" fill="#5B84A5" opacity="0.85"/>
+  <circle cx="430" cy="600" r="26" fill="#FFFFFF" stroke="#5B84A5" stroke-width="3"/>
+  <path d="M418,600 L426,610 L444,586" fill="none" stroke="#5B84A5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="360" y="770" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="28" font-weight="700" fill="#263646" text-anchor="middle">1년간 만든 에이전트</text>
+
+  <path d="M565,600 L598,625 L565,650" fill="none" stroke="#DB8A3E" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="610" y="430" width="380" height="390" rx="24" fill="#FFFFFF" stroke="#5B84A5" stroke-width="3"/>
+  <circle cx="770" cy="520" r="30" fill="#263646"/>
+  <rect x="740" y="555" width="60" height="70" rx="20" fill="#263646"/>
+  <line x1="690" y1="540" x2="720" y2="530" stroke="#C7CDD3" stroke-width="5" stroke-linecap="round"/>
+  <line x1="685" y1="565" x2="718" y2="558" stroke="#C7CDD3" stroke-width="5" stroke-linecap="round"/>
+  <line x1="690" y1="590" x2="720" y2="585" stroke="#C7CDD3" stroke-width="5" stroke-linecap="round"/>
+  <text x="800" y="770" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="28" font-weight="700" fill="#263646" text-anchor="middle">담당자 퇴사</text>
+
+  <path d="M1005,600 L1038,625 L1005,650" fill="none" stroke="#DB8A3E" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="1050" y="430" width="380" height="390" rx="24" fill="#FFFFFF" stroke="#DB8A3E" stroke-width="3"/>
+  <rect x="1170" y="480" width="140" height="110" rx="10" fill="#FFFFFF" stroke="#DB8A3E" stroke-width="4"/>
+  <rect x="1170" y="480" width="140" height="24" rx="10" fill="#DB8A3E" opacity="0.85"/>
+  <line x1="1205" y1="504" x2="1205" y2="590" stroke="#DB8A3E" stroke-width="2"/>
+  <line x1="1240" y1="504" x2="1240" y2="590" stroke="#DB8A3E" stroke-width="2"/>
+  <line x1="1275" y1="504" x2="1275" y2="590" stroke="#DB8A3E" stroke-width="2"/>
+  <line x1="1170" y1="530" x2="1310" y2="530" stroke="#DB8A3E" stroke-width="2"/>
+  <line x1="1170" y1="558" x2="1310" y2="558" stroke="#DB8A3E" stroke-width="2"/>
+  <text x="1240" y="770" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="28" font-weight="700" fill="#263646" text-anchor="middle">하루 만에 제자리로</text>
+
+  <text x="800" y="865" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="24" fill="#263646" opacity="0.85" text-anchor="middle">오너십과 문서화 없인 1년의 노력도 하루 만에 사라집니다</text>
+</svg>
+<figcaption style="color:#888;font-size:14px;">AI 에이전트를 1년간 만든 담당자가 퇴사하자 하루 만에 엑셀 업무로 되돌아간 과정을 보여주는 3단계 아이콘 다이어그램</figcaption>
+</figure>
+
+<h2>하루 만에 무너진 1년짜리 결과물</h2>
+
+<p>퍼블AI연구소 김덕중 소장이 소개한 이 사례에서, 조직원들의 반응이 흥미로워요. 에이전트가 사라지자 "그럼 그렇지, 우리가 무슨 에이전트야, 하던 대로 엑셀로 하자"라는 자조 섞인 말이 나왔다고 해요. <strong style="background:#fff3a3;color:#1a1a1a;padding:0 2px;">이 말은 단순한 체념이 아니라, 애초에 조직 전체가 그 에이전트를 '우리 것'이 아니라 '그 사람이 만든 것'으로 여기고 있었다는 뜻으로 읽혀요.</strong></p>
+
+<figure style="margin:1.5em auto;max-width:640px;text-align:center;">
+<svg viewBox="0 0 1200 800" role="img" aria-label="담당자가 있을 때 활발히 쓰이던 AI 에이전트가 퇴사 후 하루 만에 엑셀 업무로 되돌아간 모습을 대비한 일러스트" style="width:100%;height:auto;display:block;" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#F6F4EF"/>
+
+  <text x="310" y="105" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="32" font-weight="800" fill="#263646" text-anchor="middle">이전</text>
+  <text x="890" y="105" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="32" font-weight="800" fill="#263646" text-anchor="middle">이후</text>
+
+  <rect x="60" y="140" width="500" height="500" rx="24" fill="#FFFFFF" stroke="#5B84A5" stroke-width="3"/>
+  <rect x="140" y="480" width="340" height="20" rx="6" fill="#263646" opacity="0.12"/>
+  <rect x="290" y="500" width="20" height="40" fill="#C7CDD3"/>
+  <rect x="200" y="320" width="220" height="160" rx="12" fill="#263646" stroke="#5B84A5" stroke-width="3"/>
+  <rect x="270" y="350" width="80" height="70" rx="14" fill="#5B84A5"/>
+  <rect x="288" y="368" width="14" height="14" rx="4" fill="#F6F4EF"/>
+  <rect x="328" y="368" width="14" height="14" rx="4" fill="#F6F4EF"/>
+  <rect x="295" y="398" width="40" height="8" rx="4" fill="#F6F4EF"/>
+  <line x1="310" y1="330" x2="310" y2="350" stroke="#5B84A5" stroke-width="4"/>
+  <circle cx="310" cy="324" r="6" fill="#DB8A3E"/>
+  <rect x="170" y="280" width="70" height="40" rx="10" fill="#FFFFFF" stroke="#5B84A5" stroke-width="2"/>
+  <line x1="182" y1="292" x2="228" y2="292" stroke="#5B84A5" stroke-width="3" stroke-linecap="round"/>
+  <line x1="182" y1="304" x2="212" y2="304" stroke="#5B84A5" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="430" cy="300" r="22" fill="#FFFFFF" stroke="#5B84A5" stroke-width="3"/>
+  <path d="M420,300 L427,308 L442,286" fill="none" stroke="#5B84A5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="310" cy="560" r="22" fill="#263646"/>
+  <rect x="280" y="582" width="60" height="50" rx="16" fill="#263646"/>
+  <text x="310" y="695" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="24" font-weight="600" fill="#263646" text-anchor="middle">에이전트가 활발히 쓰이는 상태</text>
+
+  <rect x="640" y="140" width="500" height="500" rx="24" fill="#FFFFFF" stroke="#C7CDD3" stroke-width="3"/>
+  <rect x="720" y="480" width="340" height="20" rx="6" fill="#263646" opacity="0.08"/>
+  <rect x="870" y="500" width="20" height="40" fill="#C7CDD3"/>
+  <rect x="780" y="320" width="220" height="160" rx="12" fill="#F0EDE6" stroke="#DB8A3E" stroke-width="3"/>
+  <rect x="780" y="320" width="220" height="26" rx="12" fill="#DB8A3E" opacity="0.85"/>
+  <line x1="850" y1="346" x2="850" y2="480" stroke="#DB8A3E" stroke-width="2"/>
+  <line x1="920" y1="346" x2="920" y2="480" stroke="#DB8A3E" stroke-width="2"/>
+  <line x1="780" y1="380" x2="1000" y2="380" stroke="#DB8A3E" stroke-width="2"/>
+  <line x1="780" y1="420" x2="1000" y2="420" stroke="#DB8A3E" stroke-width="2"/>
+  <line x1="780" y1="452" x2="1000" y2="452" stroke="#DB8A3E" stroke-width="2"/>
+  <rect x="945" y="255" width="55" height="48" rx="10" fill="none" stroke="#5B84A5" stroke-width="2.5" stroke-dasharray="5,5" opacity="0.5"/>
+  <line x1="945" y1="255" x2="1000" y2="303" stroke="#5B84A5" stroke-width="2.5" opacity="0.5"/>
+  <circle cx="890" cy="560" r="22" fill="none" stroke="#C7CDD3" stroke-width="3" stroke-dasharray="6,6"/>
+  <rect x="860" y="582" width="60" height="50" rx="16" fill="none" stroke="#C7CDD3" stroke-width="3" stroke-dasharray="6,6"/>
+  <text x="890" y="695" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="24" font-weight="600" fill="#263646" text-anchor="middle">에이전트가 사라지고 엑셀로 복귀</text>
+
+  <line x1="600" y1="140" x2="600" y2="640" stroke="#C7CDD3" stroke-width="3" stroke-dasharray="10,8"/>
+  <circle cx="600" cy="390" r="34" fill="#F6F4EF" stroke="#DB8A3E" stroke-width="3"/>
+  <path d="M590,375 L610,390 L590,405" fill="none" stroke="#DB8A3E" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="600" y="445" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" font-weight="700" fill="#263646" text-anchor="middle">담당자 퇴사</text>
+  <text x="600" y="472" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="20" font-weight="700" fill="#DB8A3E" text-anchor="middle">하루 만에</text>
+
+  <text x="600" y="750" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="24" font-weight="600" fill="#263646" opacity="0.9" text-anchor="middle">1년간 쌓은 에이전트도 오너 없인 하루 만에 원상복구됩니다</text>
+</svg>
+<figcaption style="color:#888;font-size:14px;">담당자가 있을 때 활발히 쓰이던 AI 에이전트가 퇴사 후 하루 만에 엑셀 업무로 되돌아간 모습을 대비한 일러스트</figcaption>
+</figure>
+
+<p>문제는 이 조직에 에이전트를 만든 사람은 있었지만, 그 에이전트를 계속 관리할 사람은 없었다는 데 있어요. 만든 사람이 곧 유일한 담당자였고, 그 담당자가 빠지자 시스템 전체가 함께 빠져나갔습니다.</p>
+
+<h2>에이전트를 '도구'로만 보면 놓치는 것</h2>
+
+<p>이 사례가 왜 벌어졌는지 이해하려면 에이전트를 어떻게 바라보느냐부터 짚어야 해요. 에이전트는 새로운 프로그램이나 앱을 하나 설치하는 것과는 달라요. 사용자가 배워서 쓰는 도구가 아니라, 사용자를 대신해 업무를 처리하는 독립적인 존재에 가깝다는 게 김덕중 소장의 설명이에요. 냉장고나 세탁기 같은 이전 기술들은 아무도 의인화해서 부르지 않았지만, 유독 이 기술만 '에이전트(대행자)'라는 이름이 붙은 것도 이 때문이라는 거예요.</p>
+
+<p>이 관점 차이는 단순한 말장난이 아니에요. <strong style="background:#fff3a3;color:#1a1a1a;padding:0 2px;">도구는 만들어 놓으면 누가 쓰든 똑같이 작동하지만, 대행자는 관리가 필요합니다.</strong> 사람 직원에게 채용, 육성, 평가, 퇴직이라는 라이프사이클이 있듯, 에이전트도 누군가 계속 봐주지 않으면 방치되고 결국 조직 안에서 존재감을 잃어요. 앞선 사례에서 사라진 건 프로그램 파일이 아니라, 그 에이전트를 계속 굴러가게 하던 유일한 관리자였던 셈이에요.</p>
+
+<h2>오너 없는 에이전트는 시한부다</h2>
+
+<p>그렇다면 이런 일을 막으려면 무엇이 있어야 했을까요. 만약 이 조직에 에이전트를 만드는 사람(빌더)과 책임지고 운영하는 사람(오너), 실제로 쓰는 사람(유저) 개념이 구분되어 있었거나, 조직 차원에서 여러 에이전트를 관리하는 포트폴리오 담당자가 있었거나, 최소한 그 에이전트가 어떻게 만들어지고 어떻게 작동하는지 문서로 남아 있었다면 이렇게까지 허무하게 돌아가지는 않았을 거라고 해요.</p>
+
+<p>바꿔 말하면 이 조직이 놓친 건 기술이 아니라 역할과 기록이었어요. <strong style="background:#fff3a3;color:#1a1a1a;padding:0 2px;">한 사람의 관심과 실력만으로 굴러가는 에이전트는, 그 사람이 조직에 있는 동안만 존재하는 임시 자산에 가깝습니다.</strong> 지금 회사 안에 잘 쓰이고 있는 AI 에이전트가 있다면, 그걸 만든 사람 말고 그 작동 방식을 설명할 수 있는 사람이 또 있는지, 어딘가에 문서로 정리되어 있는지 확인해볼 필요가 있어요.</p>
+
+<h2>에이전트는 늘어날수록 부채가 될 수 있다</h2>
+
+<p>오너십과 문서화 문제를 짚고 나면 자연스럽게 이어지는 질문이 하나 있어요. 그럼 에이전트를 최대한 많이 만들어두고, 안 쓰면 그때 정리하면 되는 거 아니냐는 생각이에요. 이에 대해 김덕중 소장은 분명히 선을 긋습니다. 에이전트는 "돈 먹는 하마"이고, 머지않아 인건비와 비슷한 수준의 토큰·인프라 비용을 지불해야 하는 시점이 올 거라는 거예요. 계속 늘어나기만 하는 에이전트는 조직 입장에서 관리 대상이 아니라 부채가 됩니다.</p>
+
+<p>그래서 그는 성공 지표, 데이터 접근 정책, 승인 권한이 서로 다를 때만 에이전트를 분리하고, 반대로 사용률이 낮은 에이전트끼리는 통폐합하라는 원칙을 제안해요. 오너 없이 방치된 에이전트, 아무도 문서화하지 않은 에이전트가 이 통폐합 대상 1순위가 되기 쉽다는 점에서, 결국 오너십 문제와 비용 문제는 같은 뿌리에서 나와요. <strong style="background:#fff3a3;color:#1a1a1a;padding:0 2px;">담당자가 사라져도 티가 안 나는 에이전트는, 애초에 조직 자산으로 자리 잡지 못했다는 신호이기도 합니다.</strong></p>
+
+<figure style="margin:1.5em auto;max-width:640px;text-align:center;">
+<svg viewBox="0 0 1200 800" role="img" aria-label="여러 AI 에이전트 아이콘 중 오너가 없는 것에 경고 표시가 붙은 다이어그램" style="width:100%;height:auto;display:block;" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#F6F4EF"/>
+
+  <text x="600" y="90" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="36" font-weight="800" fill="#263646" text-anchor="middle">에이전트마다 오너가 있는가</text>
+  <text x="600" y="128" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" fill="#263646" opacity="0.7" text-anchor="middle">오너 없는 에이전트에는 경고가 붙는다</text>
+
+  <rect x="100" y="220" width="160" height="300" rx="20" fill="#FFFFFF" stroke="#5B84A5" stroke-width="3"/>
+  <line x1="180" y1="240" x2="180" y2="260" stroke="#5B84A5" stroke-width="4"/>
+  <circle cx="180" cy="234" r="6" fill="#5B84A5"/>
+  <rect x="145" y="260" width="70" height="60" rx="14" fill="#5B84A5"/>
+  <rect x="158" y="280" width="14" height="14" rx="4" fill="#F6F4EF"/>
+  <rect x="188" y="280" width="14" height="14" rx="4" fill="#F6F4EF"/>
+  <rect x="162" y="305" width="36" height="8" rx="4" fill="#F6F4EF"/>
+  <circle cx="240" cy="240" r="18" fill="#FFFFFF" stroke="#5B84A5" stroke-width="3"/>
+  <path d="M232,240 L238,247 L250,231" fill="none" stroke="#5B84A5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="180" cy="432" r="14" fill="#263646"/>
+  <rect x="160" y="446" width="40" height="34" rx="10" fill="#263646"/>
+  <text x="180" y="550" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="20" font-weight="700" fill="#263646" text-anchor="middle">오너 있음</text>
+
+  <rect x="310" y="220" width="160" height="300" rx="20" fill="#FFFFFF" stroke="#DB8A3E" stroke-width="3" stroke-dasharray="8,6"/>
+  <rect x="355" y="260" width="70" height="60" rx="14" fill="#5B84A5" opacity="0.55"/>
+  <rect x="368" y="280" width="14" height="14" rx="4" fill="#F6F4EF"/>
+  <rect x="398" y="280" width="14" height="14" rx="4" fill="#F6F4EF"/>
+  <rect x="372" y="305" width="36" height="8" rx="4" fill="#F6F4EF"/>
+  <path d="M450,222 L468,254 L432,254 Z" fill="#DB8A3E"/>
+  <rect x="447" y="230" width="6" height="14" fill="#F6F4EF"/>
+  <circle cx="450" cy="248" r="3" fill="#F6F4EF"/>
+  <circle cx="390" cy="432" r="14" fill="none" stroke="#C7CDD3" stroke-width="3" stroke-dasharray="4,4"/>
+  <rect x="370" y="446" width="40" height="34" rx="10" fill="none" stroke="#C7CDD3" stroke-width="3" stroke-dasharray="4,4"/>
+  <text x="390" y="550" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="20" font-weight="700" fill="#DB8A3E" text-anchor="middle">오너 없음 · 위험</text>
+
+  <rect x="520" y="220" width="160" height="300" rx="20" fill="#FFFFFF" stroke="#5B84A5" stroke-width="3"/>
+  <line x1="600" y1="240" x2="600" y2="260" stroke="#5B84A5" stroke-width="4"/>
+  <circle cx="600" cy="234" r="6" fill="#5B84A5"/>
+  <rect x="565" y="260" width="70" height="60" rx="14" fill="#5B84A5"/>
+  <rect x="578" y="280" width="14" height="14" rx="4" fill="#F6F4EF"/>
+  <rect x="608" y="280" width="14" height="14" rx="4" fill="#F6F4EF"/>
+  <rect x="582" y="305" width="36" height="8" rx="4" fill="#F6F4EF"/>
+  <circle cx="660" cy="240" r="18" fill="#FFFFFF" stroke="#5B84A5" stroke-width="3"/>
+  <path d="M652,240 L658,247 L670,231" fill="none" stroke="#5B84A5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="600" cy="432" r="14" fill="#263646"/>
+  <rect x="580" y="446" width="40" height="34" rx="10" fill="#263646"/>
+  <text x="600" y="550" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="20" font-weight="700" fill="#263646" text-anchor="middle">오너 있음</text>
+
+  <rect x="730" y="220" width="160" height="300" rx="20" fill="#FFFFFF" stroke="#DB8A3E" stroke-width="3" stroke-dasharray="8,6"/>
+  <rect x="775" y="260" width="70" height="60" rx="14" fill="#5B84A5" opacity="0.55"/>
+  <rect x="788" y="280" width="14" height="14" rx="4" fill="#F6F4EF"/>
+  <rect x="818" y="280" width="14" height="14" rx="4" fill="#F6F4EF"/>
+  <rect x="792" y="305" width="36" height="8" rx="4" fill="#F6F4EF"/>
+  <path d="M870,222 L888,254 L852,254 Z" fill="#DB8A3E"/>
+  <rect x="867" y="230" width="6" height="14" fill="#F6F4EF"/>
+  <circle cx="870" cy="248" r="3" fill="#F6F4EF"/>
+  <circle cx="810" cy="432" r="14" fill="none" stroke="#C7CDD3" stroke-width="3" stroke-dasharray="4,4"/>
+  <rect x="790" y="446" width="40" height="34" rx="10" fill="none" stroke="#C7CDD3" stroke-width="3" stroke-dasharray="4,4"/>
+  <text x="810" y="550" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="20" font-weight="700" fill="#DB8A3E" text-anchor="middle">오너 없음 · 위험</text>
+
+  <rect x="940" y="220" width="160" height="300" rx="20" fill="#FFFFFF" stroke="#5B84A5" stroke-width="3"/>
+  <line x1="1020" y1="240" x2="1020" y2="260" stroke="#5B84A5" stroke-width="4"/>
+  <circle cx="1020" cy="234" r="6" fill="#5B84A5"/>
+  <rect x="985" y="260" width="70" height="60" rx="14" fill="#5B84A5"/>
+  <rect x="998" y="280" width="14" height="14" rx="4" fill="#F6F4EF"/>
+  <rect x="1028" y="280" width="14" height="14" rx="4" fill="#F6F4EF"/>
+  <rect x="1002" y="305" width="36" height="8" rx="4" fill="#F6F4EF"/>
+  <circle cx="1080" cy="240" r="18" fill="#FFFFFF" stroke="#5B84A5" stroke-width="3"/>
+  <path d="M1072,240 L1078,247 L1090,231" fill="none" stroke="#5B84A5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="1020" cy="432" r="14" fill="#263646"/>
+  <rect x="1000" y="446" width="40" height="34" rx="10" fill="#263646"/>
+  <text x="1020" y="550" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="20" font-weight="700" fill="#263646" text-anchor="middle">오너 있음</text>
+
+  <text x="600" y="610" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="24" font-weight="600" fill="#263646" opacity="0.9" text-anchor="middle">오너 없이 방치된 에이전트가 통폐합 1순위입니다</text>
+</svg>
+<figcaption style="color:#888;font-size:14px;">여러 AI 에이전트 아이콘 중 오너가 없는 것에 경고 표시가 붙은 다이어그램</figcaption>
+</figure>
+
+<h2>지금 점검해볼 만한 것</h2>
+
+<p>거창한 거버넌스 체계를 갖추라는 이야기가 아니에요. 지금 조직 안에서 굴러가고 있는 AI 에이전트가 있다면, 그 에이전트의 오너가 누구인지 한 문장으로 답할 수 있는지, 그 사람이 없어져도 다음 사람이 인수인계 문서만 보고 운영을 이어받을 수 있는지 딱 두 가지만 먼저 확인해보길 권해요. <strong style="background:#fff3a3;color:#1a1a1a;padding:0 2px;">이 두 질문에 막힘없이 답할 수 없다면, 지금 쓰고 있는 에이전트도 담당자 한 명의 퇴사로 하루 만에 사라질 수 있는 상태라는 뜻이에요.</strong></p>
+
+<figure style="margin:1.5em auto;max-width:640px;text-align:center;">
+<svg viewBox="0 0 1200 800" role="img" aria-label="오너·빌더·유저 역할과 문서화 여부를 점검하는 체크리스트 이미지" style="width:100%;height:auto;display:block;" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#F6F4EF"/>
+
+  <text x="600" y="80" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="36" font-weight="800" fill="#263646" text-anchor="middle">지금 점검해볼 것</text>
+
+  <rect x="100" y="130" width="300" height="100" rx="16" fill="#FFFFFF" stroke="#5B84A5" stroke-width="2"/>
+  <circle cx="155" cy="160" r="16" fill="#5B84A5"/>
+  <rect x="132" y="176" width="46" height="34" rx="10" fill="#5B84A5"/>
+  <text x="210" y="176" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="28" font-weight="800" fill="#263646">빌더</text>
+  <text x="210" y="202" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="16" fill="#263646" opacity="0.7">만든 사람</text>
+
+  <rect x="440" y="130" width="300" height="100" rx="16" fill="#FFFFFF" stroke="#DB8A3E" stroke-width="2"/>
+  <circle cx="495" cy="160" r="16" fill="#DB8A3E"/>
+  <rect x="472" y="176" width="46" height="34" rx="10" fill="#DB8A3E"/>
+  <text x="550" y="176" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="28" font-weight="800" fill="#263646">오너</text>
+  <text x="550" y="202" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="16" fill="#263646" opacity="0.7">책임지고 운영</text>
+
+  <rect x="780" y="130" width="300" height="100" rx="16" fill="#FFFFFF" stroke="#8C97A3" stroke-width="2"/>
+  <circle cx="835" cy="160" r="16" fill="#8C97A3"/>
+  <rect x="812" y="176" width="46" height="34" rx="10" fill="#8C97A3"/>
+  <text x="890" y="176" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="28" font-weight="800" fill="#263646">유저</text>
+  <text x="890" y="202" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="16" fill="#263646" opacity="0.7">실제 쓰는 사람</text>
+
+  <rect x="100" y="280" width="1000" height="110" rx="16" fill="#FFFFFF" stroke="#5B84A5" stroke-width="2"/>
+  <rect x="140" y="305" width="60" height="60" rx="12" fill="#FFFFFF" stroke="#263646" stroke-width="3" stroke-dasharray="6,6"/>
+  <text x="230" y="343" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="26" font-weight="600" fill="#263646">오너가 누구인지 한 문장으로 답할 수 있는가?</text>
+
+  <rect x="100" y="420" width="1000" height="110" rx="16" fill="#FFFFFF" stroke="#5B84A5" stroke-width="2"/>
+  <rect x="140" y="445" width="60" height="60" rx="12" fill="#FFFFFF" stroke="#263646" stroke-width="3" stroke-dasharray="6,6"/>
+  <text x="230" y="483" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="26" font-weight="600" fill="#263646">담당자 없이 문서만으로 인수인계가 가능한가?</text>
+
+  <text x="600" y="610" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="24" font-weight="700" fill="#DB8A3E" text-anchor="middle">두 질문에 막힘없이 답하지 못하면 하루 만에 사라질 수 있습니다</text>
+</svg>
+<figcaption style="color:#888;font-size:14px;">오너·빌더·유저 역할과 문서화 여부를 점검하는 체크리스트 이미지</figcaption>
+</figure>
+
+<h2>자주 묻는 질문</h2>
+
+<p><strong>Q. 에이전트를 아예 안 만드는 게 더 안전하지 않나요?</strong><br>아닙니다. 문제는 에이전트를 만드는 것 자체가 아니라 관리 체계 없이 한 사람에게만 의존하는 방식이에요. 빌더·오너·유저 역할을 나누고 문서화만 해둬도 담당자가 바뀌어도 운영이 이어질 수 있어요.</p>
+
+<p><strong>Q. 이미 여러 개의 에이전트를 운영 중이라면 뭐부터 봐야 하나요?</strong><br>각 에이전트마다 오너가 누구인지, 그 오너가 없어져도 문서만으로 인계가 가능한지부터 확인하는 게 우선이에요. 사용률이 낮고 오너도 불분명한 에이전트는 통폐합 대상으로 먼저 검토해볼 만해요.</p>
+
+<p><strong>Q. 에이전트가 많아지면 비용도 그만큼 커지나요?</strong><br>그렇습니다. 토큰·인프라 사용료가 인건비 수준으로 커질 수 있다는 지적처럼, 관리되지 않고 계속 늘어나기만 하는 에이전트는 조직에 비용 부담(부채)으로 돌아올 수 있어요.</p>
+
+<hr/>
+
+<p><em>이 글은 [티타임즈TV]의 영상 "AI에이전트도 면접보고 채용하고 은퇴시켜야 한다 (김덕중 퍼블AI연구소장)"을 참고해 작성했습니다. (https://youtu.be/ckQnPKqe35M)</em></p>
+
+</article>

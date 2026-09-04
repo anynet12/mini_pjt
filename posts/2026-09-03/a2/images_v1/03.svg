@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <rect x="0" y="0" width="1200" height="800" fill="#F5F3EE"/>
+  <circle cx="1150" cy="770" r="150" fill="#2E7D74" opacity="0.05"/>
+  <circle cx="40" cy="30" r="120" fill="#E2924A" opacity="0.06"/>
+
+  <text x="600" y="34" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="20" font-weight="600" fill="#9AA3AC">IT 헬프데스크 요청 예시</text>
+
+  <!-- speech bubble -->
+  <rect x="350" y="50" width="500" height="90" rx="20" fill="#FFFFFF" stroke="#2E7D74" stroke-width="3"/>
+  <path d="M 580,140 L 600,165 L 620,140 Z" fill="#FFFFFF" stroke="#2E7D74" stroke-width="3"/>
+  <text x="600" y="104" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="26" font-weight="600" fill="#22303C">"마우스가 오래돼서 교체해 주세요"</text>
+
+  <!-- connectors -->
+  <line x1="600" y1="165" x2="600" y2="200" stroke="#ABB4BD" stroke-width="3"/>
+  <line x1="120" y1="200" x2="1080" y2="200" stroke="#ABB4BD" stroke-width="3"/>
+  <line x1="120" y1="200" x2="120" y2="258" stroke="#ABB4BD" stroke-width="3"/>
+  <line x1="280" y1="200" x2="280" y2="258" stroke="#ABB4BD" stroke-width="3"/>
+  <line x1="440" y1="200" x2="440" y2="258" stroke="#ABB4BD" stroke-width="3"/>
+  <line x1="600" y1="200" x2="600" y2="258" stroke="#ABB4BD" stroke-width="3"/>
+  <line x1="760" y1="200" x2="760" y2="258" stroke="#ABB4BD" stroke-width="3"/>
+  <line x1="920" y1="200" x2="920" y2="258" stroke="#ABB4BD" stroke-width="3"/>
+  <line x1="1080" y1="200" x2="1080" y2="258" stroke="#ABB4BD" stroke-width="3"/>
+
+  <!-- card 1: 시작 조건 -->
+  <rect x="45" y="260" width="150" height="380" rx="16" fill="#FFFFFF" stroke="#D8DDE3" stroke-width="2"/>
+  <circle cx="65" cy="260" r="16" fill="#E2924A"/>
+  <text x="65" y="266" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="17" font-weight="700" fill="#FFFFFF">1</text>
+  <rect x="51" y="266" width="138" height="60" rx="10" fill="#2E7D74"/>
+  <text x="120" y="304" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">시작 조건</text>
+  <text x="120" y="485" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" font-weight="700" fill="#22303C">요청 접수</text>
+
+  <!-- card 2: 입력 조건 -->
+  <rect x="205" y="260" width="150" height="380" rx="16" fill="#FFFFFF" stroke="#D8DDE3" stroke-width="2"/>
+  <circle cx="225" cy="260" r="16" fill="#E2924A"/>
+  <text x="225" y="266" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="17" font-weight="700" fill="#FFFFFF">2</text>
+  <rect x="211" y="266" width="138" height="60" rx="10" fill="#2E7D74"/>
+  <text x="280" y="304" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">입력 조건</text>
+  <text x="280" y="485" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" font-weight="700" fill="#22303C">요청 내용</text>
+
+  <!-- card 3: 판단 규칙 -->
+  <rect x="365" y="260" width="150" height="380" rx="16" fill="#FFFFFF" stroke="#D8DDE3" stroke-width="2"/>
+  <circle cx="385" cy="260" r="16" fill="#E2924A"/>
+  <text x="385" y="266" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="17" font-weight="700" fill="#FFFFFF">3</text>
+  <rect x="371" y="266" width="138" height="60" rx="10" fill="#2E7D74"/>
+  <text x="440" y="304" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">판단 규칙</text>
+  <text x="440" y="470" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="20" font-weight="700" fill="#22303C">노후 장비면</text>
+  <text x="440" y="498" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="20" font-weight="700" fill="#22303C">교체</text>
+
+  <!-- card 4: 사용 가능한 툴 -->
+  <rect x="525" y="260" width="150" height="380" rx="16" fill="#FFFFFF" stroke="#D8DDE3" stroke-width="2"/>
+  <circle cx="545" cy="260" r="16" fill="#E2924A"/>
+  <text x="545" y="266" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="17" font-weight="700" fill="#FFFFFF">4</text>
+  <rect x="531" y="266" width="138" height="60" rx="10" fill="#2E7D74"/>
+  <text x="600" y="294" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">사용 가능한</text>
+  <text x="600" y="316" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">툴</text>
+  <text x="600" y="470" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="20" font-weight="700" fill="#22303C">자산관리</text>
+  <text x="600" y="498" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="20" font-weight="700" fill="#22303C">시스템</text>
+
+  <!-- card 5: 출력 -->
+  <rect x="685" y="260" width="150" height="380" rx="16" fill="#FFFFFF" stroke="#D8DDE3" stroke-width="2"/>
+  <circle cx="705" cy="260" r="16" fill="#E2924A"/>
+  <text x="705" y="266" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="17" font-weight="700" fill="#FFFFFF">5</text>
+  <rect x="691" y="266" width="138" height="60" rx="10" fill="#2E7D74"/>
+  <text x="760" y="304" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">출력</text>
+  <text x="760" y="485" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" font-weight="700" fill="#22303C">교체 승인</text>
+
+  <!-- card 6: 책임자 -->
+  <rect x="845" y="260" width="150" height="380" rx="16" fill="#FFFFFF" stroke="#D8DDE3" stroke-width="2"/>
+  <circle cx="865" cy="260" r="16" fill="#E2924A"/>
+  <text x="865" y="266" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="17" font-weight="700" fill="#FFFFFF">6</text>
+  <rect x="851" y="266" width="138" height="60" rx="10" fill="#2E7D74"/>
+  <text x="920" y="304" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">책임자</text>
+  <text x="920" y="485" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" font-weight="700" fill="#22303C">담당 부서</text>
+
+  <!-- card 7: 예외 조건 -->
+  <rect x="1005" y="260" width="150" height="380" rx="16" fill="#FFFFFF" stroke="#D8DDE3" stroke-width="2"/>
+  <circle cx="1025" cy="260" r="16" fill="#E2924A"/>
+  <text x="1025" y="266" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="17" font-weight="700" fill="#FFFFFF">7</text>
+  <rect x="1011" y="266" width="138" height="60" rx="10" fill="#2E7D74"/>
+  <text x="1080" y="304" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">예외 조건</text>
+  <text x="1080" y="485" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" font-weight="700" fill="#22303C">재고 부족</text>
+
+  <text x="600" y="770" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="24" font-weight="600" fill="#2E7D74">일곱 칸이 전부 채워지면 에이전트화할 수 있는 업무예요</text>
+</svg>

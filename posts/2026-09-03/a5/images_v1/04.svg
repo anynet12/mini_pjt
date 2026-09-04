@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#f7f5f0"/>
+  <rect x="0" y="0" width="1200" height="8" fill="#263248"/>
+  <rect x="0" y="792" width="1200" height="8" fill="#e0923f"/>
+
+  <text x="600" y="72" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="34" font-weight="700" fill="#263248">에이전트 목록부터 정리하기</text>
+  <text x="600" y="108" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" fill="#5a6478">누가, 얼마나, 어떤 권한으로 쓰는지 적어보기</text>
+
+  <!-- desk line -->
+  <rect x="100" y="660" width="1000" height="14" rx="6" fill="#3f7ca6"/>
+
+  <!-- person (flat, generic silhouette) -->
+  <circle cx="255" cy="400" r="46" fill="#263248"/>
+  <path d="M 195 470 Q 255 440 315 470 L 335 660 L 175 660 Z" fill="#263248"/>
+  <!-- pointing arm -->
+  <path d="M 300 480 L 420 500" stroke="#263248" stroke-width="16" stroke-linecap="round"/>
+
+  <!-- clipboard board -->
+  <rect x="470" y="190" width="620" height="460" rx="18" fill="#ffffff" stroke="#263248" stroke-width="4"/>
+  <rect x="740" y="172" width="80" height="32" rx="8" fill="#263248"/>
+  <text x="780" y="252" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="27" font-weight="700" fill="#263248">에이전트 목록</text>
+  <line x1="500" y1="274" x2="1060" y2="274" stroke="#eee9dd" stroke-width="2"/>
+
+  <!-- row 1: 인사 + 총무 -->
+  <rect x="500" y="300" width="170" height="48" rx="10" fill="#3f7ca6"/>
+  <text x="585" y="330" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="20" font-weight="700" fill="#ffffff">인사 + 총무</text>
+  <line x1="686" y1="324" x2="716" y2="324" stroke="#263248" stroke-width="4"/>
+  <polygon points="716,317 730,324 716,331" fill="#263248"/>
+  <text x="742" y="330" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="19" fill="#263248">실사용 빈도가 낮아 통합</text>
+
+  <!-- row 2: 영업 -->
+  <rect x="500" y="372" width="170" height="48" rx="10" fill="#e0923f"/>
+  <text x="585" y="402" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="20" font-weight="700" fill="#ffffff">영업</text>
+  <line x1="686" y1="390" x2="705" y2="378" stroke="#263248" stroke-width="4" stroke-linecap="round"/>
+  <line x1="686" y1="390" x2="705" y2="402" stroke="#263248" stroke-width="4" stroke-linecap="round"/>
+  <text x="742" y="402" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="19" fill="#263248">B2B·B2C로 분리(데이터·승인 다름)</text>
+
+  <!-- row 3: 회의록 자동화 -->
+  <rect x="500" y="444" width="170" height="48" rx="10" fill="#8b93a3"/>
+  <text x="585" y="474" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="20" font-weight="700" fill="#ffffff">회의록 자동화</text>
+  <circle cx="704" cy="463" r="10" fill="none" stroke="#263248" stroke-width="4"/>
+  <line x1="712" y1="471" x2="722" y2="481" stroke="#263248" stroke-width="4" stroke-linecap="round"/>
+  <text x="742" y="474" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="19" fill="#263248">사용 현황부터 확인</text>
+
+  <rect x="500" y="524" width="560" height="98" rx="12" fill="#f3f1ea" stroke="#d8d3c8" stroke-width="1.5"/>
+  <text x="780" y="558" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="19" fill="#5a6478">누가 얼마나 쓰는지, 데이터·승인 권한이</text>
+  <text x="780" y="586" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="19" fill="#5a6478">어떻게 다른지부터 적어본다</text>
+
+  <text x="600" y="736" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="21" fill="#263248" font-weight="600">그 목록 자체가 앞으로의 통폐합 기준이 된다</text>
+</svg>

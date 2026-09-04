@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs>
+    <symbol id="ic-chat" viewBox="-40 -40 80 80">
+      <rect x="-28" y="-22" width="56" height="36" rx="10" fill="none" stroke="currentColor" stroke-width="6"/>
+      <polyline points="-12,14 -12,26 -2,14" fill="none" stroke="currentColor" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+      <circle cx="-12" cy="-4" r="3.5" fill="currentColor"/>
+      <circle cx="0" cy="-4" r="3.5" fill="currentColor"/>
+      <circle cx="12" cy="-4" r="3.5" fill="currentColor"/>
+    </symbol>
+    <symbol id="ic-doc" viewBox="-40 -40 80 80">
+      <rect x="-22" y="-28" width="34" height="52" rx="4" fill="none" stroke="currentColor" stroke-width="6"/>
+      <line x1="-14" y1="-14" x2="4" y2="-14" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+      <line x1="-14" y1="-2" x2="4" y2="-2" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+      <line x1="-14" y1="10" x2="-4" y2="10" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+      <g transform="translate(18,18) rotate(45)">
+        <rect x="-4" y="-16" width="8" height="24" rx="2" fill="none" stroke="currentColor" stroke-width="5"/>
+        <polygon points="-4,8 4,8 0,16" fill="currentColor"/>
+      </g>
+    </symbol>
+    <symbol id="ic-gear" viewBox="-40 -40 80 80">
+      <circle cx="0" cy="0" r="20" fill="none" stroke="currentColor" stroke-width="6"/>
+      <circle cx="0" cy="0" r="7" fill="none" stroke="currentColor" stroke-width="5"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(0)"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(45)"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(90)"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(135)"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(180)"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(225)"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(270)"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(315)"/>
+    </symbol>
+    <symbol id="ic-agent" viewBox="-40 -40 80 80">
+      <rect x="-20" y="-22" width="40" height="36" rx="10" fill="none" stroke="currentColor" stroke-width="6"/>
+      <line x1="0" y1="-22" x2="0" y2="-32" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="0" cy="-32" r="4" fill="currentColor"/>
+      <circle cx="-9" cy="-4" r="4" fill="currentColor"/>
+      <circle cx="9" cy="-4" r="4" fill="currentColor"/>
+      <line x1="-8" y1="10" x2="8" y2="10" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+    </symbol>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="800" fill="#F5F6F8"/>
+  <text x="600" y="55" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="32" font-weight="700" fill="#2B2F38">업무 성격에 따라 고르는 유형</text>
+
+  <!-- Row 1: 챗봇형 -->
+  <rect x="60" y="100" width="560" height="90" rx="16" fill="#FFFFFF" stroke="#9AA1AC" stroke-width="2"/>
+  <text x="340" y="153" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" fill="#2B2F38">정보를 물어보고 답만 들으면 되는 일</text>
+  <line x1="630" y1="145" x2="760" y2="145" stroke="#9AA1AC" stroke-width="4"/>
+  <polygon points="775,145 758,135 758,155" fill="#9AA1AC"/>
+  <rect x="780" y="100" width="340" height="90" rx="16" fill="#5B8FB9"/>
+  <use href="#ic-chat" x="800" y="120" width="50" height="50" style="color:#FFFFFF"/>
+  <text x="865" y="154" text-anchor="start" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="26" font-weight="700" fill="#FFFFFF">챗봇형</text>
+
+  <!-- Row 2: 코파일럿형 -->
+  <rect x="60" y="250" width="560" height="90" rx="16" fill="#FFFFFF" stroke="#9AA1AC" stroke-width="2"/>
+  <text x="340" y="303" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" fill="#2B2F38">초안을 거들어줄 손이 필요한 문서 작업</text>
+  <line x1="630" y1="295" x2="760" y2="295" stroke="#9AA1AC" stroke-width="4"/>
+  <polygon points="775,295 758,285 758,305" fill="#9AA1AC"/>
+  <rect x="780" y="250" width="340" height="90" rx="16" fill="#6FA98C"/>
+  <use href="#ic-doc" x="800" y="270" width="50" height="50" style="color:#FFFFFF"/>
+  <text x="865" y="304" text-anchor="start" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="26" font-weight="700" fill="#FFFFFF">코파일럿형</text>
+
+  <!-- Row 3: 워크플로우 자동화 -->
+  <rect x="60" y="400" width="560" height="90" rx="16" fill="#FFFFFF" stroke="#9AA1AC" stroke-width="2"/>
+  <text x="340" y="453" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" fill="#2B2F38">규칙이 명확한 반복 업무</text>
+  <line x1="630" y1="445" x2="760" y2="445" stroke="#9AA1AC" stroke-width="4"/>
+  <polygon points="775,445 758,435 758,455" fill="#9AA1AC"/>
+  <rect x="780" y="400" width="340" height="90" rx="16" fill="#D9A15B"/>
+  <use href="#ic-gear" x="800" y="420" width="50" height="50" style="color:#FFFFFF"/>
+  <text x="865" y="454" text-anchor="start" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">워크플로우 자동화</text>
+
+  <!-- Row 4: 독립 에이전트 -->
+  <rect x="60" y="550" width="560" height="90" rx="16" fill="#FFFFFF" stroke="#9AA1AC" stroke-width="2"/>
+  <text x="340" y="603" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" fill="#2B2F38">조건에 따라 스스로 판단해 실행해야 하는 일</text>
+  <line x1="630" y1="595" x2="760" y2="595" stroke="#9AA1AC" stroke-width="4"/>
+  <polygon points="775,595 758,585 758,605" fill="#9AA1AC"/>
+  <rect x="780" y="550" width="340" height="90" rx="16" fill="#8B6BB0"/>
+  <use href="#ic-agent" x="800" y="570" width="50" height="50" style="color:#FFFFFF"/>
+  <text x="865" y="604" text-anchor="start" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="26" font-weight="700" fill="#FFFFFF">독립 에이전트</text>
+
+  <text x="600" y="710" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="20" fill="#6B7280">한 가지만 골라 전체에 적용하지 않기 — 업무별로 나눠 배치</text>
+</svg>

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs>
+    <style>
+      .lbl { font-family: system-ui, -apple-system, 'Malgun Gothic', sans-serif; }
+    </style>
+    <marker id="arrow02" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#8FAFA0"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="800" fill="#F5F3EE"/>
+
+  <!-- title -->
+  <text x="600" y="66" text-anchor="middle" class="lbl" font-size="34" font-weight="700" fill="#24424B">답변형 vs 자율운영형, 무엇이 다를까</text>
+
+  <!-- LEFT CARD: Level 1 chatbot -->
+  <rect x="60" y="140" width="480" height="560" rx="20" fill="#FFFFFF" stroke="#2F6E77" stroke-width="3"/>
+  <rect x="60" y="140" width="480" height="64" rx="16" fill="#2F6E77"/>
+  <text x="300" y="182" text-anchor="middle" class="lbl" font-size="22" font-weight="700" fill="#F5F3EE">레벨 1 · 답변형</text>
+
+  <!-- user bubble -->
+  <rect x="260" y="240" width="250" height="70" rx="16" fill="#EDE9DD" stroke="#8FAFA0" stroke-width="2"/>
+  <text x="385" y="282" text-anchor="middle" class="lbl" font-size="20" font-weight="700" fill="#24424B">사용자 질문</text>
+
+  <!-- AI bubble -->
+  <rect x="110" y="340" width="280" height="110" rx="16" fill="#2F6E77" opacity="0.12" stroke="#2F6E77" stroke-width="2"/>
+  <text x="250" y="386" text-anchor="middle" class="lbl" font-size="19" font-weight="700" fill="#24424B">AI 답변</text>
+  <text x="250" y="416" text-anchor="middle" class="lbl" font-size="19" font-weight="700" fill="#24424B">+ 추천 제시</text>
+
+  <text x="300" y="650" text-anchor="middle" class="lbl" font-size="18" fill="#5B6B6E">질문 한 번 → 답변 한 번</text>
+
+  <!-- CENTER connecting arrow -->
+  <text x="600" y="398" text-anchor="middle" class="lbl" font-size="19" font-weight="700" fill="#D98A3D">스킬을 쌓아</text>
+  <path d="M 548 420 L 645 420" stroke="#D98A3D" stroke-width="4" fill="none"/>
+  <path d="M 645 420 L 618 410 L 618 430 Z" fill="#D98A3D"/>
+  <text x="600" y="450" text-anchor="middle" class="lbl" font-size="19" font-weight="700" fill="#D98A3D">레벨업</text>
+
+  <!-- RIGHT CARD: Level 5 workflow -->
+  <rect x="660" y="140" width="480" height="560" rx="20" fill="#FFFFFF" stroke="#D98A3D" stroke-width="3"/>
+  <rect x="660" y="140" width="480" height="64" rx="16" fill="#D98A3D"/>
+  <text x="900" y="182" text-anchor="middle" class="lbl" font-size="22" font-weight="700" fill="#F5F3EE">레벨 5 · 자율운영형</text>
+
+  <!-- workflow nodes -->
+  <rect x="770" y="220" width="260" height="56" rx="14" fill="#2F6E77" opacity="0.15" stroke="#2F6E77" stroke-width="2"/>
+  <text x="900" y="254" text-anchor="middle" class="lbl" font-size="19" font-weight="700" fill="#24424B">조건 인지</text>
+
+  <line x1="900" y1="276" x2="900" y2="308" stroke="#8FAFA0" stroke-width="3" marker-end="url(#arrow02)"/>
+
+  <rect x="770" y="310" width="260" height="56" rx="14" fill="#2F6E77" opacity="0.15" stroke="#2F6E77" stroke-width="2"/>
+  <text x="900" y="344" text-anchor="middle" class="lbl" font-size="19" font-weight="700" fill="#24424B">판단</text>
+
+  <line x1="900" y1="366" x2="900" y2="398" stroke="#8FAFA0" stroke-width="3" marker-end="url(#arrow02)"/>
+
+  <rect x="770" y="400" width="260" height="56" rx="14" fill="#2F6E77" opacity="0.15" stroke="#2F6E77" stroke-width="2"/>
+  <text x="900" y="434" text-anchor="middle" class="lbl" font-size="19" font-weight="700" fill="#24424B">실행</text>
+
+  <line x1="900" y1="456" x2="900" y2="488" stroke="#8FAFA0" stroke-width="3" marker-end="url(#arrow02)"/>
+
+  <rect x="770" y="490" width="260" height="56" rx="14" fill="#2F6E77" opacity="0.15" stroke="#2F6E77" stroke-width="2"/>
+  <text x="900" y="524" text-anchor="middle" class="lbl" font-size="19" font-weight="700" fill="#24424B">결과 반영</text>
+
+  <!-- feedback loop -->
+  <path d="M 1030 518 C 1110 518, 1110 248, 1030 248" stroke="#D98A3D" stroke-width="3" stroke-dasharray="7 7" fill="none" marker-end="url(#arrow02)"/>
+  <text x="1085" y="388" text-anchor="middle" class="lbl" font-size="14" fill="#5B6B6E">자동 반복</text>
+
+  <text x="900" y="650" text-anchor="middle" class="lbl" font-size="18" fill="#5B6B6E">조건을 스스로 인지해 반복 실행</text>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="60세에 1만 원 수령 신청한 경우와 70대에 처음 신청한 경우의 IRP 수령 연차와 퇴직소득세 감면율 비교">
+  <rect x="0" y="0" width="1200" height="800" fill="#F5F3EE"/>
+
+  <text x="600" y="80" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', 'Malgun Gothic', sans-serif" font-size="40" font-weight="800" fill="#2B3A55">언제 신청하느냐가 감면율을 정해요</text>
+
+  <line x1="200" y1="150" x2="200" y2="700" stroke="#9AA3B2" stroke-width="3" stroke-dasharray="10 10"/>
+  <line x1="620" y1="150" x2="620" y2="700" stroke="#9AA3B2" stroke-width="3" stroke-dasharray="10 10"/>
+  <text x="200" y="135" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', 'Malgun Gothic', sans-serif" font-size="28" font-weight="700" fill="#4B5563">60세</text>
+  <text x="620" y="135" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', 'Malgun Gothic', sans-serif" font-size="28" font-weight="700" fill="#4B5563">70대</text>
+  <text x="900" y="135" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', 'Malgun Gothic', sans-serif" font-size="28" font-weight="700" fill="#4B5563">큰돈 뺄 때</text>
+
+  <rect x="60" y="190" width="1080" height="220" rx="24" fill="#FFFFFF" stroke="#3A8F7B" stroke-width="5"/>
+  <text x="90" y="240" font-family="Pretendard, 'Noto Sans KR', 'Malgun Gothic', sans-serif" font-size="30" font-weight="800" fill="#3A8F7B">60세에 연 1만 원 수령 신청</text>
+  <rect x="200" y="290" width="580" height="40" rx="12" fill="#3A8F7B"/>
+  <circle cx="200" cy="310" r="24" fill="#3A8F7B" stroke="#FFFFFF" stroke-width="5"/>
+  <polygon points="192,297 192,323 212,310" fill="#FFFFFF"/>
+  <text x="330" y="370" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', 'Malgun Gothic', sans-serif" font-size="24" font-weight="600" fill="#2B3A55">1년 차 시작</text>
+  <text x="640" y="370" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', 'Malgun Gothic', sans-serif" font-size="24" font-weight="600" fill="#2B3A55">11년 차부터 40% 구간</text>
+  <circle cx="960" cy="310" r="70" fill="#3A8F7B"/>
+  <text x="960" y="326" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', 'Malgun Gothic', sans-serif" font-size="46" font-weight="800" fill="#FFFFFF">40%</text>
+  <text x="1060" y="320" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', 'Malgun Gothic', sans-serif" font-size="24" font-weight="600" fill="#3A8F7B">감면</text>
+
+  <rect x="60" y="440" width="1080" height="220" rx="24" fill="#FFFFFF" stroke="#D98C3F" stroke-width="5"/>
+  <text x="90" y="490" font-family="Pretendard, 'Noto Sans KR', 'Malgun Gothic', sans-serif" font-size="30" font-weight="800" fill="#D98C3F">70대에 처음 수령 신청</text>
+  <line x1="200" y1="560" x2="600" y2="560" stroke="#9AA3B2" stroke-width="8" stroke-dasharray="18 14" stroke-linecap="round"/>
+  <rect x="620" y="540" width="160" height="40" rx="12" fill="#D98C3F"/>
+  <circle cx="620" cy="560" r="24" fill="#D98C3F" stroke="#FFFFFF" stroke-width="5"/>
+  <polygon points="612,547 612,573 632,560" fill="#FFFFFF"/>
+  <text x="400" y="620" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', 'Malgun Gothic', sans-serif" font-size="24" font-weight="600" fill="#6B7280">연차 시작 안 됨 (돈만 들어 있음)</text>
+  <text x="700" y="620" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', 'Malgun Gothic', sans-serif" font-size="24" font-weight="600" fill="#2B3A55">그때부터 1년 차</text>
+  <circle cx="960" cy="560" r="70" fill="#D98C3F"/>
+  <text x="960" y="576" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', 'Malgun Gothic', sans-serif" font-size="46" font-weight="800" fill="#FFFFFF">30%</text>
+  <text x="1060" y="570" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', 'Malgun Gothic', sans-serif" font-size="24" font-weight="600" fill="#D98C3F">감면</text>
+
+  <text x="600" y="740" text-anchor="middle" font-family="Pretendard, 'Noto Sans KR', 'Malgun Gothic', sans-serif" font-size="26" font-weight="500" fill="#6B7280">1만 원이라는 금액보다 '수령을 시작했다'는 기록이 중요해요</text>
+</svg>

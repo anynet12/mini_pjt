@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#F6F4EF"/>
+
+  <text x="310" y="105" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="32" font-weight="800" fill="#263646" text-anchor="middle">이전</text>
+  <text x="890" y="105" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="32" font-weight="800" fill="#263646" text-anchor="middle">이후</text>
+
+  <!-- left: agent active -->
+  <rect x="60" y="140" width="500" height="500" rx="24" fill="#FFFFFF" stroke="#5B84A5" stroke-width="3"/>
+  <rect x="140" y="480" width="340" height="20" rx="6" fill="#263646" opacity="0.12"/>
+  <rect x="290" y="500" width="20" height="40" fill="#C7CDD3"/>
+  <rect x="200" y="320" width="220" height="160" rx="12" fill="#263646" stroke="#5B84A5" stroke-width="3"/>
+  <rect x="270" y="350" width="80" height="70" rx="14" fill="#5B84A5"/>
+  <rect x="288" y="368" width="14" height="14" rx="4" fill="#F6F4EF"/>
+  <rect x="328" y="368" width="14" height="14" rx="4" fill="#F6F4EF"/>
+  <rect x="295" y="398" width="40" height="8" rx="4" fill="#F6F4EF"/>
+  <line x1="310" y1="330" x2="310" y2="350" stroke="#5B84A5" stroke-width="4"/>
+  <circle cx="310" cy="324" r="6" fill="#DB8A3E"/>
+  <rect x="170" y="280" width="70" height="40" rx="10" fill="#FFFFFF" stroke="#5B84A5" stroke-width="2"/>
+  <line x1="182" y1="292" x2="228" y2="292" stroke="#5B84A5" stroke-width="3" stroke-linecap="round"/>
+  <line x1="182" y1="304" x2="212" y2="304" stroke="#5B84A5" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="430" cy="300" r="22" fill="#FFFFFF" stroke="#5B84A5" stroke-width="3"/>
+  <path d="M420,300 L427,308 L442,286" fill="none" stroke="#5B84A5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="310" cy="560" r="22" fill="#263646"/>
+  <rect x="280" y="582" width="60" height="50" rx="16" fill="#263646"/>
+  <text x="310" y="695" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="24" font-weight="600" fill="#263646" text-anchor="middle">에이전트가 활발히 쓰이는 상태</text>
+
+  <!-- right: agent gone, excel back -->
+  <rect x="640" y="140" width="500" height="500" rx="24" fill="#FFFFFF" stroke="#C7CDD3" stroke-width="3"/>
+  <rect x="720" y="480" width="340" height="20" rx="6" fill="#263646" opacity="0.08"/>
+  <rect x="870" y="500" width="20" height="40" fill="#C7CDD3"/>
+  <rect x="780" y="320" width="220" height="160" rx="12" fill="#F0EDE6" stroke="#DB8A3E" stroke-width="3"/>
+  <rect x="780" y="320" width="220" height="26" rx="12" fill="#DB8A3E" opacity="0.85"/>
+  <line x1="850" y1="346" x2="850" y2="480" stroke="#DB8A3E" stroke-width="2"/>
+  <line x1="920" y1="346" x2="920" y2="480" stroke="#DB8A3E" stroke-width="2"/>
+  <line x1="780" y1="380" x2="1000" y2="380" stroke="#DB8A3E" stroke-width="2"/>
+  <line x1="780" y1="420" x2="1000" y2="420" stroke="#DB8A3E" stroke-width="2"/>
+  <line x1="780" y1="452" x2="1000" y2="452" stroke="#DB8A3E" stroke-width="2"/>
+  <rect x="945" y="255" width="55" height="48" rx="10" fill="none" stroke="#5B84A5" stroke-width="2.5" stroke-dasharray="5,5" opacity="0.5"/>
+  <line x1="945" y1="255" x2="1000" y2="303" stroke="#5B84A5" stroke-width="2.5" opacity="0.5"/>
+  <circle cx="890" cy="560" r="22" fill="none" stroke="#C7CDD3" stroke-width="3" stroke-dasharray="6,6"/>
+  <rect x="860" y="582" width="60" height="50" rx="16" fill="none" stroke="#C7CDD3" stroke-width="3" stroke-dasharray="6,6"/>
+  <text x="890" y="695" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="24" font-weight="600" fill="#263646" text-anchor="middle">에이전트가 사라지고 엑셀로 복귀</text>
+
+  <!-- divider -->
+  <line x1="600" y1="140" x2="600" y2="640" stroke="#C7CDD3" stroke-width="3" stroke-dasharray="10,8"/>
+  <circle cx="600" cy="390" r="34" fill="#F6F4EF" stroke="#DB8A3E" stroke-width="3"/>
+  <path d="M590,375 L610,390 L590,405" fill="none" stroke="#DB8A3E" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="600" y="445" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" font-weight="700" fill="#263646" text-anchor="middle">담당자 퇴사</text>
+  <text x="600" y="472" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="20" font-weight="700" fill="#DB8A3E" text-anchor="middle">하루 만에</text>
+
+  <text x="600" y="750" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="24" font-weight="600" fill="#263646" opacity="0.9" text-anchor="middle">1년간 쌓은 에이전트도 오너 없인 하루 만에 원상복구돼요</text>
+</svg>

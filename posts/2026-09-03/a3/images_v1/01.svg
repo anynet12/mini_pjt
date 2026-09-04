@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs>
+    <symbol id="ic-chat" viewBox="-40 -40 80 80">
+      <rect x="-28" y="-22" width="56" height="36" rx="10" fill="none" stroke="currentColor" stroke-width="6"/>
+      <polyline points="-12,14 -12,26 -2,14" fill="none" stroke="currentColor" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+      <circle cx="-12" cy="-4" r="3.5" fill="currentColor"/>
+      <circle cx="0" cy="-4" r="3.5" fill="currentColor"/>
+      <circle cx="12" cy="-4" r="3.5" fill="currentColor"/>
+    </symbol>
+    <symbol id="ic-doc" viewBox="-40 -40 80 80">
+      <rect x="-22" y="-28" width="34" height="52" rx="4" fill="none" stroke="currentColor" stroke-width="6"/>
+      <line x1="-14" y1="-14" x2="4" y2="-14" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+      <line x1="-14" y1="-2" x2="4" y2="-2" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+      <line x1="-14" y1="10" x2="-4" y2="10" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+      <g transform="translate(18,18) rotate(45)">
+        <rect x="-4" y="-16" width="8" height="24" rx="2" fill="none" stroke="currentColor" stroke-width="5"/>
+        <polygon points="-4,8 4,8 0,16" fill="currentColor"/>
+      </g>
+    </symbol>
+    <symbol id="ic-gear" viewBox="-40 -40 80 80">
+      <circle cx="0" cy="0" r="20" fill="none" stroke="currentColor" stroke-width="6"/>
+      <circle cx="0" cy="0" r="7" fill="none" stroke="currentColor" stroke-width="5"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(0)"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(45)"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(90)"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(135)"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(180)"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(225)"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(270)"/>
+      <rect x="-4" y="-32" width="8" height="12" fill="currentColor" transform="rotate(315)"/>
+    </symbol>
+    <symbol id="ic-agent" viewBox="-40 -40 80 80">
+      <rect x="-20" y="-22" width="40" height="36" rx="10" fill="none" stroke="currentColor" stroke-width="6"/>
+      <line x1="0" y1="-22" x2="0" y2="-32" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="0" cy="-32" r="4" fill="currentColor"/>
+      <circle cx="-9" cy="-4" r="4" fill="currentColor"/>
+      <circle cx="9" cy="-4" r="4" fill="currentColor"/>
+      <line x1="-8" y1="10" x2="8" y2="10" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+    </symbol>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="800" fill="#F5F6F8"/>
+
+  <text x="600" y="60" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="36" font-weight="700" fill="#2B2F38">AI 자동화, 네 가지 유형</text>
+
+  <!-- 챗봇형 -->
+  <g>
+    <rect x="60" y="120" width="250" height="460" rx="16" fill="#FFFFFF" stroke="#5B8FB9" stroke-width="3"/>
+    <rect x="80" y="140" width="210" height="10" rx="5" fill="#5B8FB9"/>
+    <use href="#ic-chat" x="135" y="165" width="100" height="100" style="color:#5B8FB9"/>
+    <text x="185" y="300" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="26" font-weight="700" fill="#2B2F38">챗봇형</text>
+    <line x1="80" y1="330" x2="290" y2="330" stroke="#E2E5EA" stroke-width="2"/>
+    <text x="185" y="368" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="17" font-weight="600" fill="#6B7280">하는 일</text>
+    <text x="185" y="404" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" fill="#2B2F38">질문에 답변</text>
+    <text x="185" y="470" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="17" font-weight="600" fill="#6B7280">예시</text>
+    <text x="185" y="504" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" fill="#2B2F38">
+      <tspan x="185">인사·구매</tspan>
+      <tspan x="185" dy="28">규정 안내</tspan>
+    </text>
+  </g>
+
+  <!-- 코파일럿형 -->
+  <g>
+    <rect x="337" y="120" width="250" height="460" rx="16" fill="#FFFFFF" stroke="#6FA98C" stroke-width="3"/>
+    <rect x="357" y="140" width="210" height="10" rx="5" fill="#6FA98C"/>
+    <use href="#ic-doc" x="412" y="165" width="100" height="100" style="color:#6FA98C"/>
+    <text x="462" y="300" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="26" font-weight="700" fill="#2B2F38">코파일럿형</text>
+    <line x1="357" y1="330" x2="567" y2="330" stroke="#E2E5EA" stroke-width="2"/>
+    <text x="462" y="368" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="17" font-weight="600" fill="#6B7280">하는 일</text>
+    <text x="462" y="404" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" fill="#2B2F38">문서 작업 보조</text>
+    <text x="462" y="470" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="17" font-weight="600" fill="#6B7280">예시</text>
+    <text x="462" y="504" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" fill="#2B2F38">
+      <tspan x="462">오피스·독스 옆</tspan>
+      <tspan x="462" dy="28">초안 작성</tspan>
+    </text>
+  </g>
+
+  <!-- 워크플로우 자동화(RPA성) -->
+  <g>
+    <rect x="614" y="120" width="250" height="460" rx="16" fill="#FFFFFF" stroke="#D9A15B" stroke-width="3"/>
+    <rect x="634" y="140" width="210" height="10" rx="5" fill="#D9A15B"/>
+    <use href="#ic-gear" x="689" y="165" width="100" height="100" style="color:#D9A15B"/>
+    <text x="739" y="295" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="24" font-weight="700" fill="#2B2F38">
+      <tspan x="739">워크플로우 자동화</tspan>
+      <tspan x="739" dy="26" font-size="19" fill="#6B7280">(RPA성)</tspan>
+    </text>
+    <line x1="634" y1="330" x2="844" y2="330" stroke="#E2E5EA" stroke-width="2"/>
+    <text x="739" y="368" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="17" font-weight="600" fill="#6B7280">하는 일</text>
+    <text x="739" y="404" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" fill="#2B2F38">규칙 기반 처리</text>
+    <text x="739" y="470" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="17" font-weight="600" fill="#6B7280">예시</text>
+    <text x="739" y="504" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" fill="#2B2F38">
+      <tspan x="739">티켓 분류·</tspan>
+      <tspan x="739" dy="28">담당자 연결</tspan>
+    </text>
+  </g>
+
+  <!-- 독립 에이전트 -->
+  <g>
+    <rect x="891" y="120" width="250" height="460" rx="16" fill="#FFFFFF" stroke="#8B6BB0" stroke-width="3"/>
+    <rect x="911" y="140" width="210" height="10" rx="5" fill="#8B6BB0"/>
+    <use href="#ic-agent" x="966" y="165" width="100" height="100" style="color:#8B6BB0"/>
+    <text x="1016" y="300" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="26" font-weight="700" fill="#2B2F38">독립 에이전트</text>
+    <line x1="911" y1="330" x2="1121" y2="330" stroke="#E2E5EA" stroke-width="2"/>
+    <text x="1016" y="368" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="17" font-weight="600" fill="#6B7280">하는 일</text>
+    <text x="1016" y="404" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" fill="#2B2F38">
+      <tspan x="1016">조건 인지 후</tspan>
+      <tspan x="1016" dy="26">자율 행동</tspan>
+    </text>
+    <text x="1016" y="470" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="17" font-weight="600" fill="#6B7280">예시</text>
+    <text x="1016" y="504" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" fill="#2B2F38">
+      <tspan x="1016">조건 성립 시</tspan>
+      <tspan x="1016" dy="28">스스로 실행</tspan>
+    </text>
+  </g>
+
+  <!-- 자동화 정도 방향 -->
+  <line x1="90" y1="660" x2="1095" y2="660" stroke="#9AA1AC" stroke-width="4"/>
+  <polygon points="1110,660 1092,650 1092,670" fill="#9AA1AC"/>
+  <text x="600" y="710" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" fill="#6B7280">사람 개입 많음 → 스스로 판단하는 비중이 커짐</text>
+</svg>

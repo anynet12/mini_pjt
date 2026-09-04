@@ -1,0 +1,48 @@
+{
+  "run": "2026-09-03",
+  "angle": "a1",
+  "version": 2,
+  "source_file": "posts/2026-09-03/a1/review_v2.md",
+  "reviewed_at": "2026-09-03T13:38:43+09:00",
+  "model": "global.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "text_facts": {
+    "verdict": "FAIL",
+    "total": 80,
+    "score_A": 62,
+    "score_B": 83,
+    "score_C": 86,
+    "score_D": 90
+  },
+  "adjustments": [],
+  "consistency_warnings": [],
+  "result": {
+    "verdict": "FAIL",
+    "scores": {
+      "a_format": 62,
+      "b_appeal": 83,
+      "c_coherence": 86,
+      "d_traces": 90,
+      "total": 80
+    },
+    "strengths": [
+      "도입 훅 유지",
+      "본문 문장 리듬이 1차보다 자연스러워짐(해요체 통일 효과)",
+      "본문 텍스트는 해요체로 완전히 통일됨"
+    ],
+    "weaknesses": [
+      "이미지 안에서 문체가 섞여 본문과 이질감 발생",
+      "썸네일 SVG에 습니다체가 남아 클릭 전부터 톤 불일치 드러남",
+      "SVG 내부 캡션과 텍스트 요소에서 반말체·문어체 의문형 혼용"
+    ],
+    "issues": [
+      {
+        "criterion": "A",
+        "severity": "critical",
+        "stage": "image",
+        "problem": "인라인 SVG 이미지 내부 텍스트에서 문체 혼용: 00.svg에 습니다체('사라집니다'), 02.svg 부제에 반말체('붙는다'), 02.svg와 03.svg에 문어체 의문형('있는가?', '가능한가?') 남아 있음. 본문 해요체와 불일치.",
+        "instruction": "images_v3/ 디렉토리의 00, 02, 03.svg 안의 모든 `<text>` 요소를 하나도 빠짐없이 확인해 완결 서술문·의문문을 전부 해요체로 통일(명사형 라벨은 제외). 4개 SVG 전체를 다시 훑어 습니다체·반말체·문어체 의문형이 하나도 남지 않았는지 재확인."
+      }
+    ],
+    "summary": "SVG 이미지 내부 텍스트에서 문체 혼용(습니다체, 반말체, 문어체 의문형)이 남아 본문 해요체와 불일치. 썸네일부터 톤 불일치가 드러남."
+  }
+}

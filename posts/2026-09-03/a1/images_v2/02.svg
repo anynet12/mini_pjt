@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#F6F4EF"/>
+
+  <text x="600" y="90" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="36" font-weight="800" fill="#263646" text-anchor="middle">에이전트마다 오너가 있는가</text>
+  <text x="600" y="128" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" fill="#263646" opacity="0.7" text-anchor="middle">오너 없는 에이전트에는 경고가 붙는다</text>
+
+  <!-- card 0: owner OK, cx=180 -->
+  <rect x="100" y="220" width="160" height="300" rx="20" fill="#FFFFFF" stroke="#5B84A5" stroke-width="3"/>
+  <line x1="180" y1="240" x2="180" y2="260" stroke="#5B84A5" stroke-width="4"/>
+  <circle cx="180" cy="234" r="6" fill="#5B84A5"/>
+  <rect x="145" y="260" width="70" height="60" rx="14" fill="#5B84A5"/>
+  <rect x="158" y="280" width="14" height="14" rx="4" fill="#F6F4EF"/>
+  <rect x="188" y="280" width="14" height="14" rx="4" fill="#F6F4EF"/>
+  <rect x="162" y="305" width="36" height="8" rx="4" fill="#F6F4EF"/>
+  <circle cx="240" cy="240" r="18" fill="#FFFFFF" stroke="#5B84A5" stroke-width="3"/>
+  <path d="M232,240 L238,247 L250,231" fill="none" stroke="#5B84A5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="180" cy="432" r="14" fill="#263646"/>
+  <rect x="160" y="446" width="40" height="34" rx="10" fill="#263646"/>
+  <text x="180" y="550" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="20" font-weight="700" fill="#263646" text-anchor="middle">오너 있음</text>
+
+  <!-- card 1: owner missing, cx=390 -->
+  <rect x="310" y="220" width="160" height="300" rx="20" fill="#FFFFFF" stroke="#DB8A3E" stroke-width="3" stroke-dasharray="8,6"/>
+  <rect x="355" y="260" width="70" height="60" rx="14" fill="#5B84A5" opacity="0.55"/>
+  <rect x="368" y="280" width="14" height="14" rx="4" fill="#F6F4EF"/>
+  <rect x="398" y="280" width="14" height="14" rx="4" fill="#F6F4EF"/>
+  <rect x="372" y="305" width="36" height="8" rx="4" fill="#F6F4EF"/>
+  <path d="M450,222 L468,254 L432,254 Z" fill="#DB8A3E"/>
+  <rect x="447" y="230" width="6" height="14" fill="#F6F4EF"/>
+  <circle cx="450" cy="248" r="3" fill="#F6F4EF"/>
+  <circle cx="390" cy="432" r="14" fill="none" stroke="#C7CDD3" stroke-width="3" stroke-dasharray="4,4"/>
+  <rect x="370" y="446" width="40" height="34" rx="10" fill="none" stroke="#C7CDD3" stroke-width="3" stroke-dasharray="4,4"/>
+  <text x="390" y="550" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="20" font-weight="700" fill="#DB8A3E" text-anchor="middle">오너 없음 · 위험</text>
+
+  <!-- card 2: owner OK, cx=600 -->
+  <rect x="520" y="220" width="160" height="300" rx="20" fill="#FFFFFF" stroke="#5B84A5" stroke-width="3"/>
+  <line x1="600" y1="240" x2="600" y2="260" stroke="#5B84A5" stroke-width="4"/>
+  <circle cx="600" cy="234" r="6" fill="#5B84A5"/>
+  <rect x="565" y="260" width="70" height="60" rx="14" fill="#5B84A5"/>
+  <rect x="578" y="280" width="14" height="14" rx="4" fill="#F6F4EF"/>
+  <rect x="608" y="280" width="14" height="14" rx="4" fill="#F6F4EF"/>
+  <rect x="582" y="305" width="36" height="8" rx="4" fill="#F6F4EF"/>
+  <circle cx="660" cy="240" r="18" fill="#FFFFFF" stroke="#5B84A5" stroke-width="3"/>
+  <path d="M652,240 L658,247 L670,231" fill="none" stroke="#5B84A5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="600" cy="432" r="14" fill="#263646"/>
+  <rect x="580" y="446" width="40" height="34" rx="10" fill="#263646"/>
+  <text x="600" y="550" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="20" font-weight="700" fill="#263646" text-anchor="middle">오너 있음</text>
+
+  <!-- card 3: owner missing, cx=810 -->
+  <rect x="730" y="220" width="160" height="300" rx="20" fill="#FFFFFF" stroke="#DB8A3E" stroke-width="3" stroke-dasharray="8,6"/>
+  <rect x="775" y="260" width="70" height="60" rx="14" fill="#5B84A5" opacity="0.55"/>
+  <rect x="788" y="280" width="14" height="14" rx="4" fill="#F6F4EF"/>
+  <rect x="818" y="280" width="14" height="14" rx="4" fill="#F6F4EF"/>
+  <rect x="792" y="305" width="36" height="8" rx="4" fill="#F6F4EF"/>
+  <path d="M870,222 L888,254 L852,254 Z" fill="#DB8A3E"/>
+  <rect x="867" y="230" width="6" height="14" fill="#F6F4EF"/>
+  <circle cx="870" cy="248" r="3" fill="#F6F4EF"/>
+  <circle cx="810" cy="432" r="14" fill="none" stroke="#C7CDD3" stroke-width="3" stroke-dasharray="4,4"/>
+  <rect x="790" y="446" width="40" height="34" rx="10" fill="none" stroke="#C7CDD3" stroke-width="3" stroke-dasharray="4,4"/>
+  <text x="810" y="550" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="20" font-weight="700" fill="#DB8A3E" text-anchor="middle">오너 없음 · 위험</text>
+
+  <!-- card 4: owner OK, cx=1020 -->
+  <rect x="940" y="220" width="160" height="300" rx="20" fill="#FFFFFF" stroke="#5B84A5" stroke-width="3"/>
+  <line x1="1020" y1="240" x2="1020" y2="260" stroke="#5B84A5" stroke-width="4"/>
+  <circle cx="1020" cy="234" r="6" fill="#5B84A5"/>
+  <rect x="985" y="260" width="70" height="60" rx="14" fill="#5B84A5"/>
+  <rect x="998" y="280" width="14" height="14" rx="4" fill="#F6F4EF"/>
+  <rect x="1028" y="280" width="14" height="14" rx="4" fill="#F6F4EF"/>
+  <rect x="1002" y="305" width="36" height="8" rx="4" fill="#F6F4EF"/>
+  <circle cx="1080" cy="240" r="18" fill="#FFFFFF" stroke="#5B84A5" stroke-width="3"/>
+  <path d="M1072,240 L1078,247 L1090,231" fill="none" stroke="#5B84A5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="1020" cy="432" r="14" fill="#263646"/>
+  <rect x="1000" y="446" width="40" height="34" rx="10" fill="#263646"/>
+  <text x="1020" y="550" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="20" font-weight="700" fill="#263646" text-anchor="middle">오너 있음</text>
+
+  <text x="600" y="610" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="24" font-weight="600" fill="#263646" opacity="0.9" text-anchor="middle">오너 없이 방치된 에이전트가 통폐합 1순위예요</text>
+</svg>

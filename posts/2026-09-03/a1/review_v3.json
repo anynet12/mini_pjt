@@ -1,0 +1,47 @@
+{
+  "run": "2026-09-03",
+  "angle": "a1",
+  "version": 3,
+  "source_file": "posts/2026-09-03/a1/review_v3.md",
+  "reviewed_at": "2026-09-03T13:39:12+09:00",
+  "model": "global.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "text_facts": {
+    "verdict": "PASS",
+    "total": 89,
+    "score_A": 93,
+    "score_B": 85,
+    "score_C": 88,
+    "score_D": 88
+  },
+  "adjustments": [],
+  "consistency_warnings": [],
+  "result": {
+    "verdict": "PASS",
+    "scores": {
+      "a_format": 93,
+      "b_appeal": 85,
+      "c_coherence": 88,
+      "d_traces": 88,
+      "total": 89
+    },
+    "strengths": [
+      "\"1년 노력이 하루 만에 사라졌다\"는 임팩트 있는 사례 훅",
+      "체크리스트형 마무리 이미지",
+      "FAQ 자기완결적 구성",
+      "1·2차 지적 사항(본문 및 SVG 내부 문체 혼용) 완전히 해소"
+    ],
+    "weaknesses": [
+      "\"냉장고·세탁기\" 비유 문장이 insights.md에 없는 구체 예시 (명백한 과장은 아님)"
+    ],
+    "issues": [
+      {
+        "criterion": "D",
+        "severity": "minor",
+        "stage": "writer",
+        "problem": "\"냉장고·세탁기\" 비유 문장이 insights.md에 없는 구체 예시로, faithfulness 스크립트가 3회 연속 파싱 실패해 자막 대조 불가",
+        "instruction": "해당 비유 문장의 출처 확인 또는 명확한 근거 제시 권장"
+      }
+    ],
+    "summary": "1·2차에서 지적된 문체 혼용(본문 및 SVG 내부)이 전수 재검사 결과 완전히 해소됨을 확인. 형식 요건 모두 충족."
+  }
+}

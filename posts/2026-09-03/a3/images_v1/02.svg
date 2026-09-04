@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs>
+    <symbol id="ic-agent2" viewBox="-40 -40 80 80">
+      <rect x="-20" y="-22" width="40" height="36" rx="10" fill="none" stroke="currentColor" stroke-width="6"/>
+      <line x1="0" y1="-22" x2="0" y2="-32" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="0" cy="-32" r="4" fill="currentColor"/>
+      <circle cx="-9" cy="-4" r="4" fill="currentColor"/>
+      <circle cx="9" cy="-4" r="4" fill="currentColor"/>
+      <line x1="-8" y1="10" x2="8" y2="10" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+    </symbol>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="800" fill="#F5F6F8"/>
+  <text x="600" y="55" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="32" font-weight="700" fill="#2B2F38">MCP로 연결되고, 실행 전엔 사람에게 승인을 구한다</text>
+
+  <!-- 연결선 (시스템 → 에이전트, 원이 위에 그려져 선 끝이 자연스럽게 가려짐) -->
+  <line x1="280" y1="135" x2="560" y2="340" stroke="#9AA1AC" stroke-width="3"/>
+  <line x1="280" y1="355" x2="560" y2="340" stroke="#9AA1AC" stroke-width="3"/>
+  <line x1="280" y1="575" x2="560" y2="340" stroke="#9AA1AC" stroke-width="3"/>
+
+  <!-- MCP 라벨 -->
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+    <rect x="392" y="223" width="56" height="28" rx="14" fill="#FFFFFF" stroke="#9AA1AC" stroke-width="1.5"/>
+    <text x="420" y="242" text-anchor="middle" font-size="15" fill="#4B5563">MCP</text>
+    <rect x="392" y="333" width="56" height="28" rx="14" fill="#FFFFFF" stroke="#9AA1AC" stroke-width="1.5"/>
+    <text x="420" y="352" text-anchor="middle" font-size="15" fill="#4B5563">MCP</text>
+    <rect x="392" y="443" width="56" height="28" rx="14" fill="#FFFFFF" stroke="#9AA1AC" stroke-width="1.5"/>
+    <text x="420" y="462" text-anchor="middle" font-size="15" fill="#4B5563">MCP</text>
+  </g>
+
+  <!-- 업무 시스템 3개 -->
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+    <rect x="60" y="90" width="220" height="90" rx="16" fill="#FFFFFF" stroke="#5B8FB9" stroke-width="3"/>
+    <text x="170" y="141" text-anchor="middle" font-size="22" font-weight="700" fill="#2B2F38">문서 시스템</text>
+
+    <rect x="60" y="310" width="220" height="90" rx="16" fill="#FFFFFF" stroke="#6FA98C" stroke-width="3"/>
+    <text x="170" y="361" text-anchor="middle" font-size="22" font-weight="700" fill="#2B2F38">데이터베이스</text>
+
+    <rect x="60" y="530" width="220" height="90" rx="16" fill="#FFFFFF" stroke="#D9A15B" stroke-width="3"/>
+    <text x="170" y="581" text-anchor="middle" font-size="22" font-weight="700" fill="#2B2F38">커뮤니케이션 도구</text>
+  </g>
+
+  <!-- 에이전트 -->
+  <circle cx="560" cy="340" r="90" fill="#8B6BB0"/>
+  <use href="#ic-agent2" x="510" y="290" width="100" height="100" style="color:#FFFFFF"/>
+  <text x="560" y="470" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="26" font-weight="700" fill="#2B2F38">에이전트</text>
+
+  <!-- 승인 요청 화살표 -->
+  <line x1="650" y1="300" x2="716" y2="200" stroke="#8B6BB0" stroke-width="3"/>
+  <polygon points="722,190 716,210 700,196" fill="#8B6BB0"/>
+
+  <!-- 말풍선 -->
+  <rect x="720" y="150" width="380" height="95" rx="20" fill="#FFFFFF" stroke="#8B6BB0" stroke-width="3"/>
+  <text x="910" y="190" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="24" font-weight="600" fill="#2B2F38">이걸 실행해도</text>
+  <text x="910" y="224" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="24" font-weight="600" fill="#2B2F38">될까요?</text>
+
+  <!-- 승인 화살표 -->
+  <line x1="910" y1="245" x2="910" y2="335" stroke="#9AA1AC" stroke-width="3"/>
+  <polygon points="910,350 900,332 920,332" fill="#9AA1AC"/>
+
+  <!-- 승인자(사람) -->
+  <circle cx="910" cy="385" r="22" fill="none" stroke="#4B5563" stroke-width="5"/>
+  <rect x="880" y="410" width="60" height="70" rx="20" fill="none" stroke="#4B5563" stroke-width="5"/>
+
+  <!-- 승인 체크 배지 -->
+  <circle cx="972" cy="430" r="26" fill="#6FA98C"/>
+  <polyline points="960,430 969,440 987,414" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="910" y="510" text-anchor="middle" font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif" font-size="22" font-weight="700" fill="#2B2F38">승인</text>
+
+  <!-- 추가 요건 배지 -->
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+    <rect x="300" y="670" width="260" height="56" rx="28" fill="#FFFFFF" stroke="#9AA1AC" stroke-width="2"/>
+    <text x="430" y="705" text-anchor="middle" font-size="21" fill="#2B2F38">평가·감사 체계</text>
+
+    <rect x="600" y="670" width="300" height="56" rx="28" fill="#FFFFFF" stroke="#9AA1AC" stroke-width="2"/>
+    <text x="750" y="705" text-anchor="middle" font-size="21" fill="#2B2F38">운영자가 책임 관리</text>
+  </g>
+</svg>
